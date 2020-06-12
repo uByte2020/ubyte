@@ -23,6 +23,46 @@
         </mdb-row>
       </div>
     </div>
+    <div id="about" class="main-divs 2 overflow-hidden">
+      <mdb-row>
+        <mdb-col col="6" id="deeper" class>
+          <mdb-view class="back position-absolute h-100">
+            <img src="../assets/imgs/pausado.jpg" class="img-fluid w-100 h-100" />
+            <mdb-mask flex-center class="black-overlay" />
+          </mdb-view>
+          <div class="text-1 text-white" id="deep">
+            <mdb-row>
+              <mdb-col class id="about-text">
+                <h3 class>DESAFIE A NOSSA CRIATIVIDADE</h3>
+                <p>
+                  APLICATIVO MÓVEL PARA
+                  <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
+                  <span class="highlight">DESENVOLVEDORES</span>
+                </p>
+                <mdb-btn class="highlight-background" size="lg">Conheça nossas soluções</mdb-btn>
+              </mdb-col>
+            </mdb-row>
+          </div>
+        </mdb-col>
+        <mdb-col col="7" class="highlight-background skewed3">
+          <img src="../assets/imgs/download.png" id="three-phones" class="img-fluid w-75" />
+        </mdb-col>
+      </mdb-row>
+      <mdb-row>
+        <div class="skewed2 border bg-white">
+          <mdb-row class="ml-5 p-2">
+            <mdb-col col="6" class="skewed2-text">
+              <h3 class="text-left">Quem Somos?</h3>
+              <p class="text-justify">
+                Somos uma equipa especializada em soluções digitais adaptadas e personalizadas
+                aos nossos clientes. Apresentamos soluções inovadoras, softwares de optimo desempenho,
+                Produtos e serviços de alta qualidade, Melhores Designers e Soluções adaptadas e personalizadas, tudo no melhor preço.
+              </p>
+            </mdb-col>
+          </mdb-row>
+        </div>
+      </mdb-row>
+    </div>
     <div id="solutions" class="main-divs 3">
       <!-- <mdb-view class="back position-absolute">
         <img src="../assets/imgs/laptop.jpg" class="img-fluid w-100" alt="test" />
@@ -102,6 +142,68 @@
         </mdb-row>
       </div>
     </div>
+    <div id="projects" class="main-divs 5">
+      <div class="text-white">
+        <mdb-row>
+          <mdb-col md="6" offsetMd="3" class="p-3">
+            <h2 class="font-weight-bold">NOSSOS TRABALHOS</h2>
+            <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1>
+            <nav class="navbar">
+              <ul class="navbar-nav projects-menu">
+                <li class="nav-item">
+                  <a href="#" class="text-white font-weight-bold">Todos</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white font-weight-bold">Design Gráfico</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white font-weight-bold">Website</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white font-weight-bold">Apps</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white font-weight-bold">Softwares</a>
+                </li>
+              </ul>
+            </nav>
+          </mdb-col>
+        </mdb-row>
+        <mdb-row class="p-5">
+          <mdb-col md="3" offsetMd="1">
+            <img src="../assets/imgs/project-1.jpg" class="img-fluid w-100" />
+          </mdb-col>
+          <mdb-col md="3" class="mx-4">
+            <img src="../assets/imgs/project-2.jpg" class="img-fluid w-100" />
+          </mdb-col>
+          <mdb-col md="3">
+            <img src="../assets/imgs/project-3.jpg" class="img-fluid w-100" />
+          </mdb-col>
+        </mdb-row>
+      </div>
+    </div>
+    <div id="control" class="main-divs 6 overflow-hidden">
+      <mdb-row class="all">
+        <mdb-col md="4" offsetMd="1" class="space-top">
+          <h1>Assuma o controle total</h1>
+          <p
+            class="text-justify my-3 font-control"
+          >Construímos um forte relacionamento com nossos clientes, realizando três ações: prestando contas de nossos projetos, tornando nossos processos transparentes e oferecendo excelentes resultados</p>
+          <ul class="text-left mt-4 font-control">
+            <li>Abordagem ágil</li>
+            <li>Relatórios de Desempenho</li>
+            <li>Comunicações regulares</li>
+            <li>Entrega contínua</li>
+          </ul>
+        </mdb-col>
+        <mdb-col md="7" class="space-top-2">
+          <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
+        </mdb-col>
+      </mdb-row>
+      <mdb-row class="p-0 m-0">
+        <div class="skewed"></div>
+      </mdb-row>
+    </div>
     <div id="plans" class="main-divs 7">
       <div class="text-1 text-white">
         <mdb-row>
@@ -151,18 +253,30 @@
           <mdb-col md="5" offsetMd="2" class="text-overlay">
             <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
           </mdb-col>
-          <mdb-col md="3" class="text-overlay">
+          <mdb-col md="3" class="text-overlay mb-5">
             <mdb-btn class="highlight-background">Conheça as nossas soluções</mdb-btn>
           </mdb-col>
         </mdb-row>
         <mdb-row>
           <footer>
-            <mdb-row>
+            <mdb-row class="mt-5">
               <mdb-col md="2" offsetMd="1">
                 <img src="../assets/imgs/logowhite.png" class="img-fluid w-50" alt="logo" />
               </mdb-col>
               <mdb-col md="2">
-                <ul class="mt-5">
+                <ul class="mt-5 text-left">
+                  <li>
+                    <h4 class="my-2">Localização</h4>
+                  </li>
+                  <li>Sicronização de Email</li>
+                  <li>Várias listas de tarefas</li>
+                  <li>nuvem sicronização</li>
+                  <li>Sicronização de Email</li>
+                  <li>Várias listas de tarefas</li>
+                </ul>
+              </mdb-col>
+              <mdb-col md="2">
+                <ul class="mt-5 text-left">
                   <li>
                     <h4 class="my-2">Localização</h4>
                   </li>
@@ -230,8 +344,7 @@ video {
   border-left: 0.5rem solid #ffffff;
 }
 
-rgba-black-light,
-.rgba-black-light:after {
+.black-overlay {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -264,7 +377,8 @@ rgba-black-light,
 
 #plans,
 #solutions,
-#contacts {
+#contacts,
+#projects {
   background-image: url("../assets/imgs/black.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -288,5 +402,92 @@ rgba-black-light,
 footer {
   background-color: $footerColor;
   height: 60vh;
+}
+
+#control {
+  background-color: $mockupBackground;
+  overflow: hidden;
+  z-index: -1;
+}
+.all {
+  width: 100%;
+  height: 100vh;
+}
+
+.space-top {
+  margin-top: 15%;
+}
+
+.space-top-2 {
+  margin-top: 10%;
+}
+
+.font-control {
+  font-size: 1.2rem !important;
+}
+
+.skewed {
+  z-index: 1;
+
+  /*left: 0; */
+  background: $highlightColor;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  width: 100%;
+  height: 100vh;
+}
+
+.skewed2 {
+  z-index: 1;
+  margin-top: -5%;
+
+  /*left: 0; */
+
+  transform: skewY(4deg);
+  transform-origin: top left;
+  width: 100%;
+  height: 100vh;
+}
+
+.skewed2-text {
+  transform: skewY(-4deg);
+}
+
+#about-text {
+  margin-top: 30%;
+}
+
+.projects-menu {
+  display: contents;
+}
+
+#deeper {
+  z-index: -1;
+  height: 85vh;
+}
+
+#deep {
+  z-index: 0;
+  height: 80vh;
+}
+
+#deeper,
+#deep {
+}
+
+#deeper > img {
+  height: -webkit-fill-available;
+}
+
+.skewed3 {
+  transform: skewX(-190deg);
+  margin-left: -9%;
+  transform-origin: bottom left;
+  margin-bottom: -2%;
+}
+
+#three-phones {
+  transform: skewX(10deg);
+  margin-top: 10%;
 }
 </style>
