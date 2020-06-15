@@ -1,5 +1,6 @@
 <template>
-  <mdb-navbar position="top" class="mt-0" color="default" transparent scrolling>
+  <mdb-navbar position="top" class="mt-0" color="default">
+    <!-- transparent scrolling -->
     <mdb-navbar-brand class="p-1 ml-1">
       <img src="../assets/imgs/logowhite.png" alt="logo" height="35" />
     </mdb-navbar-brand>

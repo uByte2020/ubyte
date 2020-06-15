@@ -16,6 +16,7 @@ export default {
 </script>
 
 <style>
+@import "/scss/main.scss";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 #app {
   /* font-family: Avenir, Helvetica, Arial, sans-serif;  */

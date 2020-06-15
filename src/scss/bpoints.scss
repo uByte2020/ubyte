@@ -1,0 +1,53 @@
+/* Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #solutions,
+  #plans,
+  #contacts,
+  #control,
+  #projects {
+    height: -webkit-fill-available !important;
+  }
+
+  .skewed3,
+  .skewed {
+    display: none;
+  }
+
+  #deeper {
+    height: 70vh !important;
+  }
+
+  .skewed2,
+  .skewed2-text {
+    transform: none !important;
+  }
+
+  .skewed2 {
+    height: 35vh !important;
+  }
+
+  .all {
+    height: auto !important;
+  }
+
+  .plains-container {
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .skewed3 {
+    margin-left: -11% !important;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
