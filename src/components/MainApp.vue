@@ -208,7 +208,7 @@
     <div id="plans" class="main-divs container-fluid">
       <mdb-row class="justify-content-center align-items-center text-white">
         <mdb-col md="7" xl="3" lg="3" sm="10" class="col-10 plans-container p-3 p-mx-2">
-          <i class="fas fa-bell fa-4x highlight mt-3"></i>
+          <i class="fas fa-bell fa-4x highlight mt-4"></i>
           <h2 class="font-weight-normal mt-3">BASIC</h2>
           <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
           <p class="text-center my-3 display-4">30k</p>
@@ -217,10 +217,10 @@
             <li>Várias listas de tarefas</li>
             <li>60M em nuvem</li>
           </ul>
-          <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
+          <mdb-btn outline="white" size="lg" class="mb-4">Escolher Plano</mdb-btn>
         </mdb-col>
         <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container bigger p-3">
-          <i class="fas fa-paper-plane fa-7x highlight mt-3"></i>
+          <i class="fas fa-paper-plane fa-7x highlight mt-5"></i>
           <h2 class="font-weight-normal mt-3">BASIC</h2>
           <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
           <p class="text-center my-3 display-4">60k</p>
@@ -229,7 +229,7 @@
             <li>Várias listas de tarefas</li>
             <li>106M em nuvem</li>
           </ul>
-          <mdb-btn size>Escolher Plano</mdb-btn>
+          <mdb-btn size class="mb-5">Escolher Plano</mdb-btn>
         </mdb-col>
         <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container p-3">
           <i class="fas fa-cloud-upload-alt fa-4x highlight mt-3"></i>
@@ -241,7 +241,7 @@
             <li>Várias listas de tarefas</li>
             <li>106M em nuvem</li>
           </ul>
-          <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
+          <mdb-btn outline="white" size="lg" class="mb-4">Escolher Plano</mdb-btn>
         </mdb-col>
       </mdb-row>
     </div>
@@ -365,11 +365,10 @@ video {
 
 .plans-container {
   background: $plansColor;
-  height: 70vh;
+
   margin-top: 5%;
 }
 .bigger {
-  height: 80vh !important;
   z-index: 2;
 }
 
