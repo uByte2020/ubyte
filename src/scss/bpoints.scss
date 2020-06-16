@@ -2,7 +2,119 @@
   No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  #solutions,
+  #plans,
+  #contacts,
+  #control,
+  #projects {
+    height: -webkit-fill-available !important;
+  }
+
+  .skewed3,
+  .skewed {
+    display: none;
+  }
+
+  #deeper {
+    height: 70vh !important;
+  }
+
+  .skewed2,
+  .skewed2-text {
+    transform: none !important;
+  }
+
+  .skewed2 {
+    padding-top: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 33vh !important;
+  }
+
+  .all {
+    height: auto !important;
+  }
+
+  .plans-container {
+    margin-top: 0.5rem;
+  }
+
+  .solutions-names {
+    text-align: center !important;
+  }
+
+  .skewed2-text {
+    margin-bottom: 2%;
+    font-size: 0.8rem;
+  }
+
+  #about {
+    overflow: initial !important;
+  }
+  .skewed2 .row {
+    margin-left: 0 !important;
+  }
+
+  .projects-menu {
+    display: block !important;
+    margin: auto;
+  }
+
+  #plans {
+    padding: 5%;
+  }
+
+  .phone-inbox {
+    display: none;
+  }
+  .mobile-padding {
+    padding: 10%;
+  }
+}
+
 @media (min-width: 576px) and (max-width: 767.98px) {
+  #solutions,
+  #plans,
+  #contacts,
+  #control,
+  #projects {
+    height: -webkit-fill-available !important;
+  }
+
+  .skewed3,
+  .skewed {
+    display: none;
+  }
+
+  #deeper {
+    height: 70vh !important;
+  }
+
+  .skewed2,
+  .skewed2-text {
+    transform: none !important;
+  }
+
+  .skewed2 {
+    height: 35vh !important;
+  }
+
+  .all {
+    height: auto !important;
+  }
+
+  .plans-container {
+    margin-top: 0.5rem;
+  }
+
+  .solutions-names {
+    text-align: center !important;
+  }
+
+  .phone-inbox {
+    display: none;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -37,7 +149,20 @@
     height: auto !important;
   }
 
-  .plains-container {
+  .plans-container {
+    margin-top: 0.5rem;
+  }
+
+  .solutions-names {
+    text-align: center !important;
+  }
+
+  #plans {
+    padding: 5%;
+  }
+
+  .phone-inbox {
+    display: none;
   }
 }
 

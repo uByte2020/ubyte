@@ -13,7 +13,7 @@
       <mdb-row class="m-0 p-0 text-white align-items-center justify-content-center w-100 h-100">
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
-          <span class="display-3">WELCOME TO UBYTE</span>
+          <span class="display-4">WELCOME TO UBYTE</span>
           <p>
             APLICATIVO MÓVEL PARA
             <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
@@ -30,19 +30,18 @@
             <img src="../assets/imgs/pausado.jpg" class="img-fluid w-100 h-100" />
             <mdb-mask flex-center class="black-overlay" />
           </mdb-view>
-          <div class="text-1 text-white" id="deep">
-            <mdb-row>
-              <mdb-col class id="about-text">
-                <h3 class>DESAFIE A NOSSA CRIATIVIDADE</h3>
-                <p>
-                  APLICATIVO MÓVEL PARA
-                  <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
-                  <span class="highlight">DESENVOLVEDORES</span>
-                </p>
-                <mdb-btn class="highlight-background" size="lg">Conheça nossas soluções</mdb-btn>
-              </mdb-col>
-            </mdb-row>
-          </div>
+
+          <mdb-row class="justify-content-center text-white w-100 h-100">
+            <mdb-col class="align-self-center mobile-padding">
+              <h3 class>DESAFIE A NOSSA CRIATIVIDADE</h3>
+              <p>
+                APLICATIVO MÓVEL PARA
+                <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
+                <span class="highlight">DESENVOLVEDORES</span>
+              </p>
+              <mdb-btn class="highlight-background" size="lg">Conheça nossas soluções</mdb-btn>
+            </mdb-col>
+          </mdb-row>
         </mdb-col>
         <mdb-col xl="7" lg="7" md="12" sm="12" class="highlight-background skewed3">
           <img src="../assets/imgs/download.png" id="three-phones" class="img-fluid w-75" />
@@ -51,8 +50,8 @@
       <mdb-row>
         <div class="skewed2 border bg-white">
           <mdb-row class="ml-5 p-1">
-            <mdb-col xl="6" lg="10" md="11" sm="12" class="skewed2-text p-md-4">
-              <h3 class="text-left text-md-center mt-md-4">Quem Somos?</h3>
+            <mdb-col xl="6" lg="10" md="11" sm="12" class="skewed2-text p-md-4 p-lg-0 col-12">
+              <h3 class="text-left text-md-center text-lg-left mt-lg-1 mt-md-4">Quem Somos?</h3>
               <p class="text-justify">
                 Somos uma equipa especializada em soluções digitais adaptadas e personalizadas
                 aos nossos clientes. Apresentamos soluções inovadoras, softwares de optimo desempenho,
@@ -71,13 +70,13 @@
       </mdb-view>-->
 
       <mdb-row class="align-items-center w-100 h-100">
-        <mdb-col xl="6" lg="6" md="12" class="mt-5 text-white" sm="12">
+        <mdb-col xl="6" lg="6" md="12" class="text-white" sm="12">
           <h1 class="text-center">Conheça as nossas soluções</h1>
           <img src="../assets/imgs/macgold.png" alt="macgold" class="img-fluid w-100" />
           <img
             src="../assets/imgs/phone-inbox.png"
             alt="phone-inbox "
-            class="img-fluid w-25 position-absolute phone-inbox d-md-none"
+            class="img-fluid w-25 position-absolute phone-inbox"
           />
         </mdb-col>
         <mdb-col
@@ -88,44 +87,44 @@
           class="align-items-center justify-content-md-center text-white"
         >
           <mdb-row class="mb-md-2">
-            <mdb-col md="2" offsetMd="1" offsetXl="2" offsetLg="1">
+            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1">
               <i class="fas fa-code fa-4x mt-2"></i>
             </mdb-col>
-            <mdb-col md="8">
-              <h4 class="text-left text-md-center">PROTÓTIPOS ITERATIVOS</h4>
+            <mdb-col md="8" sm="12" offsetLg="1">
+              <h4 class="text-left solutions-names">PROTÓTIPOS ITERATIVOS</h4>
               <p
                 class="text-justify"
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
           <mdb-row class="mb-md-2">
-            <mdb-col md="2" offsetMd="1" offsetXl="2" offsetLg="1" sm="12">
+            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-thumbs-up fa-4x"></i>
             </mdb-col>
-            <mdb-col md="8" sm="12">
-              <h4 class="text-left text-md-center">IDENTIDADE VISUAL</h4>
+            <mdb-col md="8" sm="12" offsetLg="1">
+              <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
               <p
                 class="text-justify"
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
           <mdb-row class="mb-md-2">
-            <mdb-col md="2" offsetMd="1" offsetXl="2" offsetLg="1" sm="12">
+            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-desktop fa-4x"></i>
             </mdb-col>
-            <mdb-col md="8" sm="12">
-              <h4 class="text-left text-md-center">DESIGN DA UI</h4>
+            <mdb-col md="8" sm="12" offsetLg="1">
+              <h4 class="text-left solutions-names">DESIGN DA UI</h4>
               <p
                 class="text-justify"
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
           <mdb-row class="mb-md-2">
-            <mdb-col md="2" offsetMd="1" offsetXl="2" offsetLg="1" sm="12">
+            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-th fa-4x"></i>
             </mdb-col>
-            <mdb-col md="8" sm="12">
-              <h4 class="text-left text-md-center">DESENVOLVIMENTO DE SOFTWARE E UI</h4>
+            <mdb-col md="8" sm="12" offsetLg="1">
+              <h4 class="text-left solutions-names">DESENVOLVIMENTO DE SOFTWARE E UI</h4>
               <p
                 class="text-justify"
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
@@ -133,51 +132,12 @@
           </mdb-row>
         </mdb-col>
       </mdb-row>
-      <!-- <mdb-row>
-                  <i class="fas fa-thumbs-up fa-4x mt-5"></i>
-                </mdb-row>
-                <mdb-row>
-                  <i class="fas fa-desktop fa-4x mt-5"></i>
-                </mdb-row>
-                <mdb-row>
-                  <i class="fas fa-th fa-4x mt-4"></i>
-                </mdb-row>
-              </mdb-col>
-              <mdb-col md="8">
-                <mdb-row>
-                 
-                </mdb-row>
-                <mdb-row>
-                  <h4 class="text-left">IDENTIDADE VISUAL</h4>
-                  <p
-                    class="text-justify"
-                  >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
-                </mdb-row>
-                <mdb-row>
-                  <h4 class="text-left">DESIGN DA UI</h4>
-                  <p
-                    class="text-justify"
-                  >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
-                </mdb-row>
-                <mdb-row>
-                  <h4 class="text-left">DESENVOLVIMENTO DE SOFTWARE E UI</h4>
-                  <p
-                    class="text-justify"
-                  >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
-                </mdb-row>
-              </mdb-col>
-            </mdb-row>
-          </mdb-col>
-      </mdb-row>-->
     </div>
     <div id="message-div" class="main-divs container-fluid 4 m-0 p-0">
-      <!-- <navbar></navbar > -->
-      <div class="back position-absolute rgba-black-light parallax"></div>
-
-      <mdb-row class="justify-content-center align-items-center h-100 text-white">
-        <mdb-col xl="6" lg="8" md="10" sm="12" class="border-message">
+      <mdb-row class="justify-content-center align-items-center h-100 text-white black-overlay">
+        <mdb-col xl="5" lg="6" md="8" sm="12" class="col-12 border-message">
           <!-- text-overlay -->
-          <span class="display-3 font-weight-bold">SUA EMPRESA PRECISA DE UMA NOVA IMAGEM?</span>
+          <span class="display-4 font-weight-bold">SUA EMPRESA PRECISA DE UMA NOVA IMAGEM?</span>
 
           <mdb-btn outline="white" size="lg">Envie Mensagem</mdb-btn>
         </mdb-col>
@@ -186,7 +146,7 @@
     <div id="projects" class="main-divs container-fluid 5">
       <div class="text-white">
         <mdb-row class="justify-content-center">
-          <mdb-col xl="6" lg="8" md="10" class="p-3">
+          <mdb-col xl="6" lg="8" md="10" sm="12" class="col-12 p-3">
             <h2 class="font-weight-bold">NOSSOS TRABALHOS</h2>
             <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1>
             <nav class="navbar">
@@ -223,8 +183,8 @@
         </mdb-row>
       </div>
     </div>
-    <div id="control" class="main-divs container-fluid 6 overflow-hidden">
-      <mdb-row class="all">
+    <div id="control" class="main-divs container-fluid 6 overflow-hidden p-0 m-0">
+      <mdb-row class="all p-0 m-0">
         <mdb-col lg="4" offsetLg="1" md="12" offsetMd sm="12" class="space-top">
           <h1>Assuma o controle total</h1>
           <p
@@ -246,95 +206,91 @@
       </mdb-row>
     </div>
     <div id="plans" class="main-divs container-fluid">
-      <div class="text-1 text-white container">
-        <mdb-row class="justify-content-center">
-          <mdb-col md="8" xl="3" lg="4" sm="12" class="plans-container p-3 p-mx-2">
-            <i class="fas fa-bell fa-4x highlight mt-3"></i>
-            <h2 class="font-weight-normal mt-3">BASIC</h2>
-            <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-            <p class="text-center my-3 display-4">30k</p>
-            <ul class="navbar-nav my-3 text-center">
-              <li>Sincronização de email</li>
-              <li>Várias listas de tarefas</li>
-              <li>60M em nuvem</li>
-            </ul>
-            <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
-          </mdb-col>
-          <mdb-col xl="3" lg="4" md="8" sm="12" class="plans-container bigger p-3">
-            <i class="fas fa-paper-plane fa-7x highlight mt-3"></i>
-            <h2 class="font-weight-normal mt-3">BASIC</h2>
-            <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-            <p class="text-center my-3 display-4">60k</p>
-            <ul class="navbar-nav my-3 text-center">
-              <li>Sincronização de email</li>
-              <li>Várias listas de tarefas</li>
-              <li>106M em nuvem</li>
-            </ul>
-            <mdb-btn size>Escolher Plano</mdb-btn>
-          </mdb-col>
-          <mdb-col xl="3" lg="4" md="8" sm="12" class="plans-container p-3 mt-md-3">
-            <i class="fas fa-cloud-upload-alt fa-4x highlight mt-3"></i>
-            <h2 class="font-weight-normal mt-3">BASIC</h2>
-            <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-            <p class="text-center my-3 display-4">60k</p>
-            <ul class="navbar-nav my-3 text-center">
-              <li>Sincronização de email</li>
-              <li>Várias listas de tarefas</li>
-              <li>106M em nuvem</li>
-            </ul>
-            <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
-          </mdb-col>
-        </mdb-row>
-      </div>
+      <mdb-row class="justify-content-center align-items-center text-white">
+        <mdb-col md="7" xl="3" lg="3" sm="10" class="col-10 plans-container p-3 p-mx-2">
+          <i class="fas fa-bell fa-4x highlight mt-3"></i>
+          <h2 class="font-weight-normal mt-3">BASIC</h2>
+          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
+          <p class="text-center my-3 display-4">30k</p>
+          <ul class="navbar-nav my-3 text-center">
+            <li>Sincronização de email</li>
+            <li>Várias listas de tarefas</li>
+            <li>60M em nuvem</li>
+          </ul>
+          <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
+        </mdb-col>
+        <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container bigger p-3">
+          <i class="fas fa-paper-plane fa-7x highlight mt-3"></i>
+          <h2 class="font-weight-normal mt-3">BASIC</h2>
+          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
+          <p class="text-center my-3 display-4">60k</p>
+          <ul class="navbar-nav my-3 text-center">
+            <li>Sincronização de email</li>
+            <li>Várias listas de tarefas</li>
+            <li>106M em nuvem</li>
+          </ul>
+          <mdb-btn size>Escolher Plano</mdb-btn>
+        </mdb-col>
+        <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container p-3">
+          <i class="fas fa-cloud-upload-alt fa-4x highlight mt-3"></i>
+          <h2 class="font-weight-normal mt-3">BASIC</h2>
+          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
+          <p class="text-center my-3 display-4">60k</p>
+          <ul class="navbar-nav my-3 text-center">
+            <li>Sincronização de email</li>
+            <li>Várias listas de tarefas</li>
+            <li>106M em nuvem</li>
+          </ul>
+          <mdb-btn outline="white" size="lg">Escolher Plano</mdb-btn>
+        </mdb-col>
+      </mdb-row>
     </div>
 
-    <div id="contacts" class="main-divs container-fluid 8">
-      <div class="text-1 text-white">
-        <mdb-row class="align-items-center justify-content-center">
-          <mdb-col xl="5" lg="6" md="6" sm="12" class="text-overlay">
-            <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
-          </mdb-col>
-          <mdb-col xl="3" lg="4" md="6" sm="12" class="text-overlay mb-5">
-            <mdb-btn class="highlight-background">Conheça as nossas soluções</mdb-btn>
-          </mdb-col>
-        </mdb-row>
-        <mdb-row>
-          <footer>
-            <mdb-row class="mt-5 align-items-center">
-              <mdb-col xl="2" offsetXl="1" lg="3" offsetLg="1" md="4" sm="12">
-                <img src="../assets/imgs/logowhite.png" class="img-fluid w-50" alt="logo" />
-              </mdb-col>
-              <mdb-col xl="2" lg="3" md="4" sm="12">
-                <ul class="mt-5 text-left">
-                  <li>
-                    <h4 class="my-2">Localização</h4>
-                  </li>
-                  <li>Sicronização de Email</li>
-                  <li>Várias listas de tarefas</li>
-                  <li>nuvem sicronização</li>
-                  <li>Sicronização de Email</li>
-                  <li>Várias listas de tarefas</li>
-                </ul>
-              </mdb-col>
-              <mdb-col xl="2" lg="3" md="4" sm="12">
-                <ul class="mt-5 text-left">
-                  <li>
-                    <h4 class="my-2">Localização</h4>
-                  </li>
-                  <li>Sicronização de Email</li>
-                  <li>Várias listas de tarefas</li>
-                  <li>nuvem sicronização</li>
-                  <li>Sicronização de Email</li>
-                  <li>Várias listas de tarefas</li>
-                </ul>
-              </mdb-col>
-            </mdb-row>
-            <!-- <div class="row text-center">
+    <div id="contacts" class="main-divs container-fluid 8 m-0 p-0">
+      <mdb-row class="align-items-center justify-content-center text-white w-100 h-50 m-0 p-0">
+        <mdb-col xl="5" lg="6" md="6" sm="12" class>
+          <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
+        </mdb-col>
+        <mdb-col xl="3" lg="4" md="6" sm="12" class>
+          <mdb-btn class="highlight-background">Conheça as nossas soluções</mdb-btn>
+        </mdb-col>
+      </mdb-row>
+      <mdb-row class="w-100 h-50 m-0 p-0">
+        <footer class="w-100 h-100">
+          <mdb-row class="mt-5 align-items-center text-white">
+            <mdb-col xl="2" offsetXl="1" lg="3" offsetLg="1" md="4" sm="12">
+              <img src="../assets/imgs/logowhite.png" class="img-fluid w-50" alt="logo" />
+            </mdb-col>
+            <mdb-col xl="2" lg="3" md="4" sm="12">
+              <ul class="mt-5 text-left">
+                <li class="text-decoration-none">
+                  <h4 class="my-3">Localização</h4>
+                </li>
+                <li>Sicronização de Email</li>
+                <li>Várias listas de tarefas</li>
+                <li>nuvem sicronização</li>
+                <li>Sicronização de Email</li>
+                <li>Várias listas de tarefas</li>
+              </ul>
+            </mdb-col>
+            <mdb-col xl="2" lg="3" md="4" sm="12">
+              <ul class="mt-5 text-left">
+                <li>
+                  <h4 class="my-3">Localização</h4>
+                </li>
+                <li>Sicronização de Email</li>
+                <li>Várias listas de tarefas</li>
+                <li>nuvem sicronização</li>
+                <li>Sicronização de Email</li>
+                <li>Várias listas de tarefas</li>
+              </ul>
+            </mdb-col>
+          </mdb-row>
+          <!-- <div class="row text-center">
               <span>&copy; 2019 uByte. Todos os direitos reservados</span>
-            </div>-->
-          </footer>
-        </mdb-row>
-      </div>
+          </div>-->
+        </footer>
+      </mdb-row>
     </div>
   </div>
 </template>
@@ -415,7 +371,6 @@ video {
 .bigger {
   height: 80vh !important;
   z-index: 2;
-  margin-top: 2% !important;
 }
 
 #plans,
@@ -444,7 +399,7 @@ video {
 
 footer {
   background-color: $footerColor;
-  height: 60vh;
+
   width: 99%;
 }
 
