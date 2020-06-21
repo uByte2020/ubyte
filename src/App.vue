@@ -13,6 +13,7 @@ export default {
     HelloWorld
   } */
 };
+AOS.init();
 </script>
 
 <style>
