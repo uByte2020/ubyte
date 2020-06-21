@@ -6,14 +6,15 @@
 
 <script>
 /* import HelloWorld from "./components/HelloWorld.vue"; */
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 export default {
   name: "App"
   /*  components: {
     HelloWorld
   } */
 };
-AOS.init();
 </script>
 
 <style>

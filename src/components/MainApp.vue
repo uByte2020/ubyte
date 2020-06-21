@@ -10,7 +10,11 @@
         <mdb-mask flex-center overlay="black-strong" />
       </mdb-view>
 
-      <mdb-row class="m-0 p-0 text-white align-items-center justify-content-center w-100 h-100">
+      <mdb-row
+        data-aos="fade-down"
+        data-aos-duration="2000"
+        class="m-0 p-0 text-white align-items-center justify-content-center w-100 h-100"
+      >
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
           <span class="display-4">WELCOME TO UBYTE</span>
@@ -31,7 +35,11 @@
             <mdb-mask flex-center class="black-overlay" />
           </mdb-view>
 
-          <mdb-row class="justify-content-center text-white w-100 h-100">
+          <mdb-row
+            class="justify-content-center text-white w-100 h-100"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <mdb-col class="align-self-center mobile-padding">
               <h3 class>DESAFIE A NOSSA CRIATIVIDADE</h3>
               <p>
@@ -44,7 +52,13 @@
           </mdb-row>
         </mdb-col>
         <mdb-col xl="7" lg="7" md="12" sm="12" class="highlight-background skewed3">
-          <img src="../assets/imgs/download.png" id="three-phones" class="img-fluid w-75" />
+          <img
+            src="../assets/imgs/download.png"
+            id="three-phones"
+            class="img-fluid w-75"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          />
         </mdb-col>
       </mdb-row>
       <mdb-row>
@@ -70,7 +84,15 @@
       </mdb-view>-->
 
       <mdb-row class="align-items-center w-100 h-100">
-        <mdb-col xl="6" lg="6" md="12" class="text-white" sm="12">
+        <mdb-col
+          xl="6"
+          lg="6"
+          md="12"
+          class="text-white"
+          sm="12"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
           <h1 class="text-center">Conheça as nossas soluções</h1>
           <img src="../assets/imgs/macgold.png" alt="macgold" class="img-fluid w-100" />
           <img
@@ -86,7 +108,12 @@
           sm="12"
           class="align-items-center justify-content-md-center text-white"
         >
-          <mdb-row class="mb-md-2">
+          <mdb-row
+            class="mb-md-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1">
               <i class="fas fa-code fa-4x mt-2"></i>
             </mdb-col>
@@ -97,7 +124,12 @@
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
-          <mdb-row class="mb-md-2">
+          <mdb-row
+            class="mb-md-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+          >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-thumbs-up fa-4x"></i>
             </mdb-col>
@@ -108,7 +140,12 @@
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
-          <mdb-row class="mb-md-2">
+          <mdb-row
+            class="mb-md-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+          >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-desktop fa-4x"></i>
             </mdb-col>
@@ -119,7 +156,12 @@
               >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
             </mdb-col>
           </mdb-row>
-          <mdb-row class="mb-md-2">
+          <mdb-row
+            class="mb-md-2"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="1300"
+          >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <i class="fas fa-th fa-4x"></i>
             </mdb-col>
@@ -135,7 +177,15 @@
     </div>
     <div id="message-div" class="main-divs container-fluid 4 m-0 p-0">
       <mdb-row class="justify-content-center align-items-center h-100 text-white black-overlay">
-        <mdb-col xl="5" lg="6" md="8" sm="12" class="col-12 border-message">
+        <mdb-col
+          xl="5"
+          lg="6"
+          md="8"
+          sm="12"
+          class="col-12 border-message"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <!-- text-overlay -->
           <span class="display-4 font-weight-bold">SUA EMPRESA PRECISA DE UMA NOVA IMAGEM?</span>
 
@@ -185,7 +235,16 @@
     </div>
     <div id="control" class="main-divs container-fluid 6 overflow-hidden p-0 m-0">
       <mdb-row class="all p-0 m-0">
-        <mdb-col lg="4" offsetLg="1" md="12" offsetMd sm="12" class="space-top">
+        <mdb-col
+          lg="4"
+          offsetLg="1"
+          md="12"
+          offsetMd
+          sm="12"
+          class="space-top"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <h1>Assuma o controle total</h1>
           <p
             class="text-justify my-3 font-control"
@@ -197,17 +256,32 @@
             <li>Entrega contínua</li>
           </ul>
         </mdb-col>
-        <mdb-col lg="7" md="12" class="space-top-2" sm="12">
+        <mdb-col
+          lg="7"
+          md="12"
+          class="space-top-2"
+          sm="12"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
         </mdb-col>
       </mdb-row>
-      <mdb-row class="p-0 m-0">
+      <mdb-row class="p-0 m-0" data-aos="fade-up" data-aos-duration="1000">
         <div class="skewed"></div>
       </mdb-row>
     </div>
     <div id="plans" class="main-divs container-fluid">
       <mdb-row class="justify-content-center align-items-center text-white">
-        <mdb-col md="7" xl="3" lg="3" sm="10" class="col-10 plans-container p-3 p-mx-2">
+        <mdb-col
+          md="7"
+          xl="3"
+          lg="3"
+          sm="10"
+          class="col-10 plans-container p-3 p-mx-2"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-bell fa-4x highlight mt-4"></i>
           <h2 class="font-weight-normal mt-3">BASIC</h2>
           <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
@@ -219,7 +293,15 @@
           </ul>
           <mdb-btn outline="white" size="lg" class="mb-4">Escolher Plano</mdb-btn>
         </mdb-col>
-        <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container bigger p-3">
+        <mdb-col
+          xl="3"
+          lg="3"
+          md="7"
+          sm="12"
+          class="col-10 plans-container bigger p-3"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-paper-plane fa-7x highlight mt-5"></i>
           <h2 class="font-weight-normal mt-3">BASIC</h2>
           <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
@@ -231,7 +313,15 @@
           </ul>
           <mdb-btn size class="mb-5">Escolher Plano</mdb-btn>
         </mdb-col>
-        <mdb-col xl="3" lg="3" md="7" sm="12" class="col-10 plans-container p-3">
+        <mdb-col
+          xl="3"
+          lg="3"
+          md="7"
+          sm="12"
+          class="col-10 plans-container p-3"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-cloud-upload-alt fa-4x highlight mt-3"></i>
           <h2 class="font-weight-normal mt-3">BASIC</h2>
           <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
@@ -248,10 +338,26 @@
 
     <div id="contacts" class="main-divs container-fluid 8 m-0 p-0">
       <mdb-row class="align-items-center justify-content-center text-white w-100 h-50 m-0 p-0">
-        <mdb-col xl="5" lg="6" md="6" sm="12" class>
+        <mdb-col
+          xl="5"
+          lg="6"
+          md="6"
+          sm="12"
+          class
+          data-aos="zoom-out-left"
+          data-aos-duration="1000"
+        >
           <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
         </mdb-col>
-        <mdb-col xl="3" lg="4" md="6" sm="12" class>
+        <mdb-col
+          xl="3"
+          lg="4"
+          md="6"
+          sm="12"
+          class
+          data-aos="zoom-out-right"
+          data-aos-duration="1000"
+        >
           <mdb-btn class="highlight-background">Conheça as nossas soluções</mdb-btn>
         </mdb-col>
       </mdb-row>
