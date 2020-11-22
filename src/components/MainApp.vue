@@ -2,14 +2,16 @@
   <div class="m-0 p-0 overflow-hidden">
     <navbar></navbar>
     <div id="home" class="container-fluid main-divs 1 m-0 p-0">
-      <mdb-view class="back position-absolute">
-        <video autoplay muted loop id="landing-video">
-          <source type="video/mp4" src="../assets/imgs/video.mp4" />
-        </video>
-
-        <mdb-mask flex-center overlay="black-strong" />
-      </mdb-view>
-
+      <mdb-row>
+        <mdb-col xl='12' lg="12" md="12" sm="12" class>
+          <mdb-view class="back position-absolute">
+            <video autoplay muted loop id="landing-video">
+              <source type="video/mp4" src="../assets/imgs/video.mp4" />
+            </video>
+            <mdb-mask flex-center overlay="black-strong" />
+          </mdb-view>
+        </mdb-col>
+      </mdb-row>
       <mdb-row
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -271,6 +273,7 @@
         <div class="skewed"></div>
       </mdb-row>
     </div>
+    <!--
     <div id="plans" class="main-divs container-fluid">
       <mdb-row class="justify-content-center align-items-center text-white">
         <mdb-col
@@ -335,7 +338,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-
+    -->
     <div id="contacts" class="main-divs container-fluid 8 m-0 p-0">
       <mdb-row class="align-items-center justify-content-center text-white w-100 h-50 m-0 p-0">
         <mdb-col
