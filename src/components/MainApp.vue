@@ -1,7 +1,7 @@
 <template>
   <div class="m-0 p-0 overflow-hidden">
     <navbar></navbar>
-    <div id="home" class="container-fluid main-divs 1 m-0 p-0">
+    <div id="home" :homeheight="homeHeight" class="container-fluid main-divs 1 m-0 p-0">
       <mdb-row>
         <mdb-col xl='12' lg="12" md="12" sm="12" class>
           <mdb-view class="back position-absolute">
@@ -19,13 +19,13 @@
       >
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
-          <span class="display-4">WELCOME TO UBYTE</span>
-          <p>
+          <span class="display-4  TextoIniti" :value="letra">WELCOME TO uBYTE</span>
+          <p class="TextoIniti">
             APLICATIVO MÓVEL PARA
             <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
             <span class="highlight">DESENVOLVEDORES</span>
           </p>
-          <mdb-btn outline="white" size="lg">Conheça nossas soluções</mdb-btn>
+          <mdb-btn outline="white" class="btninicial" size="lg">Conheça nossas soluções</mdb-btn>
         </mdb-col>
       </mdb-row>
     </div>
@@ -406,8 +406,18 @@
 
 <script>
 import { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol } from "mdbvue";
+
 export default {
-  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol }
+  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol },
+  data(){
+    return {
+      letra: '../assets/GothamBold',
+      homeHeight: null,
+    }
+  },
+  mounted() {
+    this.homeHeight = document.getElementById("home").offsetHeight;
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -423,6 +433,9 @@ export default {
 }
 img {
   object-fit: cover;
+}
+#home{
+  
 }
 .back {
   z-index: -1;
@@ -546,7 +559,7 @@ footer {
 
 .skewed2 {
   z-index: 1;
-  margin-top: -5%;
+  margin-top: -13%;
 
   /*left: 0; */
 
@@ -557,7 +570,6 @@ footer {
 }
 
 .skewed2-text {
-  transform: skewY(-4deg);
 }
 
 #about-text {
@@ -597,4 +609,12 @@ footer {
   transform: skewX(10deg);
   margin-top: 10%;
 }
+@font-face {
+	font-family: 'Gotham Bold';
+	src: url('../assets/fonts/GothamBold.otf');
+}
+/*.btninicial{
+  background-color:  #37bfe1 !important;
+  text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
+}*/
 </style>
