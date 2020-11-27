@@ -19,11 +19,11 @@
       >
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
-          <span class="display-4  TextoIniti" :value="letra">WELCOME TO uBYTE</span>
+          <span class="display-4  TextoIniti" :value="letra">BEM-VINDO A uBYTE</span>
           <p class="TextoIniti">
-            APLICATIVO MÓVEL PARA
-            <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
-            <span class="highlight">DESENVOLVEDORES</span>
+            SOLUÇÕES 
+            <span class="highlight">DIGITAIS</span> PARA O SEU
+            <span class="highlight">NEGÓCIO</span>
           </p>
           <mdb-btn outline="white" class="btninicial" size="lg">Conheça nossas soluções</mdb-btn>
         </mdb-col>
@@ -43,28 +43,30 @@
             data-aos-duration="2000"
           >
             <mdb-col class="align-self-center mobile-padding">
-              <h3 class>DESAFIE A NOSSA CRIATIVIDADE</h3>
-              <p>
-                APLICATIVO MÓVEL PARA
-                <span class="highlight">DESIGNERS</span>, SOFTWARES PARA
-                <span class="highlight">DESENVOLVEDORES</span>
+              <h3 class>SOLUÇÕES INOVADORAS</h3>
+              <p class="text-uppercase">
+                soluções digitais 
+                <span class="highlight">adaptadas</span> E
+                <span class="highlight">personalizadas</span> 
+                aos nossos clientes.
               </p>
               <mdb-btn class="highlight-background" size="lg">Conheça nossas soluções</mdb-btn>
             </mdb-col>
           </mdb-row>
         </mdb-col>
-        <mdb-col xl="7" lg="7" md="12" sm="12" class="highlight-background skewed3">
+        <mdb-col xl="7" lg="7" md="12" sm="12" class=" skewed3">
           <img
-            src="../assets/imgs/download.png"
+            :src="FiskamerImg"
             id="three-phones"
             class="img-fluid w-75"
             data-aos="fade-right"
             data-aos-duration="2000"
           />
         </mdb-col>
+        
       </mdb-row>
       <mdb-row>
-        <div class="skewed2 border bg-white">
+        <div class="skewed2 ">
           <mdb-row class="ml-5 p-1">
             <mdb-col xl="6" lg="10" md="11" sm="12" class="skewed2-text p-md-4 p-lg-0 col-12">
               <h3 class="text-left text-md-center text-lg-left mt-lg-1 mt-md-4">Quem Somos?</h3>
@@ -133,13 +135,14 @@
             data-aos-delay="1100"
           >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
-              <i class="fas fa-thumbs-up fa-4x"></i>
+              <!-- <i class="fas fa-thumbs-up fa-4x"></i> -->
+              <img v-bind:src="IdentidadeVisualicone" class="Identidadeicone"/>
             </mdb-col>
             <mdb-col md="8" sm="12" offsetLg="1">
               <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
               <p
                 class="text-justify"
-              >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
+              >Criação de uma identidade visual bem definida e aplicada adequadamente, para que a empresa possa transmitir confiança ao público e ser uma marca destacada no mercado.</p>
             </mdb-col>
           </mdb-row>
           <mdb-row
@@ -155,7 +158,7 @@
               <h4 class="text-left solutions-names">DESIGN DA UI</h4>
               <p
                 class="text-justify"
-              >O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.</p>
+              >Um bom projeto de UI antecipa as necessidades do usuário e garante que a interface contenha elementos de fácil acesso e utilização, fornecendo uma experiência que é amigável e que não cause frustrações ao utilizador</p>
             </mdb-col>
           </mdb-row>
           <mdb-row
@@ -199,8 +202,8 @@
       <div class="text-white">
         <mdb-row class="justify-content-center">
           <mdb-col xl="6" lg="8" md="10" sm="12" class="col-12 p-3">
-            <h2 class="font-weight-bold">NOSSOS TRABALHOS</h2>
-            <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1>
+            <h2 class="font-weight-bold border-bottom">PORTFÓLIO</h2>
+            <!-- <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1> -->
             <nav class="navbar">
               <ul class="navbar-nav projects-menu">
                 <li class="nav-item">
@@ -243,7 +246,7 @@
           md="12"
           offsetMd
           sm="12"
-          class="space-top"
+          class="space-top-5"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
@@ -261,7 +264,7 @@
         <mdb-col
           lg="7"
           md="12"
-          class="space-top-2"
+          class="space-top-5"
           sm="12"
           data-aos="fade-right"
           data-aos-duration="1000"
@@ -406,13 +409,13 @@
 
 <script>
 import { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol } from "mdbvue";
-
 export default {
-  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol },
+  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol},
   data(){
     return {
-      letra: '../assets/GothamBold',
       homeHeight: null,
+      IdentidadeVisualicone: require('@/assets/svgs/IdentidadeVisual.svg'),
+      FiskamerImg: require('@/assets/imgs/Fiskamer.jpeg')
     }
   },
   mounted() {
@@ -542,6 +545,10 @@ footer {
   margin-top: 10%;
 }
 
+.space-top-5 {
+  margin-top: 5%;
+}
+
 .font-control {
   font-size: 1.2rem !important;
 }
@@ -563,13 +570,17 @@ footer {
 
   /*left: 0; */
 
-  transform: skewY(4deg);
+  // transform: skewY(4deg);
   transform-origin: top left;
-  width: 100%;
+  width: 75%;
   height: 100vh;
+  // background-color: rgba(10,23,55,0.5) !important;
+  // background: #000;
+  //  opacity: 0.7;
 }
 
 .skewed2-text {
+  width: 100%;
 }
 
 #about-text {
@@ -582,7 +593,7 @@ footer {
 
 #deeper {
   z-index: -1;
-  height: 85vh;
+  height: 70vh;
 }
 
 #deep {
@@ -607,7 +618,11 @@ footer {
 
 #three-phones {
   transform: skewX(10deg);
-  margin-top: 10%;
+  margin-top: 8%;
+}
+.Identidadeicone{
+  font-size: 40px !important;
+  color: #ffffff;
 }
 @font-face {
 	font-family: 'Gotham Bold';
@@ -617,4 +632,30 @@ footer {
   background-color:  #37bfe1 !important;
   text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
 }*/
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+  .skewed2{
+    margin-top: 4% ;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1140px) and (max-width: 1560px){
+  .skewed2{
+    margin-top: 1% ;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px),(min-width: 400) {
+  .skewed2{
+    margin-top: -3%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 653px),(min-width: 280) {
+  .skewed2{
+    margin-top: -4%;
+    width: 100%;
+    font-size: 16px !important;
+    height: 10px !important;
+  }
+}
 </style>
