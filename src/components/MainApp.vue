@@ -19,7 +19,7 @@
       >
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
-          <span class="display-4  TextoIniti" :value="letra">BEM-VINDO A uBYTE</span>
+          <span class="display-4  TextoIniti">BEM-VINDO A uBYTE</span>
           <p class="TextoIniti">
             SOLUÇÕES 
             <span class="highlight">DIGITAIS</span> PARA O SEU
@@ -136,7 +136,7 @@
           >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <!-- <i class="fas fa-thumbs-up fa-4x"></i> -->
-              <img v-bind:src="IdentidadeVisualicone" class="Identidadeicone"/>
+                <img :src="IdentidadeVisualicone" width="100" height="95" class="Identidadeicone fa-thumbs-up fas fa-4x "/>
             </mdb-col>
             <mdb-col md="8" sm="12" offsetLg="1">
               <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
@@ -367,8 +367,8 @@
           <mdb-btn class="highlight-background">Conheça as nossas soluções</mdb-btn>
         </mdb-col>
       </mdb-row>
-      <mdb-row class="w-100 h-50 m-0 p-0">
-        <footer class="w-100 h-100">
+       <mdb-row class="w-100 h-50 m-0 p-0 mt-5 align-items-center text-white">
+        <!--<footer class="w-100 h-100">
           <mdb-row class="mt-5 align-items-center text-white">
             <mdb-col xl="2" offsetXl="1" lg="3" offsetLg="1" md="4" sm="12">
               <img src="../assets/imgs/logowhite.png" class="img-fluid w-50" alt="logo" />
@@ -398,10 +398,11 @@
               </ul>
             </mdb-col>
           </mdb-row>
-          <!-- <div class="row text-center">
+          <-- <div class="row text-center">
               <span>&copy; 2019 uByte. Todos os direitos reservados</span>
-          </div>-->
-        </footer>
+          </div>->
+        </footer> -->
+        <Footer/>
       </mdb-row>
     </div>
   </div>
@@ -621,8 +622,10 @@ footer {
   margin-top: 8%;
 }
 .Identidadeicone{
-  font-size: 40px !important;
-  color: #ffffff;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(104%) contrast(104%);
+  size: 10px;
+  font-weight: 600 !important;
+  stroke-width:600 !important;
 }
 @font-face {
 	font-family: 'Gotham Bold';
