@@ -10,6 +10,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("sections", require("./components/Sections.vue").default);
 Vue.component("main-app", require("./components/MainApp.vue").default);
+Vue.component("Footer", require("./components/Footer.vue").default);
 new Vue({
   render: (h) => h(App),
 }).$mount("#app");
