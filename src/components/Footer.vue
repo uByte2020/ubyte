@@ -8,13 +8,13 @@
           <a href="#">Inicio</a>
         </li>
         <li class="options">
-          <a href="#">Serviços</a>
+          <a href="#">Sobre</a>
         </li>
         <li class="options">
-          <a href="#">Categorias</a>
+          <a href="#">Soluções</a>
         </li>
         <li class="options">
-          <a href="#">Eventos Locais</a>
+          <a href="#">Portfólio</a>
         </li>
       </ul>
     </div>
@@ -30,21 +30,6 @@
         </li>
         <li class="options">
           <a href="#">Políticas de Privacidade</a>
-        </li>
-      </ul>
-    </div>
-    <div class="menu col-sm-2 col-xs-12">
-      <ul>
-        <li class="title">Ajuda</li>
-        <hr />
-        <li class="options">
-          <a href="#">Recuperação de Senha</a>
-        </li>
-        <li class="options">
-          <a href="#"></a>
-        </li>
-        <li class="options">
-          <a href="#"></a>
         </li>
       </ul>
     </div>

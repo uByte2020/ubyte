@@ -29,7 +29,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="about" class="container-fluid main-divs 2 overflow-hidden m-0 p-0">
+    <div id="about" class="container-fluid  2 overflow-hidden m-0 p-0">
       <mdb-row>
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
@@ -54,7 +54,7 @@
             </mdb-col>
           </mdb-row>
         </mdb-col>
-        <mdb-col xl="7" lg="7" md="12" sm="12" class=" skewed3">
+        <!-- <mdb-col xl="7" lg="7" md="12" sm="12" class=" skewed3">
           <img
             :src="FiskamerImg"
             id="three-phones"
@@ -62,22 +62,17 @@
             data-aos="fade-right"
             data-aos-duration="2000"
           />
-        </mdb-col>
-        
-      </mdb-row>
-      <mdb-row>
-        <div class="skewed2 ">
-          <mdb-row class="ml-5 p-1">
-            <mdb-col xl="6" lg="10" md="11" sm="12" class="skewed2-text p-md-4 p-lg-0 col-12">
+        </mdb-col> -->
+          <mdb-col xl="6" lg="6" md="11" sm="12" class="skewed2-text p-md-4 p-lg-0 col-12">
+            <div class="skewed2">
               <h3 class="text-left text-md-center text-lg-left mt-lg-1 mt-md-4">Quem Somos?</h3>
               <p class="text-justify">
                 Somos uma equipa especializada em soluções digitais adaptadas e personalizadas
                 aos nossos clientes. Apresentamos soluções inovadoras, softwares de optimo desempenho,
                 Produtos e serviços de alta qualidade, Melhores Designers e Soluções adaptadas e personalizadas, tudo no melhor preço.
               </p>
-            </mdb-col>
-          </mdb-row>
-        </div>
+            </div>
+          </mdb-col>
       </mdb-row>
     </div>
     <div id="solutions" class="main-divs container-fluid 3">
@@ -136,7 +131,7 @@
           >
             <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
               <!-- <i class="fas fa-thumbs-up fa-4x"></i> -->
-                <img :src="IdentidadeVisualicone" width="100" height="95" class="Identidadeicone fa-thumbs-up fas fa-4x "/>
+                <img :src="IdentidadeVisualicone" width="100" height="95" id="Identidadeicone" class=" fa-thumbs-up fas fa-4x "/>
             </mdb-col>
             <mdb-col md="8" sm="12" offsetLg="1">
               <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
@@ -567,17 +562,14 @@ footer {
 
 .skewed2 {
   z-index: 1;
-  margin-top: -13%;
 
   /*left: 0; */
-
   // transform: skewY(4deg);
   transform-origin: top left;
-  width: 75%;
-  height: 100vh;
-  // background-color: rgba(10,23,55,0.5) !important;
-  // background: #000;
-  //  opacity: 0.7;
+  width: 95%;
+  height: 50%;
+  padding-left:35px !important;
+  padding-right:35px !important;
 }
 
 .skewed2-text {
@@ -587,7 +579,9 @@ footer {
 #about-text {
   margin-top: 30%;
 }
+#about{
 
+}
 .projects-menu {
   display: contents;
 }
@@ -621,11 +615,16 @@ footer {
   transform: skewX(10deg);
   margin-top: 8%;
 }
-.Identidadeicone{
+#Identidadeicone{
   filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg) brightness(104%) contrast(104%);
   size: 10px;
   font-weight: 600 !important;
   stroke-width:600 !important;
+}
+.text-md-center{
+   margin-top: 21% !important;
+   margin-left: 35%;
+   margin-bottom: 8px;
 }
 @font-face {
 	font-family: 'Gotham Bold';
@@ -639,26 +638,67 @@ footer {
   .skewed2{
     margin-top: 4% ;
     width: 100%;
+    
+  }
+  
+  .text-md-center{
+    margin:auto 10%;
+    margin-bottom: 4px;
   }
 }
-@media only screen and (min-width: 1140px) and (max-width: 1560px){
-  .skewed2{
-    margin-top: 1% ;
-    width: 100%;
-  }
-}
+// @media only screen and (min-width: 1140px) and (max-width: 1560px){
+//   .skewed2{
+//     margin-top: 1% ;
+//     width: 100%;
+//   }
+// }
 @media only screen and (max-width: 600px),(min-width: 400) {
   .skewed2{
-    margin-top: -3%;
-    width: 100%;
+    margin-top: -7%;
+    width: 94%;
   }
+  
+.text-md-center{
+  margin:3% 15%!important;
+  margin-bottom: 3% !important;
+}
 }
 @media only screen and (max-width: 653px),(min-width: 280) {
   .skewed2{
-    margin-top: -4%;
+    margin-top: -1%;
+    margin-bottom: -10%;
     width: 100%;
     font-size: 16px !important;
     height: 10px !important;
+    padding: -10px;
   }
+  
+.text-md-center{
+ margin-top: 21% !important;
+   margin-left: 20%;
+   margin-bottom: 8px;
+}
+#about{
+  height: 114vh;
+}
+}
+@media only screen and (max-width: 570px),(min-width: 300){
+  #about{
+  height: 114vh;
+}
+.skewed2{
+    margin-top: -1%;
+    margin-bottom: -10%;
+    width: 100%;
+    font-size: 16px !important;
+    height: 10px !important;
+    padding: -10px;
+  }
+  
+.text-md-center{
+   margin-top: -1% !important;
+   margin-left: 35%;
+   margin-bottom: 1px;
+}
 }
 </style>
