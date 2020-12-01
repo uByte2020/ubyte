@@ -33,29 +33,13 @@
         </li>
       </ul>
     </div>
-    <div class="menu col-sm-2 col-xs-12">
-      <ul>
-        <li class="title">Faça Download do Nosso App</li>
-        <hr />
-        <li class="options">
-          <a href="#">
-            <i class="fab fa-google-play fa-3x"></i>
-          </a>
-        </li>
-        <li class="options mt-3">
-          <a href="#">
-            <i class="fab fa-app-store-ios fa-3x"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
     <div class="social menu col-sm-3 col-xs-12">
       <ul>
         <li class="title">Siga-nos em:</li>
         <hr />
         <ul class="options-inline">
           <li>
-            <a href="#">
+            <a href="https://www.facebook.com/ubytee">
               <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
           </li>
@@ -65,7 +49,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://www.instagram.com/ubyte_/">
               <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
