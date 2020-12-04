@@ -114,7 +114,7 @@
               data-aos-duration="1000"
               data-aos-delay="1000"
             >
-              Softwares Usados
+              Tecnologias Usadas
             </h3>
             <div
               class="progress-txt"
@@ -216,7 +216,7 @@
         </mdb-row>
       </div>
     </div>
-    <div id="solutions" class="main-divs container-fluid 3">
+    <div id="solutions" class="main-divs1 container-fluid 3">
       <!-- <mdb-view class="back position-absolute">
         <img src="../assets/imgs/laptop.jpg" class="img-fluid w-100" alt="test" />
 
@@ -250,7 +250,7 @@
           lg="6"
           md="12"
           sm="12"
-          class="align-items-center justify-content-md-center text-white"
+          class="align-items-center justify-content-md-center text-white icones"
         >
           <mdb-row
             class="mb-md-2"
@@ -258,10 +258,16 @@
             data-aos-duration="1000"
             data-aos-delay="1000"
           >
-            <mdb-col class="prototipos-interativo" md="2" offsetMd="1" offsetXl="1" offsetLg="1">
+            <mdb-col
+              class=""
+              md="2"
+              offsetMd="1"
+              offsetXl="1"
+              offsetLg="1"
+            >
               <i class="fas fa-code fa-4x mt-2"></i>
             </mdb-col>
-            <mdb-col class="prototipos-interativo" md="8" sm="12" offsetLg="1">
+            <mdb-col class="" md="8" sm="12" offsetLg="1">
               <h4 class="text-left solutions-names">PROTÓTIPOS ITERATIVOS</h4>
               <p class="text-justify">
                 O principal objectivo da construção de protótipos é testar se o
@@ -275,16 +281,23 @@
             data-aos-duration="1000"
             data-aos-delay="1100"
           >
-            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
+            <mdb-col
+              class=""
+              md="2"
+              offsetMd="1"
+              offsetXl="1"
+              offsetLg="1"
+              sm="12"
+            >
               <!-- <i class="fas fa-thumbs-up fa-4x"></i> -->
               <img
                 :src="IdentidadeVisualicone"
                 width="100"
                 height="95"
-                class="Identidadeicone fa-thumbs-up fas fa-4x"
+                class="Identidadeicone fa-thumbs-up fas fa-4x "
               />
             </mdb-col>
-            <mdb-col md="8" sm="12" offsetLg="1">
+            <mdb-col class="" md="8" sm="12" offsetLg="1">
               <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
               <p class="text-justify">
                 Criação de uma identidade visual bem definida e aplicada
@@ -299,10 +312,17 @@
             data-aos-duration="1000"
             data-aos-delay="1200"
           >
-            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
+            <mdb-col
+              class=""
+              md="2"
+              offsetMd="1"
+              offsetXl="1"
+              offsetLg="1"
+              sm="12"
+            >
               <i class="fas fa-desktop fa-4x"></i>
             </mdb-col>
-            <mdb-col md="8" sm="12" offsetLg="1">
+            <mdb-col class="" md="8" sm="12" offsetLg="1">
               <h4 class="text-left solutions-names">DESIGN DA UI</h4>
               <p class="text-justify">
                 Um bom projeto de UI antecipa as necessidades do usuário e
@@ -318,10 +338,17 @@
             data-aos-duration="1000"
             data-aos-delay="1300"
           >
-            <mdb-col md="2" offsetMd="1" offsetXl="1" offsetLg="1" sm="12">
+            <mdb-col
+              class=""
+              md="2"
+              offsetMd="1"
+              offsetXl="1"
+              offsetLg="1"
+              sm="12"
+            >
               <i class="fas fa-th fa-4x"></i>
             </mdb-col>
-            <mdb-col md="8" sm="12" offsetLg="1">
+            <mdb-col class="" md="8" sm="12" offsetLg="1">
               <h4 class="text-left solutions-names">
                 DESENVOLVIMENTO DE SOFTWARE E UI
               </h4>
@@ -516,9 +543,9 @@
       </mdb-row>
     </div>
     -->
-    <div id="contacts" class="main-divs container-fluid 8 m-0 p-0">
+    <div id="contacts" class="main-div container-fluid 8 m-0 p-0">
       <mdb-row
-        class="align-items-center justify-content-center text-white w-100 h-50 m-0 p-0"
+        class="align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >
         <mdb-col
           xl="5"
@@ -545,41 +572,9 @@
           >
         </mdb-col>
       </mdb-row>
+    </div>
+    <div id="footer">
       <mdb-row class="w-100 h-50 m-0 p-0 mt-5 align-items-center text-white">
-        <!--<footer class="w-100 h-100">
-          <mdb-row class="mt-5 align-items-center text-white">
-            <mdb-col xl="2" offsetXl="1" lg="3" offsetLg="1" md="4" sm="12">
-              <img src="../assets/imgs/logowhite.png" class="img-fluid w-50" alt="logo" />
-            </mdb-col>
-            <mdb-col xl="2" lg="3" md="4" sm="12">
-              <ul class="mt-5 text-left">
-                <li class="text-decoration-none">
-                  <h4 class="my-3">Localização</h4>
-                </li>
-                <li>Sicronização de Email</li>
-                <li>Várias listas de tarefas</li>
-                <li>nuvem sicronização</li>
-                <li>Sicronização de Email</li>
-                <li>Várias listas de tarefas</li>
-              </ul>
-            </mdb-col>
-            <mdb-col xl="2" lg="3" md="4" sm="12">
-              <ul class="mt-5 text-left">
-                <li>
-                  <h4 class="my-3">Localização</h4>
-                </li>
-                <li>Sicronização de Email</li>
-                <li>Várias listas de tarefas</li>
-                <li>nuvem sicronização</li>
-                <li>Sicronização de Email</li>
-                <li>Várias listas de tarefas</li>
-              </ul>
-            </mdb-col>
-          </mdb-row>
-          <-- <div class="row text-center">
-              <span>&copy; 2019 uByte. Todos os direitos reservados</span>
-          </div>->
-        </footer> -->
         <Footer />
       </mdb-row>
     </div>
@@ -611,8 +606,20 @@ export default {
   height: 100vh;
   width: 100vw;
 }
+.main-divs1{
+  padding: 3%;
+}
+#footer{
+  margin-top: -50px;
+  text-align: center !important;
+  width: 100%;
+}
+// .icones{
+//   padding: 3% !important;
+// }
 .main-div {
-  height: 60vh;
+  height: 55vh;
+  padding: auto 10%;
   width: 100vw;
   margin-top: -15%;
 }
@@ -761,10 +768,11 @@ footer {
 .skewed2-text {
   width: 100%;
   padding: 0px 60px;
+  margin-top: 1%;
 }
 .progress {
   width: 50% !important;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 .skewed2-progress {
   margin-top: 2%;
@@ -780,10 +788,10 @@ footer {
   display: flex;
 }
 .Texto {
-  margin-left: 43%;
+  margin-left: 42%;
 }
 .Texto1 {
-  margin-left: 1%;
+  margin-left: 2%;
 }
 #about-text {
   margin-top: 30%;
@@ -834,9 +842,6 @@ footer {
   font-weight: 600 !important;
   stroke-width: 600 !important;
 }
-.prototipos-interativo{
-  padding-top: 5%;
-}
 @font-face {
   font-family: "Gotham Bold";
   src: url("../assets/fonts/GothamBold.otf");
@@ -845,6 +850,7 @@ footer {
   background-color:  #37bfe1 !important;
   text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
 }*/
+//@media only screen and (max-width: 2560px){}
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
   .skewed2 {
     margin-top: 4%;
@@ -875,9 +881,9 @@ footer {
 //     margin: 2% 20%;
 //   }
 // }
-@media only screen and (min-width: 570px) and (max-width: 1024px){
-  .skewed2{
-    margin-top: 1% ;
+@media only screen and (min-width: 570px) and (max-width: 1024px) {
+  .skewed2 {
+    margin-top: 1%;
     width: 100%;
   }
   .main-div {

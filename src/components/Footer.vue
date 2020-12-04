@@ -1,6 +1,6 @@
 <template>
   <footer class="col-12 container-fluid">
-    <div class="menu col-sm-2 col-xs-12">
+    <div class="menu text-center col-sm-2 col-xs-12">
       <ul>
         <li class="title">Menu</li>
         <hr />
@@ -39,17 +39,12 @@
         <hr />
         <ul class="options-inline">
           <li>
-            <a href="https://www.facebook.com/ubytee">
+            <a @click="facebook">
               <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ubyte_/">
+            <a @click="instagram">
               <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
@@ -66,19 +61,32 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: "Footer",
   data() {
-    return {}
+    return {};
   },
-  methods: {},
+  methods: {
+    instagram() {
+      var abaNova = window.open("https://www.instagram.com/ubyte_/", "_blank");
+      abaNova.focus();
+    },
+    facebook() {
+      var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
+      abaNova.focus();
+    },
+    linkedin() {
+      var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
+      abaNova.focus();
+    },
+  },
   component: {},
-}
+};
 </script>
 
 <style scoped>
 footer {
   font-size: 0.9rem;
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   position: static;
   padding-top: 20px;
   padding-left: 15px;
