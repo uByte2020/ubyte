@@ -1,6 +1,6 @@
 <template>
   <div class="m-0 p-0 overflow-hidden">
-    <navbar></navbar>
+    <navbar />
     <div
       id="home"
       :homeheight="homeHeight"
@@ -72,6 +72,7 @@
             class="img-fluid"
             data-aos="fade-right"
             data-aos-duration="2000"
+            data-aos-anchor-placement="top-bottom"
           />
         </mdb-col>
       </mdb-row>
@@ -91,6 +92,7 @@
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               Quem Somos?
             </h3>
@@ -99,6 +101,7 @@
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               Somos uma equipa especializada em soluções digitais adaptadas e
               personalizadas aos nossos clientes. Apresentamos soluções
@@ -113,6 +116,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               Tecnologias Usadas
             </h3>
@@ -121,6 +125,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               <p class="Texto1">Laravel</p>
               <p class="Texto">NodeJs</p>
@@ -130,6 +135,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               <div class="progress">
                 <div
@@ -158,6 +164,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               <p class="Texto1">MySql</p>
               <p class="Texto">MongoDb</p>
@@ -165,6 +172,7 @@
             <div
               class="skewed2-progress-1"
               data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
               data-aos-duration="1000"
               data-aos-delay="1000"
             >
@@ -194,6 +202,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               Vue
             </p>
@@ -202,6 +211,7 @@
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
+              data-aos-anchor-placement="top-bottom"
             >
               <div
                 name="Vue"
@@ -232,6 +242,7 @@
           sm="12"
           data-aos="zoom-in"
           data-aos-duration="1500"
+          data-aos-anchor-placement="top-bottom"
         >
           <h1 class="text-center">Conheça as nossas soluções</h1>
           <img
@@ -257,14 +268,9 @@
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="1000"
+            data-aos-anchor-placement="top-bottom"
           >
-            <mdb-col
-              class=""
-              md="2"
-              offsetMd="1"
-              offsetXl="1"
-              offsetLg="1"
-            >
+            <mdb-col class="" md="2" offsetMd="1" offsetXl="1" offsetLg="1">
               <i class="fas fa-code fa-4x mt-2"></i>
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
@@ -280,6 +286,7 @@
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="1100"
+            data-aos-anchor-placement="top-bottom"
           >
             <mdb-col
               class=""
@@ -294,7 +301,7 @@
                 :src="IdentidadeVisualicone"
                 width="100"
                 height="95"
-                class="Identidadeicone fa-thumbs-up fas fa-4x "
+                class="Identidadeicone fa-thumbs-up fas fa-4x"
               />
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
@@ -311,6 +318,7 @@
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="1200"
+            data-aos-anchor-placement="top-bottom"
           >
             <mdb-col
               class=""
@@ -337,6 +345,7 @@
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-delay="1300"
+            data-aos-anchor-placement="top-bottom"
           >
             <mdb-col
               class=""
@@ -373,6 +382,7 @@
           class="col-12 border-message"
           data-aos="zoom-in"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           <!-- text-overlay -->
           <span class="display-4 font-weight-bold"
@@ -448,6 +458,7 @@
           class="space-top-5"
           data-aos="fade-left"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           <h1>Assuma o controle total</h1>
           <p class="text-justify my-3 font-control">
@@ -460,6 +471,9 @@
             <li>Relatórios de Desempenho</li>
             <li>Comunicações regulares</li>
             <li>Entrega contínua</li>
+            
+      <!-- <button type="button" @click="pt" class="btn btn-dark btn-sm">en</button>
+      <p>{{pt.quem_somos?en.quem_somos||}}</p> -->
           </ul>
         </mdb-col>
         <mdb-col
@@ -469,11 +483,17 @@
           sm="12"
           data-aos="fade-right"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
         </mdb-col>
       </mdb-row>
-      <mdb-row class="p-0 m-0" data-aos="fade-up" data-aos-duration="1000">
+      <mdb-row
+        class="p-0 m-0"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="1000"
+      >
         <div class="skewed"></div>
       </mdb-row>
     </div>
@@ -555,6 +575,7 @@
           class
           data-aos="zoom-out-left"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
         </mdb-col>
@@ -566,6 +587,7 @@
           class
           data-aos="zoom-out-right"
           data-aos-duration="1000"
+          data-aos-anchor-placement="top-bottom"
         >
           <mdb-btn class="highlight-background"
             >Conheça as nossas soluções</mdb-btn
@@ -583,6 +605,7 @@
 
 <script>
 import { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol } from "mdbvue";
+// import {mapState, mapMutations} from 'vuex'
 export default {
   components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol },
   data() {
@@ -591,6 +614,7 @@ export default {
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
       FiskamerImg: require("@/assets/imgs/download.png"),
     };
+
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
@@ -606,10 +630,10 @@ export default {
   height: 100vh;
   width: 100vw;
 }
-.main-divs1{
+.main-divs1 {
   padding: 3%;
 }
-#footer{
+#footer {
   margin-top: -50px;
   text-align: center !important;
   width: 100%;

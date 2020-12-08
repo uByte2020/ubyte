@@ -74,10 +74,6 @@ export default {
       var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
       abaNova.focus();
     },
-    linkedin() {
-      var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
-      abaNova.focus();
-    },
   },
   component: {},
 };

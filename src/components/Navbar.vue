@@ -1,12 +1,17 @@
 <template>
-  <mdb-navbar position="top" class="mt-0" id="Menu" :color="scrollPosition > 657?'black':''">
+  <mdb-navbar
+    position="top"
+    class="mt-0"
+    id="Menu"
+    :color="scrollPosition > 657 ? 'black' : ''"
+  >
     <!-- transparent scrolling -->
     <mdb-navbar-brand class="p-1 ml-1">
       <img src="../assets/imgs/logowhite.png" alt="logo" height="35" />
     </mdb-navbar-brand>
 
     <mdb-navbar-toggler>
-      <mdb-navbar-nav class="font-weight-bold m-auto">
+      <mdb-navbar-nav class="m-auto">
         <mdb-nav-item href="#home" anchorClass="white-text mr-3"
           >Home</mdb-nav-item
         >
@@ -23,6 +28,8 @@
           >Contactos</mdb-nav-item
         >
       </mdb-navbar-nav>
+        <button type="button" class="btn btn-dark btn-sm">Pt</button>
+        <button type="button" class="btn btn-dark btn-sm">en</button>
     </mdb-navbar-toggler>
   </mdb-navbar>
 </template>
@@ -33,7 +40,7 @@ import {
   mdbNavbarBrand,
   mdbNavbarToggler,
   mdbNavbarNav,
-  mdbNavItem
+  mdbNavItem,
 } from "mdbvue";
 export default {
   components: {
@@ -41,25 +48,24 @@ export default {
     mdbNavbarBrand,
     mdbNavbarToggler,
     mdbNavbarNav,
-    mdbNavItem
+    mdbNavItem,
   },
-  props:['homeheight'],
+  props: ["homeheight"],
   data() {
     return {
       test: "#39c0e2",
-      scrollPosition: null
+      scrollPosition: null,
     };
   },
   methods: {
     updateScroll() {
-       this.scrollPosition = window.scrollY
+      this.scrollPosition = window.scrollY;
     },
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
-  }
-}
-
+    window.addEventListener("scroll", this.updateScroll);
+  },
+};
 </script>
 
 <style scoped>
