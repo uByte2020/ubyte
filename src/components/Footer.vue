@@ -1,72 +1,51 @@
 <template>
   <footer class="col-12 container-fluid">
-    <div class="menu col-sm-2 col-xs-12">
+    <div class="menu text-center col-sm-2 col-xs-12">
       <ul>
         <li class="title">Menu</li>
         <hr />
         <li class="options">
-          <a href="#">Inicio</a>
+          <a href="#">{{ $t("Footer.Inicio") }}</a>
         </li>
         <li class="options">
-          <a href="#">Sobre</a>
+          <a href="#">{{ $t("Footer.Sobre") }}</a>
         </li>
         <li class="options">
-          <a href="#">Soluções</a>
+          <a href="#">{{ $t("Footer.Soluções") }}</a>
         </li>
         <li class="options">
-          <a href="#">Portfólio</a>
+          <a href="#">{{ $t("Footer.Portfólio") }}</a>
         </li>
       </ul>
     </div>
     <div class="menu col-sm-2 col-xs-12">
       <ul>
-        <li class="title">Informação</li>
+        <li class="title">{{ $t("Footer.Informação") }}</li>
         <hr />
         <li class="options">
-          <a href="#">Contactos</a>
+          <a href="#">{{ $t("Footer.Contactos") }}</a>
         </li>
         <li class="options">
-          <a href="#">Quem Somos?</a>
+          <a href="#">{{ $t("Footer.Quem_Somos") }}</a>
         </li>
         <li class="options">
-          <a href="#">Políticas de Privacidade</a>
-        </li>
-      </ul>
-    </div>
-    <div class="menu col-sm-2 col-xs-12">
-      <ul>
-        <li class="title">Faça Download do Nosso App</li>
-        <hr />
-        <li class="options">
-          <a href="#">
-            <i class="fab fa-google-play fa-3x"></i>
-          </a>
-        </li>
-        <li class="options mt-3">
-          <a href="#">
-            <i class="fab fa-app-store-ios fa-3x"></i>
-          </a>
+          <a href="#">{{ $t("Footer.Privacidade") }}</a>
         </li>
       </ul>
     </div>
     <div class="social menu col-sm-3 col-xs-12">
       <ul>
-        <li class="title">Siga-nos em:</li>
+        <li class="title">{{ $t("Footer.Siga") }}</li>
         <hr />
         <ul class="options-inline">
           <li>
-            <a href="#">
-              <i class="fab fa-facebook" aria-hidden="true"></i>
+            <a @click="facebook">
+              <i class="fab fa-facebook" aria-hidden="true"> uByte</i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
+            <a @click="instagram">
+              <i class="fab fa-instagram" aria-hidden="true"> uByte</i>
             </a>
           </li>
         </ul>
@@ -74,7 +53,7 @@
     </div>
     <div class="copyrights text-center">
       <p id="p-copy-right" class="text-center">
-        uByte &copy; | All Rights Reserved | uByte - 2020
+        uByte &copy; |{{ $t("Footer.Direitos") }}| uByte - 2020
       </p>
     </div>
   </footer>
@@ -82,19 +61,28 @@
 
 <script>
 export default {
-  name: 'Footer',
+  name: "Footer",
   data() {
-    return {}
+    return {};
   },
-  methods: {},
+  methods: {
+    instagram() {
+      var abaNova = window.open("https://www.instagram.com/ubyte_/", "_blank");
+      abaNova.focus();
+    },
+    facebook() {
+      var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
+      abaNova.focus();
+    },
+  },
   component: {},
-}
+};
 </script>
 
 <style scoped>
 footer {
   font-size: 0.9rem;
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   position: static;
   padding-top: 20px;
   padding-left: 15px;

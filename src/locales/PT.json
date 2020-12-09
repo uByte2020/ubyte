@@ -1,0 +1,72 @@
+{
+    "message": "Ola i18n !!",
+    "nav": {
+        "Home": "Inicio",
+        "Sobre":"Sobre",
+        "Soluções":"Soluções",
+        "Portfólio":"Portfólio",
+        "Contactos":"Contactos"
+    },
+    "Home": {
+        "logo": "BEM-VINDO A uBYTE",
+        "Solucoes": "SOLUÇÕES ",
+        "DIGITAIS": "DIGITAIS ",
+        "P": " PARA O SEU ",
+        "Negocio": "NEGÓCIO",
+        "Botao": "Conheça nossas soluções",
+        "Solucao": "SOLUÇÕES INOVADORAS",
+        "SL": "soluções digitais",
+        "adaptadas": "adaptadas",
+        "E": "E",
+        "personalizadas": "personalizadas",
+        "Clientes": "aos nossos clientes.",
+        "BotaoSolucao": "Conheça nossas soluções"
+    },
+    "Quem_somos": {
+        "quem_somos": "Quem Somos?",
+        "texto_qs": "Somos uma equipa especializada em soluções digitais adaptadas e personalizadas aos nossos clientes. Apresentamos soluções inovadoras, softwares de optimo desempenho, Produtos e serviços de alta qualidade, Melhores Designers e Soluções adaptadas e personalizadas, tudo no melhor preço.",
+        "TecnUsadas": "Tecnologias Usadas"
+    },
+    "Conheca_Nossas_Solucoes": {
+        "CNS": "Conheça as nossas soluções",
+        "ProtoipoIterativo": "PROTÓTIPOS ITERATIVOS",
+        "ProtoipoIterativoT": "O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente.",
+        "IdentidadeV": "IDENTIDADE VISUAL",
+        "IdentidadeVT": "Criação de uma identidade visual bem definida e aplicada adequadamente, para que a empresa possa transmitir confiança ao público e ser uma marca destacada no mercado.",
+        "DesignUI": "DESIGN DA UI",
+        "DesignUIT": "Um bom projeto de UI antecipa as necessidades do usuário e garante que a interface contenha elementos de fácil acesso e utilização, fornecendo uma experiência que é amigável e que não cause frustrações ao utilizador",
+        "DesenvolvimentoSoftware": "DESENVOLVIMENTO DE SOFTWARE E UI",
+        "DesenvolvimentoSoftwareTxt": "O principal objectivo da construção de protótipos é testar se o fluxo do produto é suave ou consistente."
+    },
+    "ImagemDaImpresa": {
+        "IMG": "SUA EMPRESA PRECISA DE UMA NOVA IMAGEM?",
+        "BotaoImg":"Envie Mensagem"
+    },
+    "Portofolio":{
+        "Port":"PORTFÓLIO",
+        "todos":"Todos",
+        "DesignGrafico":"Design Gráfico"
+    },
+    "AssumaControle":{
+        "AC":"Assuma o controle total",
+        "ACText":"Construímos um forte relacionamento com nossos clientes, realizando três ações: prestando contas de nossos projetos, tornando nossos processos transparentes e oferecendo excelentes resultados",
+        "AbordagemAgil":"Abordagem ágil",
+        "RelatorioDesepenho":"Relatórios de Desempenho",
+        "ComunicacaoRegular":"Comunicações regulares",
+        "EntregaContinua":"Entrega contínua"
+    },
+    "DesafieCriatividade":"DESAFIE A NOSSA CRIATIVIDADE",
+    "ConhecaNossasSolucoes":"Conheça as nossas soluções",
+    "Footer":{
+        "Inicio":"Inicio",
+        "Sobre":"Sobre",
+        "Soluções":"Soluções",
+        "Portfólio":"Portfólio",
+        "Informação":"Informação",
+        "Contactos":"Contactos",
+        "Quem_Somos":"Quem Somos?",
+        "Privacidade":"Políticas de Privacidade",
+        "Siga":"Siga-nos em:",
+        "Direitos":"Todos os direitos reservados"
+    }
+}
