@@ -1,0 +1,72 @@
+{
+  "message": "hello i18n !!",
+  "nav": {
+    "Home": "Home",
+    "Sobre": "About",
+    "Soluções":"Solutions",
+    "Portfólio": "Portfolio",
+    "Contactos": "Contacts"
+  },
+  "Home": {
+    "logo": "WELCOME TO uBYTE",
+    "Solucoes": "DIGITAL ",
+    "DIGITAIS": "SOLUTIONS ",
+    "P": " FOR YOUR  ",
+    "Negocio": "BUSINESS",
+    "Botao": "Learn about our solutions",
+    "Solucao": "INNOVATIVE SOLUTIONS",
+    "SL": "digital services ",
+    "adaptadas": "adapted",
+    "E": "and",
+    "personalizadas": "personalized ",
+    "Clientes": "to our customers.",
+    "BotaoSolucao": "Learn about our solutions"
+  },
+  "Quem_somos": {
+    "quem_somos": "Who we are?",
+    "texto_qs": "We are a team specialized in digital solutions adapted and personalized to our customers. We present solutions technologies, optimal performance software, products and services for high quality, Best Designers and Adapted Solutions and personalized, all at the best price.",
+    "TecnUsadas": "Technologies Used"
+  },
+  "Conheca_Nossas_Solucoes": {
+    "CNS": "Discover our solutions",
+    "ProtoipoIterativo": "ITERATIVE PROTOTYPES",
+    "ProtoipoIterativoT": "The main purpose of building prototypes is to test whether the product flow is smooth or consistent.",
+    "IdentidadeV": "VISUAL IDENTITY",
+    "IdentidadeVT": "Creation of a well-defined and properly applied visual identity, so that the company can transmit confidence to the public and be a prominent brand in the market.",
+    "DesignUI": "UI DESIGN",
+    "DesignUIT": "A good UI design anticipates the user's needs and ensures that the interface contains elements that are easy to access and use, providing an experience that is friendly and does not cause frustration to the user.",
+    "DesenvolvimentoSoftware": "SOFTWARE AND UI DEVELOPMENT",
+    "DesenvolvimentoSoftwareTxt": "The main purpose of building prototypes is to test whether the product flow is smooth or consistent."
+  },
+  "ImagemDaImpresa": {
+    "IMG": "DOES YOUR COMPANY NEED A NEW IMAGE?",
+    "BotaoImg": "Send Message"
+  },
+  "Portofolio": {
+    "Port": "PORTFOLIO",
+    "todos": "All",
+    "DesignGrafico": "Graphic design"
+  },
+  "AssumaControle": {
+    "AC": "Take full control",
+    "ACText": "We have built a strong relationship with our customers, carrying out three actions: rendering accounts of our projects, making our processes transparent and offering excellent results",
+    "AbordagemAgil": "Agile approach",
+    "RelatorioDesepenho": "Performance Reports",
+    "ComunicacaoRegular": "Regular communications",
+    "EntregaContinua": "Continuous delivery"
+  },
+  "DesafieCriatividade": "CHALLENGE OUR CREATIVITY",
+  "ConhecaNossasSolucoes": "Discover our solutions",
+  "Footer": {
+    "Inicio": "Home",
+    "Sobre": "About",
+    "Soluções": "Solutions",
+    "Portfólio": "Portfolio",
+    "Informação": "Information",
+    "Contactos": "Contacts",
+    "Quem_Somos": "Who we are?",
+    "Privacidade": "Privacy Policy",
+    "Siga": "Follow us on:",
+    "Direitos": " All Rights Reserved "
+  }
+}

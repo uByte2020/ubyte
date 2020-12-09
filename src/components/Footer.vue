@@ -5,47 +5,47 @@
         <li class="title">Menu</li>
         <hr />
         <li class="options">
-          <a href="#">Inicio</a>
+          <a href="#">{{ $t("Footer.Inicio") }}</a>
         </li>
         <li class="options">
-          <a href="#">Sobre</a>
+          <a href="#">{{ $t("Footer.Sobre") }}</a>
         </li>
         <li class="options">
-          <a href="#">Soluções</a>
+          <a href="#">{{ $t("Footer.Soluções") }}</a>
         </li>
         <li class="options">
-          <a href="#">Portfólio</a>
+          <a href="#">{{ $t("Footer.Portfólio") }}</a>
         </li>
       </ul>
     </div>
     <div class="menu col-sm-2 col-xs-12">
       <ul>
-        <li class="title">Informação</li>
+        <li class="title">{{ $t("Footer.Informação") }}</li>
         <hr />
         <li class="options">
-          <a href="#">Contactos</a>
+          <a href="#">{{ $t("Footer.Contactos") }}</a>
         </li>
         <li class="options">
-          <a href="#">Quem Somos?</a>
+          <a href="#">{{ $t("Footer.Quem_Somos") }}</a>
         </li>
         <li class="options">
-          <a href="#">Políticas de Privacidade</a>
+          <a href="#">{{ $t("Footer.Privacidade") }}</a>
         </li>
       </ul>
     </div>
     <div class="social menu col-sm-3 col-xs-12">
       <ul>
-        <li class="title">Siga-nos em:</li>
+        <li class="title">{{ $t("Footer.Siga") }}</li>
         <hr />
         <ul class="options-inline">
           <li>
             <a @click="facebook">
-              <i class="fab fa-facebook" aria-hidden="true"></i>
+              <i class="fab fa-facebook" aria-hidden="true"> uByte</i>
             </a>
           </li>
           <li>
             <a @click="instagram">
-              <i class="fab fa-instagram" aria-hidden="true"></i>
+              <i class="fab fa-instagram" aria-hidden="true"> uByte</i>
             </a>
           </li>
         </ul>
@@ -53,7 +53,7 @@
     </div>
     <div class="copyrights text-center">
       <p id="p-copy-right" class="text-center">
-        uByte &copy; | All Rights Reserved | uByte - 2020
+        uByte &copy; |{{ $t("Footer.Direitos") }}| uByte - 2020
       </p>
     </div>
   </footer>

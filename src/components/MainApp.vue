@@ -23,15 +23,16 @@
       >
         <mdb-col xl="6" lg="10" md="12" sm="12" class>
           <!--  -->
-          <span class="display-4 TextoIniti">BEM-VINDO A uBYTE</span>
+          <span class="display-4 TextoIniti"> {{ $t("Home.logo") }} </span>
           <p class="TextoIniti">
-            SOLUÇÕES
-            <span class="highlight">DIGITAIS</span> PARA O SEU
-            <span class="highlight">NEGÓCIO</span>
+            {{ $t("Home.Solucoes") }}
+            <span class="highlight">{{ $t("Home.DIGITAIS") }}</span
+            >{{ $t("Home.P") }}
+            <span class="highlight">{{ $t("Home.Negocio") }}</span>
           </p>
-          <mdb-btn outline="white" class="btninicial" size="lg"
-            >Conheça nossas soluções</mdb-btn
-          >
+          <mdb-btn outline="white" class="btninicial" size="lg">{{
+            $t("Home.Botao")
+          }}</mdb-btn>
         </mdb-col>
       </mdb-row>
     </div>
@@ -52,16 +53,17 @@
             data-aos-duration="2000"
           >
             <mdb-col class="align-self-center mobile-padding">
-              <h3 class>SOLUÇÕES INOVADORAS</h3>
+              <h3 class>{{ $t("Home.Solucao") }}</h3>
               <p class="text-uppercase">
-                soluções digitais
-                <span class="highlight">adaptadas</span> E
-                <span class="highlight">personalizadas</span>
-                aos nossos clientes.
+                {{ $t("Home.SL") }}
+                <span class="highlight">{{ $t("Home.adaptadas") }}</span>
+                {{ $t("Home.E") }}
+                <span class="highlight">{{ $t("Home.personalizadas") }}</span>
+                {{ $t("Home.Clientes") }}
               </p>
-              <mdb-btn class="highlight-background" size="lg"
-                >Conheça nossas soluções</mdb-btn
-              >
+              <mdb-btn class="highlight-background" size="lg">{{
+                $t("Home.BotaoSolucao")
+              }}</mdb-btn>
             </mdb-col>
           </mdb-row>
         </mdb-col>
@@ -94,7 +96,7 @@
               data-aos-delay="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              Quem Somos?
+              {{ $t("Quem_somos.quem_somos") }}
             </h3>
             <p
               class="text-justify"
@@ -103,11 +105,7 @@
               data-aos-delay="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              Somos uma equipa especializada em soluções digitais adaptadas e
-              personalizadas aos nossos clientes. Apresentamos soluções
-              inovadoras, softwares de optimo desempenho, Produtos e serviços de
-              alta qualidade, Melhores Designers e Soluções adaptadas e
-              personalizadas, tudo no melhor preço.
+              {{ $t("Quem_somos.texto_qs") }}
             </p>
           </mdb-col>
 
@@ -118,7 +116,7 @@
               data-aos-delay="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              Tecnologias Usadas
+              {{ $t("Quem_somos.TecnUsadas") }}
             </h3>
             <div
               class="progress-txt"
@@ -244,7 +242,7 @@
           data-aos-duration="1500"
           data-aos-anchor-placement="top-bottom"
         >
-          <h1 class="text-center">Conheça as nossas soluções</h1>
+          <h1 class="text-center">{{ $t("Conheca_Nossas_Solucoes.CNS") }}</h1>
           <img
             src="../assets/imgs/macgold.png"
             alt="macgold"
@@ -274,10 +272,11 @@
               <i class="fas fa-code fa-4x mt-2"></i>
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
-              <h4 class="text-left solutions-names">PROTÓTIPOS ITERATIVOS</h4>
+              <h4 class="text-left solutions-names">
+                {{ $t("Conheca_Nossas_Solucoes.ProtoipoIterativo") }}
+              </h4>
               <p class="text-justify">
-                O principal objectivo da construção de protótipos é testar se o
-                fluxo do produto é suave ou consistente.
+                {{ $t("Conheca_Nossas_Solucoes.ProtoipoIterativoT") }}
               </p>
             </mdb-col>
           </mdb-row>
@@ -305,11 +304,11 @@
               />
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
-              <h4 class="solutions-names text-left">IDENTIDADE VISUAL</h4>
+              <h4 class="solutions-names text-left">
+                {{ $t("Conheca_Nossas_Solucoes.IdentidadeV") }}
+              </h4>
               <p class="text-justify">
-                Criação de uma identidade visual bem definida e aplicada
-                adequadamente, para que a empresa possa transmitir confiança ao
-                público e ser uma marca destacada no mercado.
+                {{ $t("Conheca_Nossas_Solucoes.IdentidadeVT") }}
               </p>
             </mdb-col>
           </mdb-row>
@@ -331,12 +330,11 @@
               <i class="fas fa-desktop fa-4x"></i>
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
-              <h4 class="text-left solutions-names">DESIGN DA UI</h4>
+              <h4 class="text-left solutions-names">
+                {{ $t("Conheca_Nossas_Solucoes.DesignUI") }}
+              </h4>
               <p class="text-justify">
-                Um bom projeto de UI antecipa as necessidades do usuário e
-                garante que a interface contenha elementos de fácil acesso e
-                utilização, fornecendo uma experiência que é amigável e que não
-                cause frustrações ao utilizador
+                {{ $t("Conheca_Nossas_Solucoes.DesignUIT") }}
               </p>
             </mdb-col>
           </mdb-row>
@@ -359,11 +357,10 @@
             </mdb-col>
             <mdb-col class="" md="8" sm="12" offsetLg="1">
               <h4 class="text-left solutions-names">
-                DESENVOLVIMENTO DE SOFTWARE E UI
+                {{ $t("Conheca_Nossas_Solucoes.DesenvolvimentoSoftware") }}
               </h4>
               <p class="text-justify">
-                O principal objectivo da construção de protótipos é testar se o
-                fluxo do produto é suave ou consistente.
+                {{ $t("Conheca_Nossas_Solucoes.DesenvolvimentoSoftwareTxt") }}
               </p>
             </mdb-col>
           </mdb-row>
@@ -385,11 +382,13 @@
           data-aos-anchor-placement="top-bottom"
         >
           <!-- text-overlay -->
-          <span class="display-4 font-weight-bold"
-            >SUA EMPRESA PRECISA DE UMA NOVA IMAGEM?</span
-          >
+          <span class="display-4 font-weight-bold">{{
+            $t("ImagemDaImpresa.IMG")
+          }}</span>
 
-          <mdb-btn outline="white" size="lg">Envie Mensagem</mdb-btn>
+          <mdb-btn outline="white" size="lg">{{
+            $t("ImagemDaImpresa.BotaoImg")
+          }}</mdb-btn>
         </mdb-col>
       </mdb-row>
     </div>
@@ -397,16 +396,18 @@
       <div class="text-white">
         <mdb-row class="justify-content-center">
           <mdb-col xl="6" lg="8" md="10" sm="12" class="col-12 p-3">
-            <h2 class="font-weight-bold border-bottom">PORTFÓLIO</h2>
+            <h2 class="font-weight-bold border-bottom">
+              {{ $t("Portofolio.Port") }}
+            </h2>
             <!-- <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1> -->
             <nav class="navbar">
               <ul class="navbar-nav projects-menu">
                 <li class="nav-item">
-                  <a href="#" class="text-white font-weight-bold">Todos</a>
+                  <a href="#" class="text-white font-weight-bold">{{ $t("Portofolio.todos") }}</a>
                 </li>
                 <li>
                   <a href="#" class="text-white font-weight-bold"
-                    >Design Gráfico</a
+                    >{{ $t("Portofolio.DesignGrafico") }}</a
                   >
                 </li>
                 <li>
@@ -460,19 +461,17 @@
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <h1>Assuma o controle total</h1>
+          <h1>{{ $t("AssumaControle.AC") }}</h1>
           <p class="text-justify my-3 font-control">
-            Construímos um forte relacionamento com nossos clientes, realizando
-            três ações: prestando contas de nossos projetos, tornando nossos
-            processos transparentes e oferecendo excelentes resultados
+            {{ $t("AssumaControle.ACText") }}
           </p>
           <ul class="text-left mt-4 font-control">
-            <li>Abordagem ágil</li>
-            <li>Relatórios de Desempenho</li>
-            <li>Comunicações regulares</li>
-            <li>Entrega contínua</li>
-            
-      <!-- <button type="button" @click="pt" class="btn btn-dark btn-sm">en</button>
+            <li>{{ $t("AssumaControle.AbordagemAgil") }}</li>
+            <li>{{ $t("AssumaControle.RelatorioDesepenho") }}</li>
+            <li>{{ $t("AssumaControle.ComunicacaoRegular") }}</li>
+            <li>{{ $t("AssumaControle.EntregaContinua") }}</li>
+
+            <!-- <button type="button" @click="pt" class="btn btn-dark btn-sm">en</button>
       <p>{{pt.quem_somos?en.quem_somos||}}</p> -->
           </ul>
         </mdb-col>
@@ -577,7 +576,7 @@
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <h2>DESAFIE A NOSSA CRIATIVIDADE</h2>
+          <h2>{{ $t("DesafieCriatividade") }}</h2>
         </mdb-col>
         <mdb-col
           xl="3"
@@ -590,7 +589,7 @@
           data-aos-anchor-placement="top-bottom"
         >
           <mdb-btn class="highlight-background"
-            >Conheça as nossas soluções</mdb-btn
+            >{{ $t("ConhecaNossasSolucoes") }}</mdb-btn
           >
         </mdb-col>
       </mdb-row>
@@ -614,10 +613,10 @@ export default {
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
       FiskamerImg: require("@/assets/imgs/download.png"),
     };
-
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
+    //process.env.NODE_ENV === 'development'
   },
 };
 </script>
