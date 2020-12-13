@@ -1,12 +1,12 @@
 <template>
-  <div class="m-0 p-0 overflow-hidden">
+  <div class="container-fluid m-0 p-0 overflow-hidden">
     <navbar />
     <div
       id="home"
       :homeheight="homeHeight"
       class="container-fluid main-divs 1 m-0 p-0"
     >
-      <mdb-row>
+      <div class="row">
         <mdb-col xl="12" lg="12" md="12" sm="12" class>
           <mdb-view class="back position-absolute">
             <video autoplay muted loop id="landing-video">
@@ -15,7 +15,7 @@
             <mdb-mask flex-center overlay="black-strong" />
           </mdb-view>
         </mdb-col>
-      </mdb-row>
+      </div>
       <mdb-row
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -224,13 +224,8 @@
         </mdb-row>
       </div>
     </div>
-    <div id="solutions" class="main-divs1 container-fluid 3">
-      <!-- <mdb-view class="back position-absolute">
-        <img src="../assets/imgs/laptop.jpg" class="img-fluid w-100" alt="test" />
-
-        <mdb-mask flex-center overlay="black-strong" />
-      </mdb-view>-->
-
+    <!------------------------------------------------------------------------->
+    <div id="solutions" class="main-solutions container-fluid 3">
       <mdb-row class="align-items-center w-100 h-100">
         <mdb-col
           xl="6"
@@ -392,7 +387,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="projects" class="main-divs container-fluid">
+    <div id="projects" class="main-portofolio container-fluid">
       <div class="row text-white">
         <div class="col-8 portofolio">
           <div class="row justify-content-center">
@@ -404,27 +399,42 @@
               <nav class="navbar">
                 <ul class="navbar-nav projects-menu">
                   <li class="nav-item">
-                    <a href="#todos" class="text-white font-weight-bold">{{
-                      $t("Portofolio.todos")
-                    }}</a>
+                    <a
+                      href="#todos"
+                      @click="showPortFolio('todos')"
+                      class="text-white font-weight-bold"
+                      >{{ $t("Portofolio.todos") }}</a
+                    >
                   </li>
                   <li>
                     <a
                       href="#DesignGrafico"
                       class="text-white font-weight-bold"
+                      @click="showPortFolio('graphicDesign')"
                       >{{ $t("Portofolio.DesignGrafico") }}</a
                     >
                   </li>
                   <li>
-                    <a href="#Website" class="text-white font-weight-bold"
+                    <a
+                      href="#Website"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('website')"
                       >Website</a
                     >
                   </li>
                   <li>
-                    <a href="#Apps" class="text-white font-weight-bold">Apps</a>
+                    <a
+                      href="#Apps"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('apps')"
+                      >Apps</a
+                    >
                   </li>
                   <li>
-                    <a href="#Softwares" class="text-white font-weight-bold"
+                    <a
+                      href="#Softwares"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('softwares')"
                       >Softwares</a
                     >
                   </li>
@@ -435,23 +445,12 @@
         </div>
         <div class="col-12">
           <div class="row p-5 justify-content-center">
-            <div class="col-lg-4 col-md-4 col-sm-7 col-xl-4">
-              <img
-                src="../assets/imgs/project-1.jpg"
-                class="img-fluid w-100 h-80 projects-images"
-              />
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-7 col-xl-4">
-              <img
-                src="../assets/imgs/project-2.jpg"
-                class="img-fluid w-100 h-80 projects-images"
-              />
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-7 col-xl-4">
-              <img
-                src="../assets/imgs/project-3.jpg"
-                class="img-fluid w-100 h-80 projects-images"
-              />
+            <div
+              v-for="(work, index) in portFolio"
+              :key="index"
+              class="col-lg-4 col-md-4 col-sm-7 col-xl-4"
+            >
+              <img :src="work" class="img-fluid w-100 h-80 projects-images" />
             </div>
           </div>
         </div>
@@ -614,165 +613,73 @@ export default {
       homeHeight: null,
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
       FiskamerImg: require("@/assets/imgs/download.png"),
+      portFolio: [],
+      ourWorkers: {
+        graphicDesign: [require("@/assets/imgs/project-1.jpg")],
+        apps: [require("@/assets/imgs/project-2.jpg")],
+        softwares: [require("@/assets/imgs/project-1.jpg")],
+        website: [require("@/assets/imgs/project-3.jpg")],
+      },
+      Portof: {
+        todos: true,
+        design: false,
+      },
     };
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
+    this.portFolio = [
+      ...this.ourWorkers.graphicDesign,
+      ...this.ourWorkers.apps,
+      ...this.ourWorkers.softwares,
+    ];
     //process.env.NODE_ENV === 'development'
+  },
+  methods: {
+    showPortFolio(work) {
+      if (work === "todos")
+        this.portFolio = [
+          ...this.ourWorkers.graphicDesign,
+          ...this.ourWorkers.apps,
+          ...this.ourWorkers.softwares,
+          ...this.ourWorkers.website,
+        ];
+      else this.portFolio = [...this.ourWorkers[work]];
+    },
+    // todos() {
+    //   this.Portof.design = false;
+    //   this.Portof.todos = true;
+    // },
+    // design() {
+    //   this.Portof.design = true;
+    //   this.Portof.todos = false;
+    // },
   },
 };
 </script>
 <style lang="scss" scoped>
 @import "../scss/variables";
 @import "../scss/bpoints";
-@import "normalize-scss";
-
-.main-divs,
-.background,
-.overlay {
-  height: 100vh;
-  width: 100vw;
-  -webkit-height: 150vh;
-  -webkit-width: 90vw;
-}
-.main-divs1 {
-  padding: 3%;
-}
-#footer {
-  margin-top: -50px;
-  text-align: center !important;
-  width: 100%;
-}
-// .icones{
-//   padding: 3% !important;
-// }
-.main-div {
-  height: 55vh;
-  padding: auto 10%;
-  width: 100vw;
-  margin-top: -15%;
-}
-img {
-  object-fit: cover;
-}
-#home {
-}
-.back {
-  z-index: -1;
-}
-
-video {
-  right: 0;
-  bottom: 0;
-  position: relative;
-  z-index: -1;
-  width: 100vw;
-  padding: 0;
-  object-fit: cover;
-  height: 100vh;
-}
-.text-1 {
-  z-index: 1;
-  .text-overlay {
-    margin-top: 20%;
-  }
-}
 .highlight {
   color: $highlightColor;
 }
-
-.border-message {
-  border-left: 0.5rem solid #ffffff;
-}
-
-.black-overlay {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-
-#message-div {
-  background-image: url("../assets/imgs/laptop.jpg");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  z-index: 0;
-}
-
 .plans-container {
   background: $plansColor;
-
   margin-top: 5%;
 }
-.bigger {
-  z-index: 2;
-}
-
-#plans,
-#solutions,
-#contacts,
-#projects {
-  background-image: url("../assets/imgs/black.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .highlight-background {
   background: $highlightColor;
 }
-
-.phone-inbox {
-  margin-left: -25%;
-  margin-top: 10%;
-}
-
-.services-col {
-  margin-top: 10%;
-}
-
 footer {
   background-color: $footerColor;
 
   width: 99%;
 }
-
 #control {
   background-color: $mockupBackground;
   overflow: hidden;
   z-index: -1;
 }
-.all {
-  width: 100%;
-  height: 100vh;
-}
-
-.space-top {
-  margin-top: 15%;
-}
-
-.space-top-2 {
-  margin-top: 10%;
-}
-
-.space-top-5 {
-  margin-top: 5%;
-}
-.space-top-1 {
-  margin: auto 4%;
-}
-
-.font-control {
-  font-size: 1.2rem !important;
-}
-
 .skewed {
   z-index: 1;
 
@@ -783,211 +690,4 @@ footer {
   width: 100%;
   height: 100vh;
 }
-
-.skewed2 {
-  z-index: 1;
-  margin-top: 5%;
-  padding: 10px;
-  // transform: skewY(4deg);
-  transform-origin: top left;
-  width: 100%;
-  height: 100vh;
-  // background-color: rgba(10,23,55,0.5) !important;
-  // background: #000;
-  //  opacity: 0.7;
-}
-
-.skewed2-text {
-  width: 100%;
-  padding: 0px 60px;
-  margin-top: 1%;
-}
-.progress {
-  width: 50% !important;
-  margin-left: 2%;
-}
-.skewed2-progress {
-  margin-top: 2%;
-  padding: 0px 4% !important;
-}
-.skewed2-progress-1 {
-  display: flex;
-  margin-top: 3px;
-}
-.progress-txt {
-  text-align: left !important;
-  margin-top: 2%;
-  display: flex;
-}
-.Texto {
-  margin-left: 42%;
-}
-.Texto1 {
-  margin-left: 2%;
-}
-#about-text {
-  margin-top: 30%;
-}
-
-.projects-menu {
-  display: contents;
-}
-
-#deeper {
-  z-index: -1;
-  height: 70vh;
-}
-
-#deep {
-  z-index: 0;
-  height: 80vh;
-}
-
-#deeper,
-#deep {
-}
-
-#deeper > img {
-  height: -webkit-fill-available;
-}
-
-.skewed3 {
-  transform: skewX(-190deg);
-  margin-left: -9%;
-  transform-origin: bottom left;
-  margin-bottom: -2%;
-  background-color: #39c0e2;
-  //border: 1px solid red;
-  height: 70vh !important;
-  width: 70vw !important;
-}
-
-#three-phones {
-  transform: skewX(10deg);
-  margin-top: 2%;
-  height: 60vh;
-}
-.Identidadeicone {
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg)
-    brightness(104%) contrast(104%);
-  size: 10px;
-  font-weight: 600 !important;
-  stroke-width: 600 !important;
-}
-.projects-images {
-  height: 90%;
-  margin-top: 1%;
-  padding-top: 1%;
-}
-.portofolio {
-  margin: auto 15%;
-}
-#contacts{
-  padding: 5px;
-}
-@font-face {
-  font-family: "Gotham Bold";
-  src: url("../assets/fonts/GothamBold.otf");
-}
-/*.btninicial{
-  background-color:  #37bfe1 !important;
-  text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
-}*/
-//@media only screen and (max-width: 2560px){}
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .skewed2 {
-    margin-top: 4%;
-    width: 100%;
-  }
-  .main-div {
-    height: 50vh;
-    width: 100vw;
-    margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 170px;
-  }
-}
-// @media only screen and (min-width: 1024px) and (max-width: 1366px){
-//   .skewed2{
-//     margin-top: 1% ;
-//     width: 100%;
-//   }
-//   .main-div {
-//     height: 40vh;
-//     width: 100vw;
-//     margin-top: -35%;
-//   }
-//   .skewed2-progress {
-//     padding: 0px 4% !important;
-//     margin: 2% 20%;
-//   }
-// }
-@media only screen and (min-width: 570px) and (max-width: 1024px) {
-  .skewed2 {
-    margin-top: 1%;
-    width: 100%;
-  }
-  .main-div {
-    height: 90vh;
-    width: 100vw;
-    margin-top: -15%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 20%;
-  }
-}
-@media only screen and (max-width: 600px), (min-width: 400) {
-  .skewed2 {
-    margin-top: -3%;
-    width: 100%;
-  }
-  .main-div {
-    height: 80vh;
-    width: 100vw;
-    margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 50px;
-  }
-}
-@media only screen and (max-width: 653px), (min-width: 340) {
-  .skewed2 {
-    //margin-top: -4%;
-    width: 100%;
-    font-size: 16px !important;
-    height: 10px !important;
-    -webkit-width: 100%;
-    -webkit-font-size: 16px !important;
-    -webkit-height: 10px !important;
-  }
-  .main-div {
-    height: 100vh;
-    width: 100vw;
-    margin-top: -35%;
-    -webkit-height: 150vh;
-    -webkit-width: 100vw;
-    -webkit-margin-top: -35%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 50px;
-    -webkit-padding: 0px 4% !important;
-    -webkit-margin: 2% 50px;
-  }
-}
-// @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
-//   @media (max-width: 653px), (min-width: 340) {
-//     .main-divs,
-//     .background,
-//     .overlay {
-//       height: 150vh;
-//       width: 100vw;
-//     }
-//   }
-// }
-// @media only screen and (max-width: 653px), (min-width: 340){}
 </style>

@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import store from './story/index'
+import store from './story'
 Vue.config.productionTip = false;
 
 import "bootstrap-css-only/css/bootstrap.min.css";
@@ -13,6 +13,8 @@ Vue.use(IconsPlugin)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+require('./styles/MyStyle.css');
+require('./styles/safari.css');
 
 Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("sections", require("./components/Sections.vue").default);
