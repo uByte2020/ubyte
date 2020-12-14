@@ -1,12 +1,12 @@
 <template>
-  <div class="m-0 p-0 overflow-hidden">
+  <div class="container-fluid m-0 p-0 overflow-hidden">
     <navbar />
     <div
       id="home"
       :homeheight="homeHeight"
       class="container-fluid main-divs 1 m-0 p-0"
     >
-      <mdb-row>
+      <div class="row">
         <mdb-col xl="12" lg="12" md="12" sm="12" class>
           <mdb-view class="back position-absolute">
             <video autoplay muted loop id="landing-video">
@@ -15,7 +15,7 @@
             <mdb-mask flex-center overlay="black-strong" />
           </mdb-view>
         </mdb-col>
-      </mdb-row>
+      </div>
       <mdb-row
         data-aos="fade-down"
         data-aos-duration="2000"
@@ -224,13 +224,8 @@
         </mdb-row>
       </div>
     </div>
-    <div id="solutions" class="main-divs1 container-fluid 3">
-      <!-- <mdb-view class="back position-absolute">
-        <img src="../assets/imgs/laptop.jpg" class="img-fluid w-100" alt="test" />
-
-        <mdb-mask flex-center overlay="black-strong" />
-      </mdb-view>-->
-
+    <!------------------------------------------------------------------------->
+    <div id="solutions" class="main-solutions container-fluid 3">
       <mdb-row class="align-items-center w-100 h-100">
         <mdb-col
           xl="6"
@@ -392,109 +387,123 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="projects" class="main-divs container-fluid 5">
-      <div class="text-white">
-        <mdb-row class="justify-content-center">
-          <mdb-col xl="6" lg="8" md="10" sm="12" class="col-12 p-3">
-            <h2 class="font-weight-bold border-bottom">
-              {{ $t("Portofolio.Port") }}
-            </h2>
-            <!-- <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1> -->
-            <nav class="navbar">
-              <ul class="navbar-nav projects-menu">
-                <li class="nav-item">
-                  <a href="#" class="text-white font-weight-bold">{{ $t("Portofolio.todos") }}</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white font-weight-bold"
-                    >{{ $t("Portofolio.DesignGrafico") }}</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white font-weight-bold">Website</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white font-weight-bold">Apps</a>
-                </li>
-                <li>
-                  <a href="#" class="text-white font-weight-bold">Softwares</a>
-                </li>
-              </ul>
-            </nav>
-          </mdb-col>
-        </mdb-row>
-        <mdb-row class="p-5 justify-content-center">
-          <mdb-col lg="4" md="12" sm="12">
-            <img
-              src="../assets/imgs/project-1.jpg"
-              class="img-fluid w-100 projects-images"
-            />
-          </mdb-col>
-          <mdb-col lg="4" md="12" class sm="12">
-            <img
-              src="../assets/imgs/project-2.jpg"
-              class="img-fluid w-100 projects-images"
-            />
-          </mdb-col>
-          <mdb-col lg="4" md="12" sm="12">
-            <img
-              src="../assets/imgs/project-3.jpg"
-              class="img-fluid w-100 projects-images"
-            />
-          </mdb-col>
-        </mdb-row>
+    <div id="projects" class="main-portofolio container-fluid">
+      <div class="row text-white">
+        <div class="col-8 portofolio">
+          <div class="row justify-content-center">
+            <div xl="6" lg="8" md="10" sm="12" class="col-12 p-3">
+              <h2 class="font-weight-bold border-bottom">
+                {{ $t("Portofolio.Port") }}
+              </h2>
+              <!-- <h1 class="border-bottom">CRIATIVIDADE E ESTRATÉGIA</h1> -->
+              <nav class="navbar">
+                <ul class="navbar-nav projects-menu">
+                  <li class="nav-item">
+                    <a
+                      href="#todos"
+                      @click="showPortFolio('todos')"
+                      class="text-white font-weight-bold"
+                      >{{ $t("Portofolio.todos") }}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#DesignGrafico"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('graphicDesign')"
+                      >{{ $t("Portofolio.DesignGrafico") }}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Website"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('website')"
+                      >Website</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Apps"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('apps')"
+                      >Apps</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#Softwares"
+                      class="text-white font-weight-bold"
+                      @click="showPortFolio('softwares')"
+                      >Softwares</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row p-5 justify-content-center">
+            <div
+              v-for="(work, index) in portFolio"
+              :key="index"
+              class="col-lg-4 col-md-4 col-sm-7 col-xl-4"
+            >
+              <img :src="work" class="img-fluid w-100 h-80 projects-images" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
       id="control"
-      class="main-divs container-fluid 6 overflow-hidden p-0 m-0"
+      class="main-divs container-fluid 6 overflow-hidden p-1 m-0"
     >
-      <mdb-row class="all p-0 m-0">
-        <mdb-col
-          lg="4"
-          offsetLg="1"
-          md="12"
-          offsetMd
-          sm="12"
-          class="space-top-5"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <h1>{{ $t("AssumaControle.AC") }}</h1>
-          <p class="text-justify my-3 font-control">
-            {{ $t("AssumaControle.ACText") }}
-          </p>
-          <ul class="text-left mt-4 font-control">
-            <li>{{ $t("AssumaControle.AbordagemAgil") }}</li>
-            <li>{{ $t("AssumaControle.RelatorioDesepenho") }}</li>
-            <li>{{ $t("AssumaControle.ComunicacaoRegular") }}</li>
-            <li>{{ $t("AssumaControle.EntregaContinua") }}</li>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 space-top-1">
+          <div class="row all p-0 m-0">
+            <div
+              offsetLg="1"
+              offsetMd
+              class="col-lg-4 col-md-12 col-sm-12 col-xl-5 space-top-5"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <h1>{{ $t("AssumaControle.AC") }}</h1>
+              <p class="text-justify my-3 font-control">
+                {{ $t("AssumaControle.ACText") }}
+              </p>
+              <ul class="text-left mt-4 font-control">
+                <li>{{ $t("AssumaControle.AbordagemAgil") }}</li>
+                <li>{{ $t("AssumaControle.RelatorioDesepenho") }}</li>
+                <li>{{ $t("AssumaControle.ComunicacaoRegular") }}</li>
+                <li>{{ $t("AssumaControle.EntregaContinua") }}</li>
 
-            <!-- <button type="button" @click="pt" class="btn btn-dark btn-sm">en</button>
-      <p>{{pt.quem_somos?en.quem_somos||}}</p> -->
-          </ul>
-        </mdb-col>
-        <mdb-col
-          lg="7"
-          md="12"
-          class="space-top-5"
-          sm="12"
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="top-bottom"
-        >
-          <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
-        </mdb-col>
-      </mdb-row>
-      <mdb-row
+                <!-- <button type="button" @click="pt" class="btn btn-dark btn-sm">en</button>
+              <p>{{pt.quem_somos?en.quem_somos||}}</p> -->
+              </ul>
+            </div>
+            <div
+              class="col-sm-12 col-lg-7 col-md-12 space-top-5"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
         class="p-0 m-0"
         data-aos="fade-up"
         data-aos-anchor-placement="top-bottom"
         data-aos-duration="1000"
       >
         <div class="skewed"></div>
-      </mdb-row>
+      </div>
     </div>
     <!--
     <div id="plans" class="main-divs container-fluid">
@@ -563,36 +572,28 @@
     </div>
     -->
     <div id="contacts" class="main-div container-fluid 8 m-0 p-0">
-      <mdb-row
-        class="align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
+      <div
+        class="row align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >
-        <mdb-col
-          xl="5"
-          lg="6"
-          md="6"
-          sm="12"
-          class
+        <div
+          class="col-xl-5 col-lg-6 col-md-6 col-sm-12"
           data-aos="zoom-out-left"
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
           <h2>{{ $t("DesafieCriatividade") }}</h2>
-        </mdb-col>
-        <mdb-col
-          xl="3"
-          lg="4"
-          md="6"
-          sm="12"
-          class
+        </div>
+        <div
+          class="col-xl-3 col-lg-4 col-md-6 col-sm-12"
           data-aos="zoom-out-right"
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <mdb-btn class="highlight-background"
-            >{{ $t("ConhecaNossasSolucoes") }}</mdb-btn
-          >
-        </mdb-col>
-      </mdb-row>
+          <a href="#solutions"><mdb-btn class="highlight-background">{{
+            $t("ConhecaNossasSolucoes")
+          }}</mdb-btn></a>
+        </div>
+      </div>
     </div>
     <div id="footer">
       <mdb-row class="w-100 h-50 m-0 p-0 mt-5 align-items-center text-white">
@@ -612,344 +613,124 @@ export default {
       homeHeight: null,
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
       FiskamerImg: require("@/assets/imgs/download.png"),
+      portFolio: [],
+      ourWorkers: {
+        graphicDesign: [require("@/assets/imgs/project-1.jpg")],
+        apps: [require("@/assets/imgs/project-2.jpg")],
+        softwares: [require("@/assets/imgs/project-1.jpg")],
+        website: [require("@/assets/imgs/project-3.jpg")],
+      },
+      Portof: {
+        todos: true,
+        design: false,
+      },
     };
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
+    // this.portFolio = [
+    //   ];
+      this.showPortFolio('todos')
+    // this.portFolio= this.portFolio('todos')
+    
     //process.env.NODE_ENV === 'development'
+  },
+  methods: {
+    showPortFolio(work) {
+      if (work === "todos")
+        this.portFolio = [
+          ...this.ourWorkers.graphicDesign,
+          ...this.ourWorkers.apps,
+          ...this.ourWorkers.softwares,
+          ...this.ourWorkers.website,
+        ];
+      else this.portFolio = [...this.ourWorkers[work]];
+    },
   },
 };
 </script>
 <style lang="scss" scoped>
 @import "../scss/variables";
 @import "../scss/bpoints";
-.main-divs,
-.background,
-.overlay {
-  height: 100vh;
-  width: 100vw;
-}
-.main-divs1 {
-  padding: 3%;
-}
-#footer {
-  margin-top: -50px;
-  text-align: center !important;
-  width: 100%;
-}
-// .icones{
-//   padding: 3% !important;
-// }
-.main-div {
-  height: 55vh;
-  padding: auto 10%;
-  width: 100vw;
-  margin-top: -15%;
-}
-img {
-  object-fit: cover;
-}
-#home {
-}
-.back {
-  z-index: -1;
-}
-
-video {
-  right: 0;
-  bottom: 0;
-  position: relative;
-  z-index: -1;
-  width: 100vw;
-  padding: 0;
-  object-fit: cover;
-  height: 100vh;
-}
-.text-1 {
-  z-index: 1;
-  .text-overlay {
-    margin-top: 20%;
-  }
-}
 .highlight {
   color: $highlightColor;
-}
-
-.border-message {
-  border-left: 0.5rem solid #ffffff;
-}
-
-.black-overlay {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-
-#message-div {
-  background-image: url("../assets/imgs/laptop.jpg");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  z-index: 0;
-}
-
+  -ms-color: $highlightColor;
+  -moz-color: $highlightColor;
+  -webkit-color: $highlightColor;
+  }
 .plans-container {
   background: $plansColor;
-
+  -ms-background: $plansColor;
+  -moz-background: $plansColor;
+  -webkit-background: $plansColor;
+  
   margin-top: 5%;
+  -ms-margin-top: 5%;
+  -moz-margin-top: 5%;
+  -webkit-margin-top: 5%;
 }
-.bigger {
-  z-index: 2;
-}
-
-#plans,
-#solutions,
-#contacts,
-#projects {
-  background-image: url("../assets/imgs/black.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .highlight-background {
   background: $highlightColor;
+  -ms-background: $highlightColor;
+  -moz-background: $highlightColor;
+  -webkit-background: $highlightColor;
 }
-
-.phone-inbox {
-  margin-left: -25%;
-  margin-top: 10%;
-}
-
-.services-col {
-  margin-top: 10%;
-}
-
 footer {
   background-color: $footerColor;
+  -ms-background-color: $footerColor;
+  -moz-background-color: $footerColor;
+  -webkit-background-color: $footerColor;
 
   width: 99%;
+  -ms-width: 99%;
+  -moz-width: 99%;
+  -webkit-width: 99%;
 }
-
 #control {
   background-color: $mockupBackground;
+  -ms-background-color: $mockupBackground;
+  -moz-background-color: $mockupBackground;
+  -webkit-background-color: $mockupBackground;
+  
   overflow: hidden;
+  -ms-overflow: hidden;
+  -moz-overflow: hidden;
+  -webkit-overflow: hidden;
+  
   z-index: -1;
+  -ms-z-index: -1;
+  -moz-z-index: -1;
+  -webkit-z-index: -1;
 }
-.all {
-  width: 100%;
-  height: 100vh;
-}
-
-.space-top {
-  margin-top: 15%;
-}
-
-.space-top-2 {
-  margin-top: 10%;
-}
-
-.space-top-5 {
-  margin-top: 5%;
-}
-
-.font-control {
-  font-size: 1.2rem !important;
-}
-
 .skewed {
   z-index: 1;
+  -ms-z-index: 1;
+  -moz-z-index: 1;
+  -webkit-z-index: 1;
 
   /*left: 0; */
   background: $highlightColor;
+  -ms-background: $highlightColor;
+  -moz-background: $highlightColor;
+  -webkit-background: $highlightColor;
+  
   transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -webkit-transform: skewY(-6deg);
+  
   transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  
   width: 100%;
+  -ms-width: 100%;
+  -moz-width: 100%;
+  -webkit-width: 100%;
   height: 100vh;
+  -ms-height: 100vh;
+  -moz-height: 100vh;
+  -webkit-height: 100vh;
 }
-
-.skewed2 {
-  z-index: 1;
-  margin-top: 5%;
-  padding: 10px;
-  // transform: skewY(4deg);
-  transform-origin: top left;
-  width: 100%;
-  height: 100vh;
-  // background-color: rgba(10,23,55,0.5) !important;
-  // background: #000;
-  //  opacity: 0.7;
-}
-
-.skewed2-text {
-  width: 100%;
-  padding: 0px 60px;
-  margin-top: 1%;
-}
-.progress {
-  width: 50% !important;
-  margin-left: 2%;
-}
-.skewed2-progress {
-  margin-top: 2%;
-  padding: 0px 4% !important;
-}
-.skewed2-progress-1 {
-  display: flex;
-  margin-top: 3px;
-}
-.progress-txt {
-  text-align: left !important;
-  margin-top: 2%;
-  display: flex;
-}
-.Texto {
-  margin-left: 42%;
-}
-.Texto1 {
-  margin-left: 2%;
-}
-#about-text {
-  margin-top: 30%;
-}
-
-.projects-menu {
-  display: contents;
-}
-
-#deeper {
-  z-index: -1;
-  height: 70vh;
-}
-
-#deep {
-  z-index: 0;
-  height: 80vh;
-}
-
-#deeper,
-#deep {
-}
-
-#deeper > img {
-  height: -webkit-fill-available;
-}
-
-.skewed3 {
-  transform: skewX(-190deg);
-  margin-left: -9%;
-  transform-origin: bottom left;
-  margin-bottom: -2%;
-  background-color: #39c0e2;
-  //border: 1px solid red;
-  height: 70vh !important;
-  width: 70vw !important;
-}
-
-#three-phones {
-  transform: skewX(10deg);
-  margin-top: 2%;
-  height: 60vh;
-}
-.Identidadeicone {
-  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(115deg)
-    brightness(104%) contrast(104%);
-  size: 10px;
-  font-weight: 600 !important;
-  stroke-width: 600 !important;
-}
-@font-face {
-  font-family: "Gotham Bold";
-  src: url("../assets/fonts/GothamBold.otf");
-}
-/*.btninicial{
-  background-color:  #37bfe1 !important;
-  text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
-}*/
-//@media only screen and (max-width: 2560px){}
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .skewed2 {
-    margin-top: 4%;
-    width: 100%;
-  }
-  .main-div {
-    height: 50vh;
-    width: 100vw;
-    margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 170px;
-  }
-}
-// @media only screen and (min-width: 1024px) and (max-width: 1366px){
-//   .skewed2{
-//     margin-top: 1% ;
-//     width: 100%;
-//   }
-//   .main-div {
-//     height: 40vh;
-//     width: 100vw;
-//     margin-top: -35%;
-//   }
-//   .skewed2-progress {
-//     padding: 0px 4% !important;
-//     margin: 2% 20%;
-//   }
-// }
-@media only screen and (min-width: 570px) and (max-width: 1024px) {
-  .skewed2 {
-    margin-top: 1%;
-    width: 100%;
-  }
-  .main-div {
-    height: 90vh;
-    width: 100vw;
-    margin-top: -15%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 20%;
-  }
-}
-@media only screen and (max-width: 600px), (min-width: 400) {
-  .skewed2 {
-    margin-top: -3%;
-    width: 100%;
-  }
-  .main-div {
-    height: 80vh;
-    width: 100vw;
-    margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 50px;
-  }
-}
-@media only screen and (max-width: 653px), (min-width: 340) {
-  .skewed2 {
-    //margin-top: -4%;
-    width: 100%;
-    font-size: 16px !important;
-    height: 10px !important;
-  }
-  .main-div {
-    height: 100vh;
-    width: 100vw;
-    margin-top: -35%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    margin: 2% 50px;
-  }
-}
-// @media only screen and (max-width: 653px), (min-width: 340){}
 </style>
