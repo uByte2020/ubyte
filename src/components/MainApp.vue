@@ -589,9 +589,9 @@
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <mdb-btn class="highlight-background">{{
+          <a href="#solutions"><mdb-btn class="highlight-background">{{
             $t("ConhecaNossasSolucoes")
-          }}</mdb-btn>
+          }}</mdb-btn></a>
         </div>
       </div>
     </div>
@@ -628,11 +628,11 @@ export default {
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
-    this.portFolio = [
-      ...this.ourWorkers.graphicDesign,
-      ...this.ourWorkers.apps,
-      ...this.ourWorkers.softwares,
-    ];
+    // this.portFolio = [
+    //   ];
+      this.showPortFolio('todos')
+    // this.portFolio= this.portFolio('todos')
+    
     //process.env.NODE_ENV === 'development'
   },
   methods: {
@@ -646,14 +646,6 @@ export default {
         ];
       else this.portFolio = [...this.ourWorkers[work]];
     },
-    // todos() {
-    //   this.Portof.design = false;
-    //   this.Portof.todos = true;
-    // },
-    // design() {
-    //   this.Portof.design = true;
-    //   this.Portof.todos = false;
-    // },
   },
 };
 </script>
@@ -662,32 +654,83 @@ export default {
 @import "../scss/bpoints";
 .highlight {
   color: $highlightColor;
-}
+  -ms-color: $highlightColor;
+  -moz-color: $highlightColor;
+  -webkit-color: $highlightColor;
+  }
 .plans-container {
   background: $plansColor;
+  -ms-background: $plansColor;
+  -moz-background: $plansColor;
+  -webkit-background: $plansColor;
+  
   margin-top: 5%;
+  -ms-margin-top: 5%;
+  -moz-margin-top: 5%;
+  -webkit-margin-top: 5%;
 }
 .highlight-background {
   background: $highlightColor;
+  -ms-background: $highlightColor;
+  -moz-background: $highlightColor;
+  -webkit-background: $highlightColor;
 }
 footer {
   background-color: $footerColor;
+  -ms-background-color: $footerColor;
+  -moz-background-color: $footerColor;
+  -webkit-background-color: $footerColor;
 
   width: 99%;
+  -ms-width: 99%;
+  -moz-width: 99%;
+  -webkit-width: 99%;
 }
 #control {
   background-color: $mockupBackground;
+  -ms-background-color: $mockupBackground;
+  -moz-background-color: $mockupBackground;
+  -webkit-background-color: $mockupBackground;
+  
   overflow: hidden;
+  -ms-overflow: hidden;
+  -moz-overflow: hidden;
+  -webkit-overflow: hidden;
+  
   z-index: -1;
+  -ms-z-index: -1;
+  -moz-z-index: -1;
+  -webkit-z-index: -1;
 }
 .skewed {
   z-index: 1;
+  -ms-z-index: 1;
+  -moz-z-index: 1;
+  -webkit-z-index: 1;
 
   /*left: 0; */
   background: $highlightColor;
+  -ms-background: $highlightColor;
+  -moz-background: $highlightColor;
+  -webkit-background: $highlightColor;
+  
   transform: skewY(-6deg);
+  -ms-transform: skewY(-6deg);
+  -moz-transform: skewY(-6deg);
+  -webkit-transform: skewY(-6deg);
+  
   transform-origin: top left;
+  -ms-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  
   width: 100%;
+  -ms-width: 100%;
+  -moz-width: 100%;
+  -webkit-width: 100%;
   height: 100vh;
+  -ms-height: 100vh;
+  -moz-height: 100vh;
+  -webkit-height: 100vh;
 }
 </style>

@@ -15,6 +15,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 require('./styles/MyStyle.css');
 require('./styles/safari.css');
+// require('./styles/MediaQueries.css');
 
 Vue.component("navbar", require("./components/Navbar.vue").default);
 Vue.component("sections", require("./components/Sections.vue").default);

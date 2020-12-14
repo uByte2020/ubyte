@@ -15,13 +15,13 @@
         <mdb-nav-item href="#home" anchorClass="white-text mr-3">
           {{ $t("nav.Home") }}
         </mdb-nav-item>
-        <mdb-nav-item href="#" anchorClass="white-text mx-3">{{
+        <mdb-nav-item href="#about" anchorClass="white-text mx-3">{{
           $t("nav.Sobre")
         }}</mdb-nav-item>
         <mdb-nav-item href="#solutions" anchorClass="white-text mx-3">{{
           $t("nav.Soluções")
         }}</mdb-nav-item>
-        <mdb-nav-item href="#" anchorClass="white-text mx-3">{{
+        <mdb-nav-item href="#projects" anchorClass="white-text mx-3">{{
           $t("nav.Portfólio")
         }}</mdb-nav-item>
         <mdb-nav-item href="#contacts" anchorClass="white-text ml-3">{{
@@ -111,20 +111,39 @@ nav {
 }
 .nav-link {
   color: rgb(55, 191, 225) !important;
+  -ms-color: rgb(55, 191, 225) !important;
+  -moz-color: rgb(55, 191, 225) !important;
+  -webkit-color: rgb(55, 191, 225) !important;
 }
 .locale-changer {
   padding-right: 2%;
+  -ms-padding-right: 2%;
+  -moz-padding-right: 2%;
+  -webkit-padding-right: 2%;
 }
 .btn {
   margin: 2px;
+  -ms-margin: 2px;
+  -moz-margin: 2px;
+  -webkit-margin: 2px;
 }
 
 .lang-btn{
   color: #fff;
+  -ms-color: #fff;
+  -moz-color: #fff;
+  -webkit-color: #fff;
 }
 
 .lang-btn-active{
   border:1px solid rgba(255,255,255,.3);
+  -ms-border:1px solid rgba(255,255,255,.3);
+  -moz-border:1px solid rgba(255,255,255,.3);
+  -webkit-border:1px solid rgba(255,255,255,.3);
+  
   background-color: transparent;
+  -ms-background-color: transparent;
+  -moz-background-color: transparent;
+  -webkit-background-color: transparent;
 }
 </style>
