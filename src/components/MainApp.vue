@@ -239,15 +239,15 @@
         >
           <h1 class="text-center">{{ $t("Conheca_Nossas_Solucoes.CNS") }}</h1>
           <img
-            src="../assets/imgs/macgold.png"
+            src="../assets/imgs/Tela Website - Fiskamer.png"
             alt="macgold"
-            class="img-fluid w-100"
+            class="img-fluid w-90"
           />
-          <img
+          <!-- <img
             src="../assets/imgs/phone-inbox.png"
             alt="phone-inbox "
             class="img-fluid w-25 position-absolute phone-inbox"
-          />
+          /> -->
         </mdb-col>
         <mdb-col
           xl="5"
@@ -491,7 +491,7 @@
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
+              <img src="../assets/imgs/Tela Website.png" class="img-fluid w-90 TelaWebsite" />
             </div>
           </div>
         </div>

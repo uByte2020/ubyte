@@ -521,6 +521,9 @@ video {
   -moz-padding: 5px;
   -webkit-padding: 5px;
 }
+.TelaWebsite{
+  margin-top: -10%;
+}
 
 @font-face {
   font-family: "Gotham Bold";
