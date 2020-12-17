@@ -39,12 +39,12 @@
         <hr />
         <ul class="options-inline">
           <li>
-            <a @click="facebook">
+            <a id="facebook" href="https://www.facebook.com/ubytee" target="_blank">
               <i class="fab fa-facebook" aria-hidden="true"> uByte</i>
             </a>
           </li>
           <li>
-            <a @click="instagram">
+            <a id="instagram" href="https://www.instagram.com/ubyte_/" target="_blank">
               <i class="fab fa-instagram" aria-hidden="true"> uByte</i>
             </a>
           </li>
@@ -67,12 +67,18 @@ export default {
   },
   methods: {
     instagram() {
-      var abaNova = window.open("https://www.instagram.com/ubyte_/", "_blank");
-      abaNova.focus();
+      // var abaNova = window.open("https://www.instagram.com/ubyte_/", "_blank");
+      // abaNova.focus();
+      document.getElementById("instagram").addEventListener("click", function () {
+        location.replace("http://localhost:8080/#contacts");
+      });
     },
     facebook() {
-      var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
-      abaNova.focus();
+      // var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
+      // abaNova.focus();
+      document.getElementById("instagram").addEventListener("click", function () {
+        location.replace("http://localhost:8080/#contacts");
+      });
     },
   },
   component: {},
