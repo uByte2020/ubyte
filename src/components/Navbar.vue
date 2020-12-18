@@ -12,10 +12,7 @@
     </b-navbar-brand>
 
     <b-navbar-toggle target="navbar-toggle">
-      <template #default="{ expanded }">
-        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
-        <b-icon v-else icon="chevron-bar-down"></b-icon>
-      </template>
+      
     </b-navbar-toggle>
 
     <b-collapse id="navbar-toggle" is-nav>
@@ -23,18 +20,10 @@
         <b-nav-item href="#home">
           {{ $t("nav.Home") }}
         </b-nav-item>
-        <b-nav-item href="#about">{{
-          $t("nav.Sobre")
-        }}</b-nav-item>
-        <b-nav-item href="#solutions">{{
-          $t("nav.Soluções")
-        }}</b-nav-item>
-        <b-nav-item href="#projects">{{
-          $t("nav.Portfólio")
-        }}</b-nav-item>
-        <b-nav-item href="#contacts">{{
-          $t("nav.Contactos")
-        }}</b-nav-item>
+        <b-nav-item href="#about">{{ $t("nav.Sobre") }}</b-nav-item>
+        <b-nav-item href="#solutions">{{ $t("nav.Soluções") }}</b-nav-item>
+        <b-nav-item href="#projects">{{ $t("nav.Portfólio") }}</b-nav-item>
+        <b-nav-item href="#contacts">{{ $t("nav.Contactos") }}</b-nav-item>
       </b-navbar-nav>
 
       <div class="locale-changer">
@@ -118,9 +107,9 @@ export default {
   z-index: 1;
 }
 .nav-link {
-  color:#fff !important;
-  -ms-color: #fff!important;
-  -moz-color:#fff!important;
+  color: #fff !important;
+  -ms-color: #fff !important;
+  -moz-color: #fff !important;
   -webkit-color: #fff !important;
 }
 .locale-changer {
