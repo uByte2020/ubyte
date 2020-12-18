@@ -36,7 +36,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="about" class="main-divs 2 overflow-hidden m-0 p-0">
+    <div id="about" class="2 overflow-hidden m-0 p-0">
       <mdb-row>
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
@@ -79,7 +79,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div class="main-div">
+    <div class="who-we-are">
       <div class="skewed2">
         <mdb-row>
           <mdb-col
@@ -226,7 +226,7 @@
     </div>
     <!------------------------------------------------------------------------->
     <div id="solutions" class="main-solutions 3">
-      <mdb-row class="align-items-center w-100 h-100">
+      <mdb-row class="align-items-center w-100">
         <mdb-col
           xl="6"
           lg="6"
@@ -243,11 +243,6 @@
             alt="macgold"
             class="img-fluid w-90"
           />
-          <!-- <img
-            src="../assets/imgs/phone-inbox.png"
-            alt="phone-inbox "
-            class="img-fluid w-25 position-absolute phone-inbox"
-          /> -->
         </mdb-col>
         <mdb-col
           xl="5"
@@ -649,11 +644,7 @@ export default {
   },
   mounted() {
     this.homeHeight = document.getElementById("home").offsetHeight;
-    // this.portFolio = [
-    //   ];
     this.showPortFolio("todos");
-    // this.portFolio= this.portFolio('todos')
-
     //process.env.NODE_ENV === 'development'
   },
   methods: {
