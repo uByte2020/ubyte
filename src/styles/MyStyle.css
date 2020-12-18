@@ -55,6 +55,10 @@
 
 .main-div {
   height: 55vh;
+  min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
+  -ms-min-height:100%;
   padding: auto 10%;
   margin-top: -15%;
   width: 100vw;
@@ -494,10 +498,11 @@ video {
 }
 
 .projects-images {
-  height: 350px;
-  -ms-height: 350px;
-  -moz-height: 350px;
-  -webkit-height: 350px;
+  height: 250px;
+  -ms-height: 250px;
+  -moz-height: 250px;
+  -webkit-height: 250px;
+  width: 360px;
   margin-top: 1%;
   -ms-margin-top: 1%;
   -moz-margin-top: 1%;
@@ -559,6 +564,9 @@ video {
     -ms-height: 50vh;
     -moz-height: 50vh;
     -webkit-height: 50vh;
+    min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
     width: 100vw;
     -ms-width: 100vw;
     -moz-width: 100vw;
@@ -595,6 +603,9 @@ video {
     height: 90vh;
     -ms-height: 90vh;
     -moz-height: 90vh;
+    min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
     -webkit-height: 90vh;
     width: 100vw;
     -ms-width: 100vw;
@@ -633,6 +644,9 @@ video {
     -ms-height: 80vh;
     -moz-height: 80vh;
     -webkit-height: 80vh;
+    min-height:100%;
+    -moz-min-height:100%;
+    -webkit-min-height:100%;
     width: 100vw;
     -ms-width: 100vw;
     -moz-width: 100vw;
@@ -674,6 +688,9 @@ video {
     -ms-height: 100vh;
     -moz-height: 100vh;
     -webkit-height: 100vh;
+    min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
     width: 100vw;
     -ms-width: 100vw;
     -moz-width: 100vw;
@@ -714,6 +731,9 @@ video {
     -ms-height: 100vh;
     -moz-height: 100vh;
     -webkit-height: 100vh;
+    min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
     width: 100vw;
     -ms-width: 100vw;
     -moz-width: 100vw;

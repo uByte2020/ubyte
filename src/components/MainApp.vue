@@ -450,7 +450,11 @@
               :key="index"
               class="col-lg-4 col-md-4 col-sm-7 col-xl-4"
             >
-              <img :src="work" class="img-fluid w-100 h-80 projects-images" />
+              <img
+                :src="work"
+                class="img-fluid w-90 h-80 projects-images"
+                alt="uByte Imagens de portofolio"
+              />
             </div>
           </div>
         </div>
@@ -491,7 +495,11 @@
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="../assets/imgs/Tela Website.png" class="img-fluid w-90 TelaWebsite" />
+              <img
+                src="../assets/imgs/Tela Website.png"
+                class="img-fluid w-90 TelaWebsite"
+                alt="WebSite"
+              />
             </div>
           </div>
         </div>
@@ -589,9 +597,11 @@
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <a href="#solutions"><mdb-btn class="highlight-background">{{
-            $t("ConhecaNossasSolucoes")
-          }}</mdb-btn></a>
+          <a href="#solutions"
+            ><mdb-btn class="highlight-background">{{
+              $t("ConhecaNossasSolucoes")
+            }}</mdb-btn></a
+          >
         </div>
       </div>
     </div>
@@ -615,10 +625,21 @@ export default {
       FiskamerImg: require("@/assets/imgs/download.png"),
       portFolio: [],
       ourWorkers: {
-        graphicDesign: [require("@/assets/imgs/project-1.jpg")],
+        graphicDesign: [
+          require("@/assets/imgs/Logos P Portfólio/Albertinny´s - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/C & JA - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Changing Lives - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Fiskamer - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Rodjet - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Tec One - Logotipos em Papel Cartulina.jpg"),
+        ],
         apps: [require("@/assets/imgs/project-2.jpg")],
         softwares: [require("@/assets/imgs/project-1.jpg")],
-        website: [require("@/assets/imgs/project-3.jpg")],
+        website: [
+          require("@/assets/imgs/Tela Website.png"),
+          require("@/assets/imgs/Tela Website - Fiskamer.png"),
+        ],
       },
       Portof: {
         todos: true,
@@ -630,9 +651,9 @@ export default {
     this.homeHeight = document.getElementById("home").offsetHeight;
     // this.portFolio = [
     //   ];
-      this.showPortFolio('todos')
+    this.showPortFolio("todos");
     // this.portFolio= this.portFolio('todos')
-    
+
     //process.env.NODE_ENV === 'development'
   },
   methods: {
@@ -657,13 +678,13 @@ export default {
   -ms-color: $highlightColor;
   -moz-color: $highlightColor;
   -webkit-color: $highlightColor;
-  }
+}
 .plans-container {
   background: $plansColor;
   -ms-background: $plansColor;
   -moz-background: $plansColor;
   -webkit-background: $plansColor;
-  
+
   margin-top: 5%;
   -ms-margin-top: 5%;
   -moz-margin-top: 5%;
@@ -691,12 +712,12 @@ footer {
   -ms-background-color: $mockupBackground;
   -moz-background-color: $mockupBackground;
   -webkit-background-color: $mockupBackground;
-  
+
   overflow: hidden;
   -ms-overflow: hidden;
   -moz-overflow: hidden;
   -webkit-overflow: hidden;
-  
+
   z-index: -1;
   -ms-z-index: -1;
   -moz-z-index: -1;
@@ -713,17 +734,17 @@ footer {
   -ms-background: $highlightColor;
   -moz-background: $highlightColor;
   -webkit-background: $highlightColor;
-  
+
   transform: skewY(-6deg);
   -ms-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
   -webkit-transform: skewY(-6deg);
-  
+
   transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
   -webkit-transform-origin: top left;
-  
+
   width: 100%;
   -ms-width: 100%;
   -moz-width: 100%;
