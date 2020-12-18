@@ -9,15 +9,93 @@
   -webkit-width: 100vw;
 }
 
+#about{
+
+}
+
+.who-we-are{
+  padding: 5% 0;
+  -ms-padding: 5% 0;
+  -moz-padding: 5% 0;
+  -webkit-padding: 5% 0;
+}
+
+
+.skewed2 {
+  width: 100%;
+  -ms-width: 100%;
+  -moz-width: 100%;
+  -webkit-width: 100%;
+}
+
+.skewed2-text {
+  width: 100%;
+  -ms-width: 100%;
+  -moz-width: 100%;
+  -webkit-width: 100%;
+  padding: 0px 60px;
+  -ms-padding: 0px 60px;
+  -moz-padding: 0px 60px;
+  -webkit-padding: 0px 60px;
+  margin-top: 1%;
+  -ms-margin-top: 1%;
+  -moz-margin-top: 1%;
+  -webkit-margin-top: 1%;
+}
+
+.skewed2-progress {
+  margin-top: 2%;
+  -ms-margin-top: 2%;
+  -moz-margin-top: 2%;
+  -webkit-margin-top: 2%;
+  padding: 0px 4% !important;
+  -ms-padding: 0px 4% !important;
+  -moz-padding: 0px 4% !important;
+  -webkit-padding: 0px 4% !important;
+}
+
+.skewed2-progress-1 {
+  display: flex;
+  -ms-display: flex;
+  -moz-display: flex;
+  -webkit-display: flex;
+  margin-top: 3px;
+  -ms-margin-top: 3px;
+  -moz-margin-top: 3px;
+  -webkit-margin-top: 3px;
+}
+
+
+/* .main-div {
+  height: 55vh;
+  min-height:100%;
+ 
+  padding: auto 10%;
+  margin-top: -15%;
+  width: 100vw;
+
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
+  -ms-min-height:100%;
+  -ms-height: 55vh;
+  -moz-height: 55vh;
+  -webkit-height: 55vh;
+  -ms-padding: auto 10%;
+  -moz-padding: auto 10%;
+  -webkit-padding: auto 10%;
+  -ms-width: 100vw;
+  -moz-width: 100vw;
+  -webkit-width: 100vw;
+  -ms-margin-top: -15%;
+  -moz-margin-top: -15%;
+  -webkit-margin-top: -15%;
+} */
+
 .main-solutions {
   height: auto;
-  min-height: 100vh;
   -ms-height: auto;
   -moz-height: auto;
   -webkit-height: auto;
-  -ms-min-height: 100vh;
-  -moz-min-height: 100vh;
-  -webkit-min-height: 100vh;
 }
 
 .main-portofolio {
@@ -31,11 +109,8 @@
   -webkit-min-height: 100vh;
 }
 
-.main-divs1 {
-  padding: 3%;
-  -ms-padding: 3%;
-  -moz-padding: 3%;
-  -webkit-padding: 3%;
+#contacts{
+    height: 50vh;
 }
 
 #footer {
@@ -53,37 +128,12 @@
   -webkit-width: 100%;
 }
 
-.main-div {
-  height: 55vh;
-  min-height:100%;
-  -moz-min-height:100%;
-  -webkit-min-height:100%;
-  -ms-min-height:100%;
-  padding: auto 10%;
-  margin-top: -15%;
-  width: 100vw;
-  -ms-height: 55vh;
-  -moz-height: 55vh;
-  -webkit-height: 55vh;
-  -ms-padding: auto 10%;
-  -moz-padding: auto 10%;
-  -webkit-padding: auto 10%;
-  -ms-width: 100vw;
-  -moz-width: 100vw;
-  -webkit-width: 100vw;
-  -ms-margin-top: -15%;
-  -moz-margin-top: -15%;
-  -webkit-margin-top: -15%;
-}
-
 img {
   object-fit: cover;
   -ms-object-fit: cover;
   -moz-object-fit: cover;
   -webkit-object-fit: cover;
 }
-
-#home {}
 
 .back {
   z-index: -1;
@@ -284,48 +334,6 @@ video {
   -webkit-font-size: 1.2rem !important;
 }
 
-.skewed2 {
-  z-index: 1;
-  -ms-z-index: 1;
-  -moz-z-index: 1;
-  -webkit-z-index: 1;
-  margin-top: 5%;
-  -ms-margin-top: 5%;
-  -moz-margin-top: 5%;
-  -webkit-margin-top: 5%;
-  padding: 10px;
-  -ms-padding: 10px;
-  -moz-padding: 10px;
-  -webkit-padding: 10px;
-  transform-origin: top left;
-  -ms-transform-origin: top left;
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
-  width: 100%;
-  -ms-width: 100%;
-  -moz-width: 100%;
-  -webkit-width: 100%;
-  height: 100vh;
-  -ms-height: 100vh;
-  -moz-height: 100vh;
-  -webkit-height: 100vh;
-}
-
-.skewed2-text {
-  width: 100%;
-  -ms-width: 100%;
-  -moz-width: 100%;
-  -webkit-width: 100%;
-  padding: 0px 60px;
-  -ms-padding: 0px 60px;
-  -moz-padding: 0px 60px;
-  -webkit-padding: 0px 60px;
-  margin-top: 1%;
-  -ms-margin-top: 1%;
-  -moz-margin-top: 1%;
-  -webkit-margin-top: 1%;
-}
-
 .progress {
   width: 50% !important;
   -ms-width: 50% !important;
@@ -335,28 +343,6 @@ video {
   -ms-margin-left: 2%;
   -moz-margin-left: 2%;
   -webkit-margin-left: 2%;
-}
-
-.skewed2-progress {
-  margin-top: 2%;
-  -ms-margin-top: 2%;
-  -moz-margin-top: 2%;
-  -webkit-margin-top: 2%;
-  padding: 0px 4% !important;
-  -ms-padding: 0px 4% !important;
-  -moz-padding: 0px 4% !important;
-  -webkit-padding: 0px 4% !important;
-}
-
-.skewed2-progress-1 {
-  display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -webkit-display: flex;
-  margin-top: 3px;
-  -ms-margin-top: 3px;
-  -moz-margin-top: 3px;
-  -webkit-margin-top: 3px;
 }
 
 .progress-txt {
