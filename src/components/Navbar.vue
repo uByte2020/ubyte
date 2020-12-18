@@ -11,6 +11,7 @@
     </mdb-navbar-brand>
 
     <mdb-navbar-toggler>
+      <span class="navbar-toggler-icon"></span>
       <mdb-navbar-nav class="m-auto">
         <mdb-nav-item href="#home" anchorClass="white-text mr-3">
           {{ $t("nav.Home") }}
@@ -30,15 +31,6 @@
       </mdb-navbar-nav>
 
       <div class="locale-changer">
-        <!-- <button
-          type="button"
-          class="btn btn-dark btn-sm"
-          v-for="entry in langs"
-          :key="entry.lang"
-          @click="changeLocale(entry.langs)"
-        >
-          {{ entry.title }}
-        </button> -->
         <button
           type="button"
           class="btn btn-sm lang-btn"

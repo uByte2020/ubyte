@@ -55,6 +55,10 @@
 
 .main-div {
   height: 55vh;
+  min-height:100%;
+  -moz-min-height:100%;
+  -webkit-min-height:100%;
+  -ms-min-height:100%;
   padding: auto 10%;
   margin-top: -15%;
   width: 100vw;
@@ -494,10 +498,11 @@ video {
 }
 
 .projects-images {
-  height: 350px;
-  -ms-height: 350px;
-  -moz-height: 350px;
-  -webkit-height: 350px;
+  height: 250px;
+  -ms-height: 250px;
+  -moz-height: 250px;
+  -webkit-height: 250px;
+  width: 360px;
   margin-top: 1%;
   -ms-margin-top: 1%;
   -moz-margin-top: 1%;
@@ -521,6 +526,9 @@ video {
   -moz-padding: 5px;
   -webkit-padding: 5px;
 }
+.TelaWebsite{
+  margin-top: -10%;
+}
 
 @font-face {
   font-family: "Gotham Bold";
@@ -532,242 +540,3 @@ video {
   -moz-src: url("../assets/fonts/GothamBold.otf");
   -webkit-src: url("../assets/fonts/GothamBold.otf");
 }
-
-/*.btninicial{
-  background-color:  #37bfe1 !important;
-  text-shadow: 1px 0.5px 1px rgb(26, 25, 25) !important;
-}*/
-
-/* //@media only screen and (max-width: 2560px){} */
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .skewed2 {
-    margin-top: 4%;
-    -ms-margin-top: 4%;
-    -moz-margin-top: 4%;
-    -webkit-margin-top: 4%;
-    width: 100%;
-    -ms-width: 100%;
-    -moz-width: 100%;
-    -webkit-width: 100%;
-  }
-  .main-div {
-    height: 50vh;
-    -ms-height: 50vh;
-    -moz-height: 50vh;
-    -webkit-height: 50vh;
-    width: 100vw;
-    -ms-width: 100vw;
-    -moz-width: 100vw;
-    -webkit-width: 100vw;
-    margin-top: -45%;
-    -ms-margin-top: -45%;
-    -moz-margin-top: -45%;
-    -webkit-margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    -ms-padding: 0px 4% !important;
-    -moz-padding: 0px 4% !important;
-    -webkit-padding: 0px 4% !important;
-    margin: 2% 170px;
-    -ms-margin: 2% 170px;
-    -moz-margin: 2% 170px;
-    -webkit-margin: 2% 170px;
-  }
-}
-
-@media only screen and (min-width: 570px) and (max-width: 1024px) {
-  .skewed2 {
-    margin-top: 1%;
-    -ms-margin-top: 1%;
-    -moz-margin-top: 1%;
-    -webkit-margin-top: 1%;
-    width: 100%;
-    -ms-width: 100%;
-    -moz-width: 100%;
-    -webkit-width: 100%;
-  }
-  .main-div {
-    height: 90vh;
-    -ms-height: 90vh;
-    -moz-height: 90vh;
-    -webkit-height: 90vh;
-    width: 100vw;
-    -ms-width: 100vw;
-    -moz-width: 100vw;
-    -webkit-width: 100vw;
-    margin-top: -15%;
-    -ms-margin-top: -15%;
-    -moz-margin-top: -15%;
-    -webkit-margin-top: -15%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    -ms-padding: 0px 4% !important;
-    -moz-padding: 0px 4% !important;
-    -webkit-padding: 0px 4% !important;
-    margin: 2% 20%;
-    -ms-margin: 2% 20%;
-    -moz-margin: 2% 20%;
-    -webkit-margin: 2% 20%;
-  }
-}
-
-@media only screen and (max-width: 600px), (min-width: 400) {
-  .skewed2 {
-    margin-top: -3%;
-    -ms-margin-top: -3%;
-    -moz-margin-top: -3%;
-    -webkit-margin-top: -3%;
-    width: 100%;
-    -ms-width: 100%;
-    -moz-width: 100%;
-    -webkit-width: 100%;
-  }
-  .main-div {
-    height: 80vh;
-    -ms-height: 80vh;
-    -moz-height: 80vh;
-    -webkit-height: 80vh;
-    width: 100vw;
-    -ms-width: 100vw;
-    -moz-width: 100vw;
-    -webkit-width: 100vw;
-    margin-top: -45%;
-    -ms-margin-top: -45%;
-    -moz-margin-top: -45%;
-    -webkit-margin-top: -45%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    -ms-padding: 0px 4% !important;
-    -moz-padding: 0px 4% !important;
-    -webkit-padding: 0px 4% !important;
-    margin: 2% 50px;
-    -ms-margin: 2% 50px;
-    -moz-margin: 2% 50px;
-    -webkit-margin: 2% 50px;
-  }
-}
-
-@media only screen and (max-width: 653px), (min-width: 340) {
-  .skewed2 {
-    width: 100%;
-    -ms-width: 100%;
-    -moz-width: 100%;
-    -webkit-width: 100%;
-    font-size: 16px !important;
-    -ms-font-size: 16px !important;
-    -moz-font-size: 16px !important;
-    -webkit-font-size: 16px !important;
-    height: 10px !important;
-    -ms-height: 10px !important;
-    -moz-height: 10px !important;
-    -webkit-height: 10px !important;
-  }
-  .main-div {
-    height: 100vh;
-    -ms-height: 100vh;
-    -moz-height: 100vh;
-    -webkit-height: 100vh;
-    width: 100vw;
-    -ms-width: 100vw;
-    -moz-width: 100vw;
-    -webkit-width: 100vw;
-    margin-top: -35%;
-    -ms-margin-top: -35%;
-    -moz-margin-top: -35%;
-    -webkit-margin-top: -35%;
-  }
-  .skewed2-progress {
-    padding: 0px 4% !important;
-    -ms-padding: 0px 4% !important;
-    -moz-padding: 0px 4% !important;
-    -webkit-padding: 0px 4% !important;
-    margin: 2% 50px;
-    -ms-margin: 2% 50px;
-    -moz-margin: 2% 50px;
-    -webkit-margin: 2% 50px;
-  }
-}
-@media only screen and (max-width: 411px) , (max-height:731) {
-  .skewed2 {
-    width: 100%;
-    -ms-width: 100%;
-    -moz-width: 100%;
-    -webkit-width: 100%;
-    font-size: 16px !important;
-    -ms-font-size: 16px !important;
-    -moz-font-size: 16px !important;
-    -webkit-font-size: 16px !important;
-    height: 10px !important;
-    -ms-height: 10px !important;
-    -moz-height: 10px !important;
-    -webkit-height: 10px !important;
-  }
-  .main-div {
-    height: 80vh;
-    -ms-height: 100vh;
-    -moz-height: 100vh;
-    -webkit-height: 100vh;
-    width: 100vw;
-    -ms-width: 100vw;
-    -moz-width: 100vw;
-    -webkit-width: 100vw;
-    margin-top: -35%;
-    -ms-margin-top: -35%;
-    -moz-margin-top: -35%;
-    -webkit-margin-top: -35%;
-  }
-  .skewed2-progress {
-    padding: 0px!important;
-    -ms-padding: 0px !important;
-    -moz-padding: 0px !important;
-    -webkit-padding: 0px !important;
-    margin: 2% 5px;
-    -ms-margin: 2% 5px;
-    -moz-margin: 2% 5px;
-    -webkit-margin: 2% 5px;
-  }
-}
-
-/* @media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
-  @media (max-width: 667px), (min-width: 375) {
-    .main-divs,
-    .background,
-    .overlay {
-      height: 150vh;
-      width: 100vw;
-    }
-  }
-}
-@media only screen and (min-width: 375)and (max-width: 667px){
-    .main-divs,
-    .background,
-    .overlay {
-      height: 100vh;
-      width: 100vw;
-    }
-}
-@media only screen and (max-width: 33px) and (min-width: 140) {
-    .skewed2 {
-      -webkit-width: 100%;
-      -webkit-font-size: 16px !important;
-      -webkit-height: 10px !important;
-    }
-    .main-div {
-      -webkit-height: 150vh;
-      -webkit-width: 100vw;
-      -webkit-margin-top: -35%;
-    }
-    .skewed2-progress {
-      -webkit-padding: 0px 4% !important;
-      -webkit-margin: 2% 50px;
-    }
-    .main-solutions{
-        -o-height: 300vh;
-    }
-  } */
-
-/* // @media only screen and (max-width: 653px), (min-width: 340){} */

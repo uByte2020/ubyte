@@ -4,7 +4,7 @@
     <div
       id="home"
       :homeheight="homeHeight"
-      class="container-fluid main-divs 1 m-0 p-0"
+      class="main-divs 1 m-0 p-0"
     >
       <div class="row">
         <mdb-col xl="12" lg="12" md="12" sm="12" class>
@@ -36,7 +36,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="about" class="container-fluid main-divs 2 overflow-hidden m-0 p-0">
+    <div id="about" class="main-divs 2 overflow-hidden m-0 p-0">
       <mdb-row>
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
@@ -225,7 +225,7 @@
       </div>
     </div>
     <!------------------------------------------------------------------------->
-    <div id="solutions" class="main-solutions container-fluid 3">
+    <div id="solutions" class="main-solutions 3">
       <mdb-row class="align-items-center w-100 h-100">
         <mdb-col
           xl="6"
@@ -239,15 +239,15 @@
         >
           <h1 class="text-center">{{ $t("Conheca_Nossas_Solucoes.CNS") }}</h1>
           <img
-            src="../assets/imgs/macgold.png"
+            src="../assets/imgs/Tela Website - Fiskamer.png"
             alt="macgold"
-            class="img-fluid w-100"
+            class="img-fluid w-90"
           />
-          <img
+          <!-- <img
             src="../assets/imgs/phone-inbox.png"
             alt="phone-inbox "
             class="img-fluid w-25 position-absolute phone-inbox"
-          />
+          /> -->
         </mdb-col>
         <mdb-col
           xl="5"
@@ -362,7 +362,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="message-div" class="main-divs container-fluid 4 m-0 p-0">
+    <div id="message-div" class="main-divs  4 m-0 p-0">
       <mdb-row
         class="justify-content-center align-items-center h-100 text-white black-overlay"
       >
@@ -387,7 +387,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="projects" class="main-portofolio container-fluid">
+    <div id="projects" class="main-portofolio ">
       <div class="row text-white">
         <div class="col-8 portofolio">
           <div class="row justify-content-center">
@@ -450,7 +450,11 @@
               :key="index"
               class="col-lg-4 col-md-4 col-sm-7 col-xl-4"
             >
-              <img :src="work" class="img-fluid w-100 h-80 projects-images" />
+              <img
+                :src="work"
+                class="img-fluid w-90 h-80 projects-images"
+                alt="uByte Imagens de portofolio"
+              />
             </div>
           </div>
         </div>
@@ -458,7 +462,7 @@
     </div>
     <div
       id="control"
-      class="main-divs container-fluid 6 overflow-hidden p-1 m-0"
+      class="main-divs  6 overflow-hidden p-1 m-0"
     >
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 space-top-1">
@@ -491,7 +495,11 @@
               data-aos-duration="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              <img src="../assets/imgs/mockup.jpg" class="img-fluid w-100" />
+              <img
+                src="../assets/imgs/Tela Website.png"
+                class="img-fluid w-90 TelaWebsite"
+                alt="WebSite"
+              />
             </div>
           </div>
         </div>
@@ -571,7 +579,7 @@
       </mdb-row>
     </div>
     -->
-    <div id="contacts" class="main-div container-fluid 8 m-0 p-0">
+    <div id="contacts" class="main-div  8 m-0 p-0">
       <div
         class="row align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >
@@ -589,9 +597,11 @@
           data-aos-duration="1000"
           data-aos-anchor-placement="top-bottom"
         >
-          <a href="#solutions"><mdb-btn class="highlight-background">{{
-            $t("ConhecaNossasSolucoes")
-          }}</mdb-btn></a>
+          <a href="#solutions"
+            ><mdb-btn class="highlight-background">{{
+              $t("ConhecaNossasSolucoes")
+            }}</mdb-btn></a
+          >
         </div>
       </div>
     </div>
@@ -615,10 +625,21 @@ export default {
       FiskamerImg: require("@/assets/imgs/download.png"),
       portFolio: [],
       ourWorkers: {
-        graphicDesign: [require("@/assets/imgs/project-1.jpg")],
+        graphicDesign: [
+          require("@/assets/imgs/Logos P Portfólio/Albertinny´s - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/C & JA - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Changing Lives - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Fiskamer - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Rodjet - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/Logos P Portfólio/Tec One - Logotipos em Papel Cartulina.jpg"),
+        ],
         apps: [require("@/assets/imgs/project-2.jpg")],
         softwares: [require("@/assets/imgs/project-1.jpg")],
-        website: [require("@/assets/imgs/project-3.jpg")],
+        website: [
+          require("@/assets/imgs/Tela Website.png"),
+          require("@/assets/imgs/Tela Website - Fiskamer.png"),
+        ],
       },
       Portof: {
         todos: true,
@@ -630,9 +651,9 @@ export default {
     this.homeHeight = document.getElementById("home").offsetHeight;
     // this.portFolio = [
     //   ];
-      this.showPortFolio('todos')
+    this.showPortFolio("todos");
     // this.portFolio= this.portFolio('todos')
-    
+
     //process.env.NODE_ENV === 'development'
   },
   methods: {
@@ -657,13 +678,13 @@ export default {
   -ms-color: $highlightColor;
   -moz-color: $highlightColor;
   -webkit-color: $highlightColor;
-  }
+}
 .plans-container {
   background: $plansColor;
   -ms-background: $plansColor;
   -moz-background: $plansColor;
   -webkit-background: $plansColor;
-  
+
   margin-top: 5%;
   -ms-margin-top: 5%;
   -moz-margin-top: 5%;
@@ -691,12 +712,12 @@ footer {
   -ms-background-color: $mockupBackground;
   -moz-background-color: $mockupBackground;
   -webkit-background-color: $mockupBackground;
-  
+
   overflow: hidden;
   -ms-overflow: hidden;
   -moz-overflow: hidden;
   -webkit-overflow: hidden;
-  
+
   z-index: -1;
   -ms-z-index: -1;
   -moz-z-index: -1;
@@ -713,17 +734,17 @@ footer {
   -ms-background: $highlightColor;
   -moz-background: $highlightColor;
   -webkit-background: $highlightColor;
-  
+
   transform: skewY(-6deg);
   -ms-transform: skewY(-6deg);
   -moz-transform: skewY(-6deg);
   -webkit-transform: skewY(-6deg);
-  
+
   transform-origin: top left;
   -ms-transform-origin: top left;
   -moz-transform-origin: top left;
   -webkit-transform-origin: top left;
-  
+
   width: 100%;
   -ms-width: 100%;
   -moz-width: 100%;
