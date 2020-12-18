@@ -1,41 +1,51 @@
 <template>
-  <mdb-navbar
-    position="top"
+  <b-navbar
     class="mt-0"
     id="Menu"
-    :color="scrollPosition > 657 ? 'black' : ''"
+    toggleable="lg"
+    type="dark"
+    :variant="scrollPosition > 657 ? 'dark' : 'transparent'"
   >
     <!-- transparent scrolling -->
-    <mdb-navbar-brand class="p-1 ml-1">
+    <b-navbar-brand class="p-1 ml-1">
       <img src="../assets/imgs/logowhite.png" alt="logo" height="35" />
-    </mdb-navbar-brand>
+    </b-navbar-brand>
 
-    <mdb-navbar-toggler>
-      <span class="navbar-toggler-icon"></span>
-      <mdb-navbar-nav class="m-auto">
-        <mdb-nav-item href="#home" anchorClass="white-text mr-3">
+    <b-navbar-toggle target="navbar-toggle">
+      <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="chevron-bar-up"></b-icon>
+        <b-icon v-else icon="chevron-bar-down"></b-icon>
+      </template>
+    </b-navbar-toggle>
+
+    <b-collapse id="navbar-toggle" is-nav>
+      <b-navbar-nav class="m-auto">
+        <b-nav-item href="#home">
           {{ $t("nav.Home") }}
-        </mdb-nav-item>
-        <mdb-nav-item href="#about" anchorClass="white-text mx-3">{{
+        </b-nav-item>
+        <b-nav-item href="#about">{{
           $t("nav.Sobre")
-        }}</mdb-nav-item>
-        <mdb-nav-item href="#solutions" anchorClass="white-text mx-3">{{
+        }}</b-nav-item>
+        <b-nav-item href="#solutions">{{
           $t("nav.Soluções")
-        }}</mdb-nav-item>
-        <mdb-nav-item href="#projects" anchorClass="white-text mx-3">{{
+        }}</b-nav-item>
+        <b-nav-item href="#projects">{{
           $t("nav.Portfólio")
-        }}</mdb-nav-item>
-        <mdb-nav-item href="#contacts" anchorClass="white-text ml-3">{{
+        }}</b-nav-item>
+        <b-nav-item href="#contacts">{{
           $t("nav.Contactos")
-        }}</mdb-nav-item>
-      </mdb-navbar-nav>
+        }}</b-nav-item>
+      </b-navbar-nav>
 
       <div class="locale-changer">
         <button
           type="button"
           class="btn btn-sm lang-btn"
-          :class="{'btn-dark':langActive===0,'lang-btn-active':langActive===0}"
-          @click="changeLocale(langs[0].langs,0)"
+          :class="{
+            'btn-dark': langActive === 0,
+            'lang-btn-active': langActive === 0,
+          }"
+          @click="changeLocale(langs[0].langs, 0)"
         >
           {{ langs[0].title }}
         </button>
@@ -43,33 +53,36 @@
         <button
           type="button"
           class="btn btn-sm lang-btn"
-          :class="{'btn-dark':langActive===1,'lang-btn-active':langActive===1}"
-          @click="changeLocale(langs[1].langs,1)"
+          :class="{
+            'btn-dark': langActive === 1,
+            'lang-btn-active': langActive === 1,
+          }"
+          @click="changeLocale(langs[1].langs, 1)"
         >
           {{ langs[1].title }}
         </button>
       </div>
-    </mdb-navbar-toggler>
-  </mdb-navbar>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
-import {
-  mdbNavbar,
-  mdbNavbarBrand,
-  mdbNavbarToggler,
-  mdbNavbarNav,
-  mdbNavItem,
-} from "mdbvue";
+// import {
+//   mdbNavbar,
+//   mdbNavbarBrand,
+//   mdbNavbarToggler,
+//   mdbNavbarNav,
+//   mdbNavItem,
+// } from "mdbvue";
 import i18n from "../i18n";
 export default {
-  components: {
-    mdbNavbar,
-    mdbNavbarBrand,
-    mdbNavbarToggler,
-    mdbNavbarNav,
-    mdbNavItem,
-  },
+  // components: {
+  //   mdbNavbar,
+  //   mdbNavbarBrand,
+  //   mdbNavbarToggler,
+  //   mdbNavbarNav,
+  //   mdbNavItem,
+  // },
   props: ["homeheight"],
   data() {
     return {
@@ -79,7 +92,7 @@ export default {
         { langs: "PT", title: "PT" },
         { langs: "EN", title: "EN" },
       ],
-      langActive:0
+      langActive: 0,
     };
   },
   methods: {
@@ -98,14 +111,17 @@ export default {
 </script>
 
 <style scoped>
-nav {
+#Menu {
   /*  background-color: #39c0e2; */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .nav-link {
-  color: rgb(55, 191, 225) !important;
-  -ms-color: rgb(55, 191, 225) !important;
-  -moz-color: rgb(55, 191, 225) !important;
-  -webkit-color: rgb(55, 191, 225) !important;
+  color:#fff !important;
+  -ms-color: #fff!important;
+  -moz-color:#fff!important;
+  -webkit-color: #fff !important;
 }
 .locale-changer {
   padding-right: 2%;
@@ -120,19 +136,19 @@ nav {
   -webkit-margin: 2px;
 }
 
-.lang-btn{
+.lang-btn {
   color: #fff;
   -ms-color: #fff;
   -moz-color: #fff;
   -webkit-color: #fff;
 }
 
-.lang-btn-active{
-  border:1px solid rgba(255,255,255,.3);
-  -ms-border:1px solid rgba(255,255,255,.3);
-  -moz-border:1px solid rgba(255,255,255,.3);
-  -webkit-border:1px solid rgba(255,255,255,.3);
-  
+.lang-btn-active {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -ms-border: 1px solid rgba(255, 255, 255, 0.3);
+  -moz-border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-border: 1px solid rgba(255, 255, 255, 0.3);
+
   background-color: transparent;
   -ms-background-color: transparent;
   -moz-background-color: transparent;
