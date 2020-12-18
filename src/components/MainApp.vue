@@ -225,7 +225,7 @@
       </div>
     </div>
     <!------------------------------------------------------------------------->
-    <div id="solutions" class="main-solutions 3">
+    <div id="solutions" class="main-solutions 3 py-5 px-2">
       <mdb-row class="align-items-center w-100">
         <mdb-col
           xl="6"
@@ -372,9 +372,9 @@
           data-aos-anchor-placement="top-bottom"
         >
           <!-- text-overlay -->
-          <span class="display-4 font-weight-bold">{{
+          <h1 class="display-4 font-weight-bold">{{
             $t("ImagemDaImpresa.IMG")
-          }}</span>
+          }}</h1>
 
           <mdb-btn outline="white" size="lg">{{
             $t("ImagemDaImpresa.BotaoImg")
@@ -508,73 +508,8 @@
         <div class="skewed"></div>
       </div>
     </div>
-    <!--
-    <div id="plans" class="main-divs container-fluid">
-      <mdb-row class="justify-content-center align-items-center text-white">
-        <mdb-col
-          md="7"
-          xl="3"
-          lg="3"
-          sm="10"
-          class="col-10 plans-container p-3 p-mx-2"
-          data-aos="flip-left"
-          data-aos-duration="1000"
-        >
-          <i class="fas fa-bell fa-4x highlight mt-4"></i>
-          <h2 class="font-weight-normal mt-3">BASIC</h2>
-          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-          <p class="text-center my-3 display-4">30k</p>
-          <ul class="navbar-nav my-3 text-center">
-            <li>Sincronização de email</li>
-            <li>Várias listas de tarefas</li>
-            <li>60M em nuvem</li>
-          </ul>
-          <mdb-btn outline="white" size="lg" class="mb-4">Escolher Plano</mdb-btn>
-        </mdb-col>
-        <mdb-col
-          xl="3"
-          lg="3"
-          md="7"
-          sm="12"
-          class="col-10 plans-container bigger p-3"
-          data-aos="flip-left"
-          data-aos-duration="1000"
-        >
-          <i class="fas fa-paper-plane fa-7x highlight mt-5"></i>
-          <h2 class="font-weight-normal mt-3">BASIC</h2>
-          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-          <p class="text-center my-3 display-4">60k</p>
-          <ul class="navbar-nav my-3 text-center">
-            <li>Sincronização de email</li>
-            <li>Várias listas de tarefas</li>
-            <li>106M em nuvem</li>
-          </ul>
-          <mdb-btn size class="mb-5">Escolher Plano</mdb-btn>
-        </mdb-col>
-        <mdb-col
-          xl="3"
-          lg="3"
-          md="7"
-          sm="12"
-          class="col-10 plans-container p-3"
-          data-aos="flip-left"
-          data-aos-duration="1000"
-        >
-          <i class="fas fa-cloud-upload-alt fa-4x highlight mt-3"></i>
-          <h2 class="font-weight-normal mt-3">BASIC</h2>
-          <p class="text-center">Plano avançado excelente para empresas online, pequenas e locais</p>
-          <p class="text-center my-3 display-4">60k</p>
-          <ul class="navbar-nav my-3 text-center">
-            <li>Sincronização de email</li>
-            <li>Várias listas de tarefas</li>
-            <li>106M em nuvem</li>
-          </ul>
-          <mdb-btn outline="white" size="lg" class="mb-4">Escolher Plano</mdb-btn>
-        </mdb-col>
-      </mdb-row>
-    </div>
-    -->
-    <div id="contacts" class="main-div  8 m-0 p-0">
+    
+    <div id="contacts" class="main-div  8 m-0 py-5">
       <div
         class="row align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >

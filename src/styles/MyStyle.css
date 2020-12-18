@@ -22,10 +22,6 @@
 
 
 .skewed2 {
-  transform-origin: top left;
-  -ms-transform-origin: top left;
-  -moz-transform-origin: top left;
-  -webkit-transform-origin: top left;
   width: 100%;
   -ms-width: 100%;
   -moz-width: 100%;
@@ -97,13 +93,9 @@
 
 .main-solutions {
   height: auto;
-  min-height: 100vh;
   -ms-height: auto;
   -moz-height: auto;
   -webkit-height: auto;
-  -ms-min-height: 100vh;
-  -moz-min-height: 100vh;
-  -webkit-min-height: 100vh;
 }
 
 .main-portofolio {
@@ -117,6 +109,9 @@
   -webkit-min-height: 100vh;
 }
 
+#contacts{
+    height: 50vh;
+}
 
 #footer {
   margin-top: -50px;
