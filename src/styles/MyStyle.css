@@ -484,6 +484,7 @@ video {
 }
 
 .projects-images {
+  object-fit: contain;
   height: 250px;
   -ms-height: 250px;
   -moz-height: 250px;
@@ -511,9 +512,6 @@ video {
   -ms-padding: 5px;
   -moz-padding: 5px;
   -webkit-padding: 5px;
-}
-.TelaWebsite{
-  margin-top: -10%;
 }
 
 @font-face {

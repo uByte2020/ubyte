@@ -447,7 +447,7 @@
             >
               <img
                 :src="work"
-                class="img-fluid w-90 h-80 projects-images"
+                class="img-fluid w-100 projects-images"
                 alt="uByte Imagens de portofolio"
               />
             </div>
@@ -460,7 +460,7 @@
       class="main-divs  6 overflow-hidden p-1 m-0"
     >
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 space-top-1">
+        <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="row all p-0 m-0">
             <div
               offsetLg="1"
@@ -563,9 +563,11 @@ export default {
           require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
           require("@/assets/imgs/Logos P Portfólio/Rodjet - Logotipos em Papel Cartulina.jpg"),
           require("@/assets/imgs/Logos P Portfólio/Tec One - Logotipos em Papel Cartulina.jpg"),
+          require("@/assets/imgs/project-1.jpg"),
+          require("@/assets/imgs/project-2.jpg")
         ],
-        apps: [require("@/assets/imgs/project-2.jpg")],
-        softwares: [require("@/assets/imgs/project-1.jpg")],
+        apps: [],
+        softwares: [],
         website: [
           require("@/assets/imgs/Tela Website.png"),
           require("@/assets/imgs/Tela Website - Fiskamer.png"),
@@ -586,10 +588,10 @@ export default {
     showPortFolio(work) {
       if (work === "todos")
         this.portFolio = [
+          ...this.ourWorkers.website,
+           ...this.ourWorkers.softwares,
           ...this.ourWorkers.graphicDesign,
           ...this.ourWorkers.apps,
-          ...this.ourWorkers.softwares,
-          ...this.ourWorkers.website,
         ];
       else this.portFolio = [...this.ourWorkers[work]];
     },
