@@ -4,7 +4,7 @@
     <div
       id="home"
       :homeheight="homeHeight"
-      class="container-fluid main-divs 1 m-0 p-0"
+      class="main-divs 1 m-0 p-0"
     >
       <div class="row">
         <mdb-col xl="12" lg="12" md="12" sm="12" class>
@@ -36,7 +36,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="about" class="container-fluid main-divs 2 overflow-hidden m-0 p-0">
+    <div id="about" class="main-divs 2 overflow-hidden m-0 p-0">
       <mdb-row>
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
@@ -225,7 +225,7 @@
       </div>
     </div>
     <!------------------------------------------------------------------------->
-    <div id="solutions" class="main-solutions container-fluid 3">
+    <div id="solutions" class="main-solutions 3">
       <mdb-row class="align-items-center w-100 h-100">
         <mdb-col
           xl="6"
@@ -362,7 +362,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="message-div" class="main-divs container-fluid 4 m-0 p-0">
+    <div id="message-div" class="main-divs  4 m-0 p-0">
       <mdb-row
         class="justify-content-center align-items-center h-100 text-white black-overlay"
       >
@@ -387,7 +387,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="projects" class="main-portofolio container-fluid">
+    <div id="projects" class="main-portofolio ">
       <div class="row text-white">
         <div class="col-8 portofolio">
           <div class="row justify-content-center">
@@ -462,7 +462,7 @@
     </div>
     <div
       id="control"
-      class="main-divs container-fluid 6 overflow-hidden p-1 m-0"
+      class="main-divs  6 overflow-hidden p-1 m-0"
     >
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 space-top-1">
@@ -579,7 +579,7 @@
       </mdb-row>
     </div>
     -->
-    <div id="contacts" class="main-div container-fluid 8 m-0 p-0">
+    <div id="contacts" class="main-div  8 m-0 p-0">
       <div
         class="row align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >
