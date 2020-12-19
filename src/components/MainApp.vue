@@ -556,11 +556,11 @@ export default {
       portFolio: [],
       ourWorkers: {
         graphicDesign: [
-          require("@/assets/imgs/Logos P Portfólio/Albertinny´s - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/C & JA - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/Changing Lives - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/Fiskamer - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
+          // require("@/assets/imgs/Logos P Portfólio/Albertinny´s - Logotipos em Papel Cartulina.jpg"),
+          // require("@/assets/imgs/Logos P Portfólio/C & JA - Logotipos em Papel Cartulina.jpg"),
+          // require("@/assets/imgs/Logos P Portfólio/Changing Lives - Logotipos em Papel Cartulina.jpg"),
+          // require("@/assets/imgs/Logos P Portfólio/Fiskamer - Logotipos em Papel Cartulina.jpg"),
+          // require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
           require("@/assets/imgs/Logos P Portfólio/Rodjet - Logotipos em Papel Cartulina.jpg"),
           require("@/assets/imgs/Logos P Portfólio/Tec One - Logotipos em Papel Cartulina.jpg"),
           require("@/assets/imgs/project-1.jpg"),
