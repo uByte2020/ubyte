@@ -12,7 +12,10 @@
     </b-navbar-brand>
 
     <b-navbar-toggle target="navbar-toggle">
-      
+       <template #default="{ expanded }">
+        <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
+        <b-icon v-else icon="list" font-scale="1"></b-icon>
+      </template>
     </b-navbar-toggle>
 
     <b-collapse class="Background" id="navbar-toggle" is-nav>
@@ -148,6 +151,9 @@ export default {
   .Background
     {
         background-color:#363b41;
+        -ms-background-color:#363b41;
+        -moz-background-color:#363b41;
+        -webkit-background-color:#363b41;
     }
 }
 </style>
