@@ -25,7 +25,9 @@
     "Quem_somos": {
         "quem_somos": "Quem Somos?",
         "texto_qs": "Somos uma equipa especializada em soluções digitais adaptadas e personalizadas aos nossos clientes. Apresentamos soluções inovadoras, softwares de optimo desempenho, Produtos e serviços de alta qualidade, Melhores Designers e Soluções adaptadas e personalizadas, tudo no melhor preço.",
-        "TecnUsadas": "Tecnologias Usadas"
+        "TecnUsadas": "Experiências",
+        "DesignGraficos":"Design Graficos",
+        "WebSites-Aplicações_Web":"WebSites e Aplicações Web"
     },
     "Conheca_Nossas_Solucoes": {
         "CNS": "Conheça as nossas soluções",

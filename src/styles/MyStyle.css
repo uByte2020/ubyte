@@ -40,10 +40,10 @@
 }
 
 .skewed2-progress {
-  margin-top: 2%;
-  -ms-margin-top: 2%;
-  -moz-margin-top: 2%;
-  -webkit-margin-top: 2%;
+  margin-top: 1%;
+  -ms-margin-top: 1%;
+  -moz-margin-top: 1%;
+  -webkit-margin-top: 1%;
   padding: 0px 4% !important;
   -ms-padding: 0px 4% !important;
   -moz-padding: 0px 4% !important;
@@ -51,10 +51,6 @@
 }
 
 .skewed2-progress-1 {
-  display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -webkit-display: flex;
   margin-top: 3px;
   -ms-margin-top: 3px;
   -moz-margin-top: 3px;
@@ -331,10 +327,10 @@ video {
 }
 
 .progress {
-  width: 50% !important;
-  -ms-width: 50% !important;
-  -moz-width: 50% !important;
-  -webkit-width: 50% !important;
+  width: 80% !important;
+  -ms-width: 80% !important;
+  -moz-width: 80% !important;
+  -webkit-width: 80% !important;
   margin-left: 2%;
   -ms-margin-left: 2%;
   -moz-margin-left: 2%;
@@ -350,21 +346,18 @@ video {
   -ms-margin-top: 2%;
   -moz-margin-top: 2%;
   -webkit-margin-top: 2%;
-  display: flex;
-  -ms-display: flex;
-  -moz-display: flex;
-  -webkit-display: flex;
+  
 }
 
 .Texto {
-  margin-left: 42%;
+  margin-left: 2%;
   -ms-margin-left: 42%;
   -moz-margin-left: 42%;
   -webkit-margin-left: 42%;
 }
 
 .Texto1 {
-  margin-left: 2%;
+  margin-left: 1%;
   -ms-margin-left: 2%;
   -moz-margin-left: 2%;
   -webkit-margin-left: 2%;

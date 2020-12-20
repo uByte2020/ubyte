@@ -4,15 +4,19 @@
     id="Menu"
     toggleable="lg"
     type="dark"
-    :variant="scrollPosition > 657 ? 'dark' : 'transparent'"
+    :variant="BackgroundClick || scrollPosition > 657 ? 'dark' : 'transparent'"
   >
     <!-- transparent scrolling -->
     <b-navbar-brand class="p-1 ml-1">
       <img src="../assets/imgs/logowhite.png" alt="logo" height="35" />
     </b-navbar-brand>
 
-    <b-navbar-toggle target="navbar-toggle">
-       <template #default="{ expanded }">
+    <b-navbar-toggle
+      target="navbar-toggle"
+      
+      @click="toggleBackgroundClick"
+    >
+      <template #default="{ expanded }">
         <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
         <b-icon v-else icon="list" font-scale="1"></b-icon>
       </template>
@@ -59,32 +63,18 @@
 </template>
 
 <script>
-// import {
-//   mdbNavbar,
-//   mdbNavbarBrand,
-//   mdbNavbarToggler,
-//   mdbNavbarNav,
-//   mdbNavItem,
-// } from "mdbvue";
 import i18n from "../i18n";
 export default {
-  // components: {
-  //   mdbNavbar,
-  //   mdbNavbarBrand,
-  //   mdbNavbarToggler,
-  //   mdbNavbarNav,
-  //   mdbNavItem,
-  // },
   props: ["homeheight"],
   data() {
     return {
-      test: "#39c0e2",
       scrollPosition: null,
       langs: [
         { langs: "PT", title: "PT" },
         { langs: "EN", title: "EN" },
       ],
       langActive: 0,
+      BackgroundClick: false,
     };
   },
   methods: {
@@ -94,6 +84,10 @@ export default {
     changeLocale(locale, langActive) {
       this.langActive = langActive;
       i18n.locale = locale;
+    },
+    toggleBackgroundClick() {
+      console.log(this.BackgroundClick);
+      this.BackgroundClick = !this.BackgroundClick;
     },
   },
   mounted() {
@@ -145,15 +139,5 @@ export default {
   -ms-background-color: transparent;
   -moz-background-color: transparent;
   -webkit-background-color: transparent;
-}
-
-@media (max-width: 800px) {
-  .Background
-    {
-        background-color:#363b41;
-        -ms-background-color:#363b41;
-        -moz-background-color:#363b41;
-        -webkit-background-color:#363b41;
-    }
 }
 </style>

@@ -1,11 +1,7 @@
 <template>
   <div class="container-fluid m-0 p-0 overflow-hidden">
     <navbar />
-    <div
-      id="home"
-      :homeheight="homeHeight"
-      class="main-divs 1 m-0 p-0"
-    >
+    <div id="home" :homeheight="homeHeight" class="main-divs 1 m-0 p-0">
       <div class="row">
         <mdb-col xl="12" lg="12" md="12" sm="12" class>
           <mdb-view class="back position-absolute">
@@ -30,9 +26,11 @@
             >{{ $t("Home.P") }}
             <span class="highlight">{{ $t("Home.Negocio") }}</span>
           </p>
-          <mdb-btn outline="white" class="btninicial" size="lg">{{
-            $t("Home.Botao")
-          }}</mdb-btn>
+          <a href="#solutions">
+            <mdb-btn outline="white" class="btninicial" size="lg">{{
+              $t("Home.Botao")
+            }}</mdb-btn>
+          </a>
         </mdb-col>
       </mdb-row>
     </div>
@@ -40,10 +38,7 @@
       <mdb-row>
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
-            <img
-              src="../assets/imgs/img4.jpg"
-              class="img-fluid w-100 h-100"
-            />
+            <img src="../assets/imgs/img4.jpg" class="img-fluid w-100 h-100" />
             <mdb-mask flex-center class="black-overlay" />
           </mdb-view>
 
@@ -61,9 +56,11 @@
                 <span class="highlight">{{ $t("Home.personalizadas") }}</span>
                 {{ $t("Home.Clientes") }}
               </p>
+              <a href="#solutions">
               <mdb-btn class="highlight-background" size="lg">{{
                 $t("Home.BotaoSolucao")
               }}</mdb-btn>
+              </a>
             </mdb-col>
           </mdb-row>
         </mdb-col>
@@ -125,100 +122,43 @@
               data-aos-delay="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              <p class="Texto1">Laravel</p>
-              <p class="Texto">NodeJs</p>
-            </div>
-            <div
-              class="skewed2-progress-1"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <div class="progress">
-                <div
-                  name="Laravel"
-                  class="progress-bar w-75"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-
-              <div class="progress">
-                <div
-                  name="NodeJs"
-                  class="progress-bar w-75"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div>
+                <p class="Texto">{{ $t("Quem_somos.DesignGraficos") }}</p>
+                <div class="progress">
+                  <div
+                    name="DesignGrafic"
+                    class="progress-bar"
+                    style="width: 80%"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
             </div>
             <div
-              class="progress-txt"
+              class="skewed2-progress-1 progress-txt"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="1000"
               data-aos-anchor-placement="top-bottom"
             >
-              <p class="Texto1">MySql</p>
-              <p class="Texto">MongoDb</p>
-            </div>
-            <div
-              class="skewed2-progress-1"
-              data-aos="fade-left"
-              data-aos-anchor-placement="top-bottom"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-            >
-              <div class="progress">
-                <div
-                  name="MySql"
-                  class="progress-bar w-75"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
+              <div>
+                <p class="Texto">
+                  {{ $t("Quem_somos.WebSites-Aplicações_Web") }}
+                </p>
+                <div class="progress">
+                  <div
+                    name="WebSite"
+                    class="progress-bar w-75"
+                    role="progressbar"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
               </div>
-              <div class="progress">
-                <div
-                  name="MongoDb"
-                  class="progress-bar w-75"
-                  role="progressbar"
-                  aria-valuenow="75"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-            </div>
-            <p
-              class="progress-txt Texto1"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-              data-aos-anchor-placement="top-bottom"
-            >
-              Vue
-            </p>
-            <div
-              class="progress"
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="1000"
-              data-aos-anchor-placement="top-bottom"
-            >
-              <div
-                name="Vue"
-                class="progress-bar w-75"
-                role="progressbar"
-                aria-valuenow="75"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
             </div>
           </mdb-col>
         </mdb-row>
@@ -226,6 +166,7 @@
     </div>
     <!------------------------------------------------------------------------->
     <div id="solutions" class="main-solutions 3 py-5 px-2">
+      <mdb-row class="align-items-center w-90">
         <mdb-col
           xl="6"
           lg="6"
@@ -356,7 +297,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="message-div" class="main-divs  4 m-0 p-0">
+    <div id="message-div" class="main-divs 4 m-0 p-0">
       <mdb-row
         class="justify-content-center align-items-center h-100 text-white black-overlay"
       >
@@ -371,9 +312,9 @@
           data-aos-anchor-placement="top-bottom"
         >
           <!-- text-overlay -->
-          <h1 class="display-4 font-weight-bold">{{
-            $t("ImagemDaImpresa.IMG")
-          }}</h1>
+          <h1 class="display-4 font-weight-bold">
+            {{ $t("ImagemDaImpresa.IMG") }}
+          </h1>
 
           <mdb-btn outline="white" size="lg">{{
             $t("ImagemDaImpresa.BotaoImg")
@@ -381,7 +322,7 @@
         </mdb-col>
       </mdb-row>
     </div>
-    <div id="projects" class="main-portofolio ">
+    <div id="projects" class="main-portofolio">
       <div class="row text-white">
         <div class="col-8 portofolio">
           <div class="row justify-content-center">
@@ -454,10 +395,7 @@
         </div>
       </div>
     </div>
-    <div
-      id="control"
-      class="main-divs  6 overflow-hidden p-1 m-0"
-    >
+    <div id="control" class="main-divs 6 overflow-hidden p-1 m-0">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="row all p-0 m-0">
@@ -507,8 +445,8 @@
         <div class="skewed"></div>
       </div>
     </div>
-    
-    <div id="contacts" class="main-div  8 m-0 py-5">
+
+    <div id="contacts" class="main-div 8 m-0 py-5">
       <div
         class="row align-items-center justify-content-center text-white w-100 h-100 m-0 p-0"
       >
@@ -558,7 +496,7 @@ export default {
           require("@/assets/imgs/logotipos/img6.jpg"),
           require("@/assets/imgs/logotipos/img7.jpg"),
           require("@/assets/imgs/img5.jpg"),
-          require("@/assets/imgs/img6.jpg")
+          require("@/assets/imgs/img6.jpg"),
         ],
         apps: [],
         softwares: [],
@@ -583,7 +521,7 @@ export default {
       if (work === "todos")
         this.portFolio = [
           ...this.ourWorkers.website,
-           ...this.ourWorkers.softwares,
+          ...this.ourWorkers.softwares,
           ...this.ourWorkers.graphicDesign,
           ...this.ourWorkers.apps,
         ];
