@@ -15,7 +15,7 @@
       
     </b-navbar-toggle>
 
-    <b-collapse id="navbar-toggle" is-nav>
+    <b-collapse class="Background" id="navbar-toggle" is-nav>
       <b-navbar-nav class="m-auto">
         <b-nav-item href="#home">
           {{ $t("nav.Home") }}
@@ -142,5 +142,12 @@ export default {
   -ms-background-color: transparent;
   -moz-background-color: transparent;
   -webkit-background-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .Background
+    {
+        background-color:#363b41;
+    }
 }
 </style>
