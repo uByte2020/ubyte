@@ -69,7 +69,7 @@
         </mdb-col>
         <mdb-col xl="7" lg="7" md="12" sm="12" class="skewed3">
           <img
-            :src="FiskamerImg"
+            :src="img9Img"
             id="three-phones"
             class="img-fluid"
             data-aos="fade-right"
@@ -552,7 +552,7 @@ export default {
     return {
       homeHeight: null,
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
-      FiskamerImg: require("@/assets/imgs/img2.png"),
+      img9Img: require("@/assets/imgs/img2.png"),
       portFolio: [],
       ourWorkers: {
         graphicDesign: [
