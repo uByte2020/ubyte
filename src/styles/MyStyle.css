@@ -195,10 +195,10 @@ video {
 }
 
 #message-div {
-  background-image: url("../assets/imgs/laptop.jpg");
-  -ms-background-image: url("../assets/imgs/laptop.jpg");
-  -moz-background-image: url("../assets/imgs/laptop.jpg");
-  -webkit-background-image: url("../assets/imgs/laptop.jpg");
+  background-image: url("../assets/imgs/img3.jpg");
+  -ms-background-image: url("../assets/imgs/img3.jpg");
+  -moz-background-image: url("../assets/imgs/img3.jpg");
+  -webkit-background-image: url("../assets/imgs/img3.jpg");
   background-attachment: fixed;
   -ms-background-attachment: fixed;
   -moz-background-attachment: fixed;

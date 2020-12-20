@@ -2,7 +2,7 @@
   <div class="main-divs">
     <!-- <navbar></navbar> -->
     <mdb-view class="back position-absolute">
-      <img src="../assets/imgs/laptop.jpg" class="img-fluid w-100" alt="test" />
+      <img src="../assets/imgs/img3.jpg" class="img-fluid w-100" alt="test" />
       <mdb-mask flex-center overlay="black-light" />
     </mdb-view>
 

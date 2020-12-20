@@ -41,7 +41,7 @@
         <mdb-col xl="6" lg="6" md="12" sm="12" id="deeper" class="m-0 p-0">
           <mdb-view class="back position-absolute h-100">
             <img
-              src="../assets/imgs/pausado.jpg"
+              src="../assets/imgs/img4.jpg"
               class="img-fluid w-100 h-100"
             />
             <mdb-mask flex-center class="black-overlay" />
@@ -239,7 +239,7 @@
         >
           <h1 class="text-center">{{ $t("Conheca_Nossas_Solucoes.CNS") }}</h1>
           <img
-            src="../assets/imgs/Tela Website - Fiskamer.png"
+            src="../assets/imgs/img7.png"
             alt="macgold"
             class="img-fluid w-90"
           />
@@ -491,7 +491,7 @@
               data-aos-anchor-placement="top-bottom"
             >
               <img
-                src="../assets/imgs/Tela Website.png"
+                src="../assets/imgs/img8.png"
                 class="img-fluid w-90 TelaWebsite"
                 alt="WebSite"
               />
@@ -552,25 +552,20 @@ export default {
     return {
       homeHeight: null,
       IdentidadeVisualicone: require("@/assets/svgs/IdentidadeVisual.svg"),
-      FiskamerImg: require("@/assets/imgs/download.png"),
+      FiskamerImg: require("@/assets/imgs/img2.png"),
       portFolio: [],
       ourWorkers: {
         graphicDesign: [
-          // require("@/assets/imgs/Logos P Portfólio/Albertinny´s - Logotipos em Papel Cartulina.jpg"),
-          // require("@/assets/imgs/Logos P Portfólio/C & JA - Logotipos em Papel Cartulina.jpg"),
-          // require("@/assets/imgs/Logos P Portfólio/Changing Lives - Logotipos em Papel Cartulina.jpg"),
-          // require("@/assets/imgs/Logos P Portfólio/Fiskamer - Logotipos em Papel Cartulina.jpg"),
-          // require("@/assets/imgs/Logos P Portfólio/Raúl Jorge - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/Rodjet - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/Logos P Portfólio/Tec One - Logotipos em Papel Cartulina.jpg"),
-          require("@/assets/imgs/project-1.jpg"),
-          require("@/assets/imgs/project-2.jpg")
+          require("@/assets/imgs/logotipos/img6.jpg"),
+          require("@/assets/imgs/logotipos/img7.jpg"),
+          require("@/assets/imgs/img5.jpg"),
+          require("@/assets/imgs/img6.jpg")
         ],
         apps: [],
         softwares: [],
         website: [
-          require("@/assets/imgs/Tela Website.png"),
-          require("@/assets/imgs/Tela Website - Fiskamer.png"),
+          require("@/assets/imgs/img8.png"),
+          require("@/assets/imgs/img7.png"),
         ],
       },
       Portof: {
