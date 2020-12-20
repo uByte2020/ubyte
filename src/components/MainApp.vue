@@ -226,7 +226,6 @@
     </div>
     <!------------------------------------------------------------------------->
     <div id="solutions" class="main-solutions 3 py-5 px-2">
-      <mdb-row class="align-items-center w-100">
         <mdb-col
           xl="6"
           lg="6"
