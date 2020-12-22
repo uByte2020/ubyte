@@ -8,4 +8,4 @@ const store = new Vuex.Store({
     mutations: {},
     actions:{}
 })
-export { store }
+export default { store }

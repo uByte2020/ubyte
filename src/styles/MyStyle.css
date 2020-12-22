@@ -240,10 +240,10 @@ video {
 }
 
 #plans, #solutions, #contacts, #projects {
-  background-image: url("../assets/imgs/black.jpg");
-  -ms-background-image: url("../assets/imgs/black.jpg");
-  -moz-background-image: url("../assets/imgs/black.jpg");
-  -webkit-background-image: url("../assets/imgs/black.jpg");
+  background-image: url("../assets/imgs/img11.jpg");
+  -ms-background-image: url("../assets/imgs/img11.jpg");
+  -moz-background-image: url("../assets/imgs/img11.jpg");
+  -webkit-background-image: url("../assets/imgs/img11.jpg");
   background-attachment: fixed;
   -ms-background-attachment: fixed;
   -moz-background-attachment: fixed;
@@ -378,10 +378,10 @@ video {
 }
 
 #deeper {
-  z-index: -1;
+  /* z-index: -1;
   -ms-z-index: -1;
   -moz-z-index: -1;
-  -webkit-z-index: -1;
+  -webkit-z-index: -1; */
   height: 70vh;
   -ms-height: 70vh;
   -moz-height: 70vh;
