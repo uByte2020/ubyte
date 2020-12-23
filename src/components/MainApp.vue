@@ -57,9 +57,9 @@
                 {{ $t("Home.Clientes") }}
               </p>
               <a href="#solutions">
-              <mdb-btn class="highlight-background" size="lg">{{
-                $t("Home.BotaoSolucao")
-              }}</mdb-btn>
+                <mdb-btn class="highlight-background" size="lg">{{
+                  $t("Home.BotaoSolucao")
+                }}</mdb-btn>
               </a>
             </mdb-col>
           </mdb-row>
@@ -315,10 +315,13 @@
           <h1 class="display-4 font-weight-bold">
             {{ $t("ImagemDaImpresa.IMG") }}
           </h1>
-
-          <mdb-btn outline="white" size="lg">{{
-            $t("ImagemDaImpresa.BotaoImg")
-          }}</mdb-btn>
+          <a
+            href="https://api.whatsapp.com/send?phone=244940262168&text=Ol%C3%A1"
+          >
+            <mdb-btn outline="white" size="lg">{{
+              $t("ImagemDaImpresa.BotaoImg")
+            }}</mdb-btn>
+          </a>
         </mdb-col>
       </mdb-row>
     </div>
