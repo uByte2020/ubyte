@@ -39,13 +39,26 @@
         <hr />
         <ul class="options-inline">
           <li>
-            <a id="facebook" href="https://www.facebook.com/ubytee" target="_blank">
+            <a
+              id="facebook"
+              href="https://www.facebook.com/ubytee"
+              target="_blank"
+            >
               <i class="fab fa-facebook" aria-hidden="true"> uByte</i>
             </a>
           </li>
           <li>
-            <a id="instagram" href="https://www.instagram.com/ubyte_/" target="_blank">
+            <a
+              id="instagram"
+              href="https://www.instagram.com/ubyte_/"
+              target="_blank"
+            >
               <i class="fab fa-instagram" aria-hidden="true"> uByte</i>
+            </a>
+          </li>
+          <li>
+            <a id="whatsapp" href="https://api.whatsapp.com/send?phone=244940262168&text=Ol%C3%A1" target="_blank">
+              <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
             </a>
           </li>
         </ul>
@@ -67,18 +80,27 @@ export default {
   },
   methods: {
     instagram() {
-      // var abaNova = window.open("https://www.instagram.com/ubyte_/", "_blank");
-      // abaNova.focus();
-      document.getElementById("instagram").addEventListener("click", function () {
-        location.replace("http://localhost:8080/#contacts");
-      });
+      document
+        .getElementById("instagram")
+        .addEventListener("click", function () {
+          location.replace("http://localhost:8080/#contacts");
+        });
     },
     facebook() {
       // var abaNova = window.open("https://www.facebook.com/ubytee", "_blank");
       // abaNova.focus();
-      document.getElementById("instagram").addEventListener("click", function () {
-        location.replace("http://localhost:8080/#contacts");
-      });
+      document
+        .getElementById("instagram")
+        .addEventListener("click", function () {
+          location.replace("http://localhost:8080/#contacts");
+        });
+    },
+    whatsapp() {
+      document
+        .getElementById("whatsapp")
+        .addEventListener("click", function () {
+          location.replace("http://localhost:8080/#contacts");
+        });
     },
   },
   component: {},
@@ -91,32 +113,32 @@ footer {
   -ms-font-size: 0.9rem;
   -moz-font-size: 0.9rem;
   -webkit-font-size: 0.9rem;
-  
+
   background-color: #2d2d2d;
   -ms-background-color: #2d2d2d;
   -moz-background-color: #2d2d2d;
   -webkit-background-color: #2d2d2d;
-  
+
   position: static;
   -ms-position: static;
   -moz-position: static;
   -webkit-position: static;
-  
+
   padding-top: 20px;
   -ms-padding-top: 20px;
   -moz-padding-top: 20px;
   -webkit-padding-top: 20px;
-  
+
   padding-left: 15px;
   -ms-padding-left: 15px;
   -moz-padding-left: 15px;
   -webkit-padding-left: 15px;
-  
+
   padding-right: 15px;
   -ms-padding-right: 15px;
   -moz-padding-right: 15px;
   -webkit-padding-right: 15px;
-  
+
   padding-bottom: 15px;
   -ms-padding-bottom: 15px;
   -moz-padding-bottom: 15px;
@@ -127,7 +149,7 @@ footer .menu {
   -ms-display: inline-block;
   -moz-display: inline-block;
   -webkit-display: inline-block;
-  
+
   text-align: left;
   -ms-text-align: left;
   -moz-text-align: left;
@@ -138,7 +160,7 @@ footer .menu ul {
   -ms-list-style-type: none;
   -moz-list-style-type: none;
   -webkit-list-style-type: none;
-  
+
   text-align: left;
   -ms-text-align: left;
   -moz-text-align: left;
@@ -157,22 +179,22 @@ footer .menu li a {
   -ms-text-transform: none;
   -moz-text-transform: none;
   -webkit-text-transform: none;
-  
+
   text-decoration: none;
   -ms-text-decoration: none;
   -moz-text-decoration: none;
   -webkit-text-decoration: none;
-  
+
   font-weight: normal;
   -ms-font-weight: normal;
   -moz-font-weight: normal;
   -webkit-font-weight: normal;
-  
+
   color: rgba(255, 255, 255, 0.8);
   -ms-color: rgba(255, 255, 255, 0.8);
   -moz-color: rgba(255, 255, 255, 0.8);
   -webkit-color: rgba(255, 255, 255, 0.8);
-  
+
   text-align: left;
   -ms-text-align: left;
   -moz-text-align: left;
@@ -183,17 +205,17 @@ footer .menu hr {
   -ms-background-color: white;
   -moz-background-color: white;
   -webkit-background-color: white;
-  
+
   border-width: 1px;
   -ms-border-width: 1px;
   -moz-border-width: 1px;
   -webkit-border-width: 1px;
-  
+
   width: 30%;
   -ms-width: 30%;
   -moz-width: 30%;
   -webkit-width: 30%;
-  
+
   margin-left: 0px;
   -ms-margin-left: 0px;
   -moz-margin-left: 0px;
@@ -204,12 +226,12 @@ footer .menu .title {
   -ms-font-weight: bold;
   -moz-font-weight: bold;
   -webkit-font-weight: bold;
-  
+
   color: white;
   -ms-color: white;
   -moz-color: white;
   -webkit-color: white;
-  
+
   margin-bottom: 9%;
   -ms-margin-bottom: 9%;
   -moz-margin-bottom: 9%;
@@ -232,12 +254,12 @@ footer .copyrights {
   -ms-color: white;
   -moz-color: white;
   -webkit-color: white;
-  
+
   margin-top: 1%;
   -ms-margin-top: 1%;
   -moz-margin-top: 1%;
   -webkit-margin-top: 1%;
-  
+
   font-size: 0.8rem;
   -ms-font-size: 0.8rem;
   -moz-font-size: 0.8rem;

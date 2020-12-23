@@ -57,9 +57,9 @@
                 {{ $t("Home.Clientes") }}
               </p>
               <a href="#solutions">
-              <mdb-btn class="highlight-background" size="lg">{{
-                $t("Home.BotaoSolucao")
-              }}</mdb-btn>
+                <mdb-btn class="highlight-background" size="lg">{{
+                  $t("Home.BotaoSolucao")
+                }}</mdb-btn>
               </a>
             </mdb-col>
           </mdb-row>
@@ -315,10 +315,15 @@
           <h1 class="display-4 font-weight-bold">
             {{ $t("ImagemDaImpresa.IMG") }}
           </h1>
-
-          <mdb-btn outline="white" size="lg">{{
-            $t("ImagemDaImpresa.BotaoImg")
-          }}</mdb-btn>
+          <a
+            id="whatsapp"
+            href="https://api.whatsapp.com/send?phone=244940262168&text=Ol%C3%A1"
+            target="_blank"
+          >
+            <mdb-btn outline="white" size="lg">{{
+              $t("ImagemDaImpresa.BotaoImg")
+            }}</mdb-btn>
+          </a>
         </mdb-col>
       </mdb-row>
     </div>
@@ -526,6 +531,14 @@ export default {
           ...this.ourWorkers.apps,
         ];
       else this.portFolio = [...this.ourWorkers[work]];
+    },
+
+    whatsapp() {
+      document
+        .getElementById("whatsapp")
+        .addEventListener("click", function () {
+          location.replace("http://localhost:8080/#solutions");
+        });
     },
   },
 };
