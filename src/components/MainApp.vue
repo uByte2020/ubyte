@@ -316,7 +316,9 @@
             {{ $t("ImagemDaImpresa.IMG") }}
           </h1>
           <a
+            id="whatsapp"
             href="https://api.whatsapp.com/send?phone=244940262168&text=Ol%C3%A1"
+            target="_blank"
           >
             <mdb-btn outline="white" size="lg">{{
               $t("ImagemDaImpresa.BotaoImg")
@@ -529,6 +531,14 @@ export default {
           ...this.ourWorkers.apps,
         ];
       else this.portFolio = [...this.ourWorkers[work]];
+    },
+
+    whatsapp() {
+      document
+        .getElementById("whatsapp")
+        .addEventListener("click", function () {
+          location.replace("http://localhost:8080/#solutions");
+        });
     },
   },
 };
