@@ -57,7 +57,7 @@
             </a>
           </li>
           <li>
-            <a id="whatsapp" href="https://api.whatsapp.com/send?phone=244940262168&text=Ol%C3%A1" target="_blank">
+            <a id="whatsapp" href="https://api.whatsapp.com/send?phone=244999262168&text=Ol%C3%A1" target="_blank">
               <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
             </a>
           </li>
