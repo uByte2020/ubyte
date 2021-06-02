@@ -33,6 +33,28 @@
         </li>
       </ul>
     </div>
+    <div class="menu social col-sm-2 col-xs-12">
+      <ul>
+        <li class="title">{{ $t("Footer.contactos") }}</li>
+        <hr />
+        <li class="options">
+          <a href>geral@ubyte.ao</a>
+        </li>
+        <li class="options" style="visibility: hidden;">
+          <a href>940262168</a>
+        </li>
+        <li>
+          <a href style="visibility: hidden;">
+            <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
+          </a>
+        </li>
+        <li>
+          <a href style="visibility: hidden;">
+            <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="social menu col-sm-3 col-xs-12">
       <ul>
         <li class="title">{{ $t("Footer.Siga") }}</li>
@@ -57,7 +79,16 @@
             </a>
           </li>
           <li>
-            <a id="whatsapp" href="https://api.whatsapp.com/send?phone=244999262168&text=Ol%C3%A1" target="_blank">
+            <a
+              id="whatsapp"
+              href="https://api.whatsapp.com/send?phone=244999262168&text=Ol%C3%A1"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
+            </a>
+          </li>
+          <li>
+            <a href style="visibility: hidden;">
               <i class="fab fa-whatsapp" aria-hidden="true"> uByte</i>
             </a>
           </li>
@@ -82,7 +113,7 @@ export default {
     instagram() {
       document
         .getElementById("instagram")
-        .addEventListener("click", function () {
+        .addEventListener("click", function() {
           location.replace("http://localhost:8080/#contacts");
         });
     },
@@ -91,16 +122,14 @@ export default {
       // abaNova.focus();
       document
         .getElementById("instagram")
-        .addEventListener("click", function () {
+        .addEventListener("click", function() {
           location.replace("http://localhost:8080/#contacts");
         });
     },
     whatsapp() {
-      document
-        .getElementById("whatsapp")
-        .addEventListener("click", function () {
-          location.replace("http://localhost:8080/#contacts");
-        });
+      document.getElementById("whatsapp").addEventListener("click", function() {
+        location.replace("http://localhost:8080/#contacts");
+      });
     },
   },
   component: {},
