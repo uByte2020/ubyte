@@ -316,9 +316,9 @@
             {{ $t("ImagemDaImpresa.IMG") }}
           </h1>
           <a
-            id="whatsapp"
-            href="https://api.whatsapp.com/send?phone=244999262168&text=Ol%C3%A1"
+            id="email"
             target="_blank"
+            @click="openEmail()"
           >
             <mdb-btn outline="white" size="lg">{{
               $t("ImagemDaImpresa.BotaoImg")
@@ -540,6 +540,26 @@ export default {
           location.replace("http://localhost:8080/#solutions");
         });
     },
+    openEmail() {
+      // var ua = navigator.platform.toLowerCase();
+      // var Android = ;
+      if (navigator.userAgent.match(/Android/i)
+          || navigator.userAgent.match(/webOS/i)
+          || navigator.userAgent.match(/iPhone/i)
+          || navigator.userAgent.match(/iPad/i)
+          || navigator.userAgent.match(/iPod/i)
+          || navigator.userAgent.match(/BlackBerry/i)
+          || navigator.userAgent.match(/Windows Phone/i)
+          || screen.width < 640 
+          || screen.height < 480) {
+        urlLink = "mailto:geral@ubyte.ao";
+      }
+      else{
+        var urlLink = "mailto:geral@ubyte.ao";
+      }
+      document.getElementById('email').setAttribute('href', urlLink);
+      window.onload = this.openEmail;
+    }
   },
 };
 </script>
