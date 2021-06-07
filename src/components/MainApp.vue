@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid m-0 p-0 overflow-hidden">
+  <div class="container-fluid m-0 p-0 overflow-hidden main">
     <navbar />
     <div id="home" :homeheight="homeHeight" class="main-divs 1 m-0 p-0">
       <div class="row">
@@ -482,14 +482,16 @@
         <Footer />
       </mdb-row>
     </div>
+    <IconFixed relative-element-selector="#main"/>
   </div>
 </template>
 
 <script>
 import { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol } from "mdbvue";
+import IconFixed from './IconFixed.vue'
 // import {mapState, mapMutations} from 'vuex'
 export default {
-  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol },
+  components: { mdbMask, mdbView, mdbBtn, mdbRow, mdbCol,IconFixed },
   data() {
     return {
       homeHeight: null,
@@ -532,7 +534,6 @@ export default {
         ];
       else this.portFolio = [...this.ourWorkers[work]];
     },
-
     whatsapp() {
       document
         .getElementById("whatsapp")
@@ -541,8 +542,6 @@ export default {
         });
     },
     openEmail() {
-      // var ua = navigator.platform.toLowerCase();
-      // var Android = ;
       if (navigator.userAgent.match(/Android/i)
           || navigator.userAgent.match(/webOS/i)
           || navigator.userAgent.match(/iPhone/i)

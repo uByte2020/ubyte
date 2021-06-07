@@ -16,6 +16,7 @@
     "mdbvue": "^6.7.1",
     "normalize-scss": "^7.0.1",
     "rfs": "^9.0.3",
+    "vue-affix": "^0.5.2",
     "vue-i18n": "^8.22.2",
     "vue-router": "^3.3.2",
     "vue-server-renderer": "^2.6.12",
